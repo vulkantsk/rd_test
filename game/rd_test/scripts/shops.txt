@@ -1,0 +1,179 @@
+"dota_shops"
+{
+	"consumables"
+	{
+		"item" "item_ward_observer"
+		"item" "item_clarity_custom"
+		"item" "item_cheese"
+		"item" "item_bonus_str_10_shop"
+		"item" "item_bonus_agi_10_shop"
+		"item" "item_bonus_int_10_shop"
+		"item" "item_bonus_stats_10_shop"
+	}
+
+	"attributes"
+	{
+		"item" "item_boots"
+		"item" "item_talisman_of_evasion"
+		"item" "item_lifesteal_custom"
+		"item" "item_voodoo_mask"
+		"item" "item_skull_of_midas"
+		"item" "item_imba_javelin"
+		"item" "item_blight_stone"
+		"item" "item_quelling_blade"
+	}
+
+	"weapons_armor"
+	{
+		"item" "item_base_str_1"
+		"item" "item_base_str_2"
+		"item" "item_base_str_3"
+		"item" "item_base_str_4"
+		"item" "item_base_agi_1"
+		"item" "item_base_agi_2"
+		"item" "item_base_agi_3"
+		"item" "item_base_agi_4"
+		"item" "item_base_int_1"
+		"item" "item_base_int_2"
+		"item" "item_base_int_3"
+		"item" "item_base_int_4"
+		"item" "item_base_allstats_1"
+		"item" "item_base_allstats_2"
+		"item" "item_base_allstats_3"
+		"item" "item_base_allstats_4"
+
+	}
+
+	"misc"
+	{
+		"item" "item_base_damage_1"
+		"item" "item_base_damage_2"
+		"item" "item_base_damage_3"
+		"item" "item_base_damage_4"
+		"item" "item_base_attack_speed_1"
+		"item" "item_base_attack_speed_2"
+		"item" "item_base_attack_speed_3"
+		"item" "item_base_attack_speed_4"
+		"item" "item_base_armor_1"
+		"item" "item_base_armor_2"
+		"item" "item_base_armor_3"
+		"item" "item_base_armor_4"
+		"item" "item_base_shield_1"
+		"item" "item_base_shield_2"
+		"item" "item_base_shield_3"
+		"item" "item_base_shield_4"
+
+	}
+
+	// Level 1 - Green Recipes
+	"basics"
+	{
+		"item"	"item_dodger_boots_3"
+		"item"	"item_mage_boots_3"
+		"item"	"item_guardian_greaves_3"
+		"item"	"item_scout_boots_3"
+		"item"	"item_treant_boots_3"
+	}
+
+	// Level 2 - Blue Recipes
+	"support"
+	{
+		"item"	"item_ancient_bible"	
+		"item"	"item_rd_solar_crest"	
+		"item"	"item_staff_of_nature"	
+		"item"	"item_rd_bottle_upgraded"
+		"item"	"item_imba_vladmir_4"
+	}
+
+	"magics"
+	{
+		"item"	"item_imba_dagon_10"		
+		"item"	"item_imba_bloodthorn"
+		"item"	"item_kaya_custom_2"
+		"item"	"item_refresher_core"
+	}
+
+	// Level 3 - Purple Recipes
+	"defense"
+	{
+		"item"	"item_imba_siege_cuirass"
+		"item"	"item_imba_shivas_guard"
+		"item"	"item_thor_armor"
+		"item"	"item_barbarian_armor_2"
+		"item"	"item_barbarian_helm_2"
+		"item"	"item_barbarian_shield_2"
+		"item"	"item_radiance_armor_2"
+		"item"	"item_werewolf_cape_2"
+		"item"	"item_cuirass_cursed"
+	}
+
+	"weapons"
+	{
+		"item"	"item_greater_mjollnir"
+		"item"	"item_imba_monkey_king_bar"
+		"item"	"item_imba_butterfly"
+		"item"	"item_imba_greater_crit"
+		"item"	"item_imba_triumvirate"
+		"item"	"item_imba_desolator_3"
+		"item"	"item_bfury_3"
+		"item"	"item_fire_rapier"
+		"item"	"item_wind_rapier"
+		"item"	"item_nature_rapier"
+		"item"	"item_water_rapier"
+		"item"	"item_ice_rapier"
+		"item"	"item_earth_rapier"
+		"item"	"item_cursed_rapier"
+	}
+
+	// Level 4 - Orange / Orb / Artifacts
+	"artifacts"
+	{
+		"item"	"item_rd_dominator_3"
+		"item"	"item_imba_necronomicon_auraman"
+		"item"	"item_imba_necronomicon_tank"
+		"item"	"item_imba_armlet"
+		"item"	"item_imba_agility_armlet"
+		"item"	"item_imba_magic_armlet"
+		"item"	"item_imba_moon_shard"
+		"item"	"item_skadi2"
+		"item"	"item_satanic_lua_4"
+		"item"	"item_mask_of_madness_custom_4"
+
+	}
+
+	"sideshop1"
+	{
+
+	}
+
+	"sideshop2"
+	{
+
+	}
+
+	"secretshop"
+	{
+		"item" "item_base_health_1"
+		"item" "item_base_health_2"
+		"item" "item_base_health_3"
+		"item" "item_base_health_4"
+		"item" "item_base_health_regeneration_1"
+		"item" "item_base_health_regeneration_2"
+		"item" "item_base_health_regeneration_3"
+		"item" "item_base_health_regeneration_4"
+		"item" "item_base_mana_1"
+		"item" "item_base_mana_2"
+		"item" "item_base_mana_3"
+		"item" "item_base_mana_4"
+		"item" "item_base_mana_regeneration_1"
+		"item" "item_base_mana_regeneration_2"
+		"item" "item_base_mana_regeneration_3"
+		"item" "item_base_mana_regeneration_4"
+	}
+
+	"pregame"
+	{
+
+
+	}
+}
