@@ -1,0 +1,102 @@
+"DOTAAbilities"
+{
+	"batrider_fireball"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/heroes/hero_batrider/fireball"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
+
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
+
+		"AbilityCastRange"			"1000"
+		"AbilityManaCost"			"50"
+		"AbilityCooldown"			"5"
+
+		"AbilityValues"
+		{
+			"proj_speed"			"1000"
+			"fire_width"			"200"
+			"damage_interval"		"0.5"
+			"damage_per_sec"		"100"
+			//"proj_length"			"1000"
+			"fire_duration"			"5"
+			"vision_radius"			"100"
+			"proj_width"			"200"
+			"proj_damage"			"200"
+			"particle_distance_multiplier"	"1.25" //на неё множится fire_width чтобы нормально подгонять размер партикля
+		}
+	}
+	"batrider_bomb"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/heroes/hero_batrider/bomb"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
+
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
+
+		"AbilityCastRange"			"1000"
+		"AbilityManaCost"			"50"
+		"AbilityCooldown"			"5"
+
+		"AbilityValues"
+		{
+			"radius"				"500"
+			"damage"				"100"
+			"stun_duration"			"1"
+			"proj_speed"			"1000"
+			"vision_radius"			"100"
+		}
+	}
+	"batrider_spell_amp_passive"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/heroes/hero_batrider/spell_amp_passive"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
+
+		"AbilityValues"
+		{
+			"stack_duration"		"10"
+			"max_stacks"			"5"
+			"spell_amp_per_stack"	"5"
+		}
+	}
+	"batrider_bombs"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/heroes/hero_batrider/bombs"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
+
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
+
+		"AbilityCastRange"			"1000"
+		"AbilityManaCost"			"50"
+		"AbilityCooldown"			"5"
+
+		"AbilityValues"
+		{
+			"radius"				"1000"
+			"bombs_count"			"3"
+			"duration"				"10"
+			"interval"				"0.5"
+		}
+	}
+}

@@ -4,9 +4,21 @@ batrider_bombs = class({
 	GetChannelTime = function(self) return self:GetSpecialValueFor("duration") end
 })
 
+function batrider_bombs:CastFilterResult()
+	if not IsServer() then return end
+	local caster = self:GetCaster()
+	if caster:HasAbility("batrider_bomb") then
+		if caster:FindAbilityByName("batrider_bomb"):GetLevel() > 0 then
+			return UF_SUCCESS
+		end
+	end
+	return UF_FAIL_CUSTOM
+end
+
 function batrider_bombs:OnSpellStart()
 	if not IsServer() then return end
-	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_batrider_bombs", {duration = self:GetSpecialValueFor("duration")})
+	local caster = self:GetCaster()
+	caster:AddNewModifier(caster, self, "modifier_batrider_bombs", {duration = self:GetSpecialValueFor("duration")})
 end
 
 function batrider_bombs:OnChannelFinish(bInterrupted)

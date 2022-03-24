@@ -9,7 +9,6 @@ function luna_moon_glaive_custom:OnProjectileHit_ExtraData(target, location, dat
 	local caster = self:GetCaster()
 	if target then
 		local reduction = (100 - self:GetSpecialValueFor("damage_reduction_pct")) / 100
-		print(data.isUlt)
 		local final_damage
 		if data.isUlt == 1 then
 			final_damage = data.damage
@@ -88,40 +87,42 @@ function modifier_luna_moon_glaive_custom:OnAttackLanded(keys)
 	if not IsServer() then return end
 	local caster = self:GetCaster()
 	local target = keys.target
-	local UltActive = caster:HasModifier("modifier_luna_eclipse_custom")
-	local nearby_enemies = FindUnitsInRadius(
-		caster:GetTeamNumber(),
-		target:GetAbsOrigin(),
-		nil,
-		self.radius,
-		self.target_team,
-		self.target_type,
-		self.target_flags,
-		FIND_CLOSEST,
-		false
-	)
-	table.remove(nearby_enemies, 1)
---[[	for i = 1, #nearby_enemies, 1 in pairs(nearby_enemies) do
-		if nearby_enemies[i] == target then
-			table.remove(nearby_enemies, i)
+	if keys.attacker == self:GetParent() then
+		local UltActive = caster:HasModifier("modifier_luna_eclipse_custom")
+		local nearby_enemies = FindUnitsInRadius(
+			caster:GetTeamNumber(),
+			target:GetAbsOrigin(),
+			nil,
+			self.radius,
+			self.target_team,
+			self.target_type,
+			self.target_flags,
+			FIND_CLOSEST,
+			false
+		)
+		table.remove(nearby_enemies, 1)
+--[[		for i = 1, #nearby_enemies, 1 in pairs(nearby_enemies) do
+			if nearby_enemies[i] == target then
+				table.remove(nearby_enemies, i)
+				break
+			end
+		end]]
+		for _, unit in pairs(nearby_enemies) do
+			caster_damage = caster:GetAverageTrueAttackDamageDisplay()
+			ProjectileManager:CreateTrackingProjectile({
+				Target = unit,
+				Source = target,
+				Ability = self.ability,
+				EffectName = caster:GetRangedProjectileName(),
+				bDodgeable = false,
+				iMoveSpeed = caster:GetProjectileSpeed(),
+				ExtraData = {
+					bounces = self.bounces,
+					damage = caster_damage,
+					isUlt = UltActive
+				}
+			})
 			break
 		end
-	end]]
-	for _, unit in pairs(nearby_enemies) do
-		caster_damage = caster:GetAverageTrueAttackDamageDisplay()
-		ProjectileManager:CreateTrackingProjectile({
-			Target = unit,
-			Source = target,
-			Ability = self.ability,
-			EffectName = caster:GetRangedProjectileName(),
-			bDodgeable = false,
-			iMoveSpeed = caster:GetProjectileSpeed(),
-			ExtraData = {
-				bounces = self.bounces,
-				damage = caster_damage,
-				isUlt = UltActive
-			}
-		})
-		break
 	end
 end

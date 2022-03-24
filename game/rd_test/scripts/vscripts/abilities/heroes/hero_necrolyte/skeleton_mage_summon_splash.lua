@@ -28,7 +28,6 @@ function modifier_necrolyte_skeleton_mage_summon_splash:OnAttackLanded(data)
 	local attacker = data.attacker
 	local target = data.target
 	local damage = data.damage * (self.damage_pct / 100)
-	print(damage)
 	if attacker == self:GetParent() and target and not (target:IsMagicImmune()) then
 		local enemies_in_radius = FindUnitsInRadius(attacker:GetTeamNumber(), target:GetAbsOrigin(), nil, self.radius, self.target_team, self.target_type, self.target_flags, 0, false)
 		for _, enemy in pairs(enemies_in_radius) do

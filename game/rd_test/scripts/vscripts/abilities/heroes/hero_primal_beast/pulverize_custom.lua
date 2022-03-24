@@ -44,26 +44,28 @@ function modifier_primal_beast_pulverize_custom:OnIntervalThink()
 	local caster = self:GetCaster()
 	local nearby_enemies = FindUnitsInRadius(caster:GetTeamNumber(), caster:GetAbsOrigin(), nil, self.radius, self.target_team, self.target_type, self.target_flags, 0, false)
 	for _, enemy in pairs(nearby_enemies) do
-		ApplyDamage({
-			victim = enemy,
-			attacker = caster,
-			ability = self.ability,
-			damage = self.damage,
-			damage_type = self.damage_type
-		})
-		if not enemy:HasModifier("modifier_primal_beast_pulverize_custom_debuff") then
-			enemy:AddNewModifier(caster, self.ability, "modifier_primal_beast_pulverize_custom_debuff", {duration = self.stack_duration}):SetStackCount(1)
-		else
-			local mod = enemy:FindModifierByName("modifier_primal_beast_pulverize_custom_debuff")
-			if mod:GetStackCount() < self.max_stacks then
-				mod:IncrementStackCount()
-				mod:SetDuration(self.stack_duration, true)
-				--if mod and not mod:IsNull() then
-				--	Timers:CreateTimer(self.stack_duration, function()
-				--		mod:DecrementStackCount()
-				--	end)
-				--end
+		if enemy then
+			if not enemy:HasModifier("modifier_primal_beast_pulverize_custom_debuff") then
+				enemy:AddNewModifier(caster, self.ability, "modifier_primal_beast_pulverize_custom_debuff", {duration = self.stack_duration}):SetStackCount(1)
+			else
+				local mod = enemy:FindModifierByName("modifier_primal_beast_pulverize_custom_debuff")
+				if mod:GetStackCount() < self.max_stacks then
+					mod:IncrementStackCount()
+					mod:SetDuration(self.stack_duration, true)
+					--if mod and not mod:IsNull() then
+					--	Timers:CreateTimer(self.stack_duration, function()
+					--		mod:DecrementStackCount()
+					--	end)
+					--end
+				end
 			end
+			ApplyDamage({
+				victim = enemy,
+				attacker = caster,
+				ability = self.ability,
+				damage = self.damage,
+				damage_type = self.damage_type
+			})
 		end
 	end
 	EmitSoundOnLocationWithCaster(caster:GetAbsOrigin(), "Hero_PrimalBeast.Pulverize.Impact", caster)
@@ -80,7 +82,10 @@ modifier_primal_beast_pulverize_custom_debuff = class({
 	DeclareFunctions = function() return {
 		MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE
 	} end,
-	GetModifierDamageOutgoing_Percentage = function(self) return self.dmg_red_pct_per_stack * self:GetStackCount() end
+	GetModifierDamageOutgoing_Percentage = function(self)
+		if not IsServer() then return end
+		return self.dmg_red_pct_per_stack * self:GetStackCount()
+	end
 })
 
 function modifier_primal_beast_pulverize_custom_debuff:OnCreated()

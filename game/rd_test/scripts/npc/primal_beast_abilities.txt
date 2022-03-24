@@ -1,0 +1,88 @@
+"DOTAAbilities"
+{
+	"primal_beast_wave"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_primal_beast/wave"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"					"10"
+
+		"AbilityValues"
+		{
+			"damage"						"200"
+			"wave_speed"					"900"
+			"wave_start_width"				"300"
+			"wave_end_width"				"300"
+			"stun_duration"					"0.05"
+			"wave_distance"					"1000"
+			"vision_radius"					"200"
+		}
+
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_magnataur.vsndevts"
+		}
+	}
+	"primal_beast_clap"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_primal_beast/clap"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"					"10"
+		"AbilityCastPoint"					"0.25"
+
+		"AbilityValues"
+		{
+			"radius"						"1000"
+			"damage"						"200"
+			"as_reduction"					"100"
+			"reduction_duration"			"5"
+		}
+	}
+	"primal_beast_armor"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_primal_beast/armor"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"damage_reduction_pct"			"30"
+		}
+	}
+	"primal_beast_pulverize_custom"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_primal_beast/pulverize_custom"
+		"AbilityTextureName"				"primal_beast_pulverize"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"					"10"
+
+		"AbilityValues"
+		{
+			"duration"						"5"
+			"radius"						"1000"
+			"stack_duration"				"4"
+			"damage"						"200"
+			"max_stacks"					"5"
+			"attack_interval"				"1"
+			"dmg_red_pct_per_stack" 		"5"
+		}
+	}
+}

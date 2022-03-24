@@ -9,7 +9,6 @@ function batrider_fireball:OnSpellStart()
 	self.end_pos = caster:GetAbsOrigin()
 	self.final_end_pos = self:GetCursorPosition()
 	local point = self:GetCursorPosition()
-	print((self.start_pos - point):Length2D())
 	ProjectileManager:CreateLinearProjectile({
 		EffectName = "",
 		Ability = self,
@@ -84,7 +83,6 @@ end
 
 function modifier_batrider_fireball_thinker:OnDestroy()
 	if not IsServer() then return end
-	print("fire stop")
 	for _, particle in pairs (self.ability.particles) do
 		ParticleManager:DestroyParticle(particle, false)
 	end

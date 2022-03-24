@@ -1,0 +1,119 @@
+"DOTAAbilities"
+{
+	"necrolyte_skeleton_summon"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_summon"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT"
+
+		"AbilityCooldown"					"5"
+
+		"AbilityValues"
+		{
+			"skeleton_count"				"3"
+			"skeleton_duration"				"10"
+			"skeleton_hp"					"1000"
+			"skeleton_damage"				"200"
+			"skeleton_armor"				"10"
+			"skeleton_BAT"					"1.0"
+		}
+	}
+	"necrolyte_plague_cloud"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/plague_cloud"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"					"10"
+
+		"AbilityValues"
+		{
+			"radius"						"600"
+			"damage_per_sec"				"100"
+			"damage_interval"				"0.5"
+			"duration"						"8"
+		}
+	}
+	"necrolyte_breath_of_death"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/breath_of_death"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"					"10"
+
+		"AbilityValues"
+		{
+			"radius"						"600"
+			"duration"						"10"
+			"damage_per_sec"				"100"
+			"damage_interval"				"0.2"
+			"live_duration"					"10"
+			"stats_reduction_pct"			"20"
+		}
+	}
+	"necrolyte_skeleton_mage_summon"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_mage_summon"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT"
+
+		"AbilityCooldown"					"10"
+
+		"AbilityValues"
+		{
+			"skeleton_duration"				"10"
+			"skeleton_hp"					"1000"
+			"skeleton_damage"				"200"
+			"skeleton_armor"				"10"
+			"skeleton_BAT"					"1.0"
+		}
+	}
+	"necrolyte_skeleton_mage_summon_nether_blast"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/creature_nether_blast"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetFlags"			"DOTA_UNIT_TARGET_FLAG_NONE"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"AbilitySound"						"Hero_Pugna.NetherBlast"
+
+		"AbilityCooldown"					"10"
+
+		"AbilityValues"
+		{
+			"structure_damage_pct"				"100"
+			"delay"								"0.5"
+			"radius"							"500"
+			"blast_damage"						"100"
+		}
+	}
+	"necrolyte_skeleton_mage_summon_splash"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_mage_summon_splash"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_PHYSICAL"
+
+		"AbilityValues"
+		{
+			"radius"						"500"
+			"damage_pct"					"80"
+		}
+	}
+}
