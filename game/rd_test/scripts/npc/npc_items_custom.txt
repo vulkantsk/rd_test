@@ -1,5 +1,125 @@
 "DOTAAbilities"
 {
+	"item_flask_hp_1"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_flask"
+		"Model"							"models/props_gameplay/salve.vmdl"
+
+		"ItemCost"						"100"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"AbilityCooldown"				"15"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"hp_recover"				"500"
+			}
+		}
+	}
+	"item_flask_hp_2"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_flask"
+		"Model"							"models/props_gameplay/salve.vmdl"
+
+		"ItemCost"						"250"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"AbilityCooldown"				"15"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"hp_recover"				"1500"
+			}
+		}
+	}
+	"item_flask_mp_1"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_clarity"
+		"Model"							"models/props_gameplay/clarity.vmdl"
+
+		"ItemCost"						"100"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"AbilityCooldown"				"15"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"mp_recover"				"225"
+			}
+		}
+	}
+	"item_flask_mp_2"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_clarity"
+		"Model"							"models/props_gameplay/clarity.vmdl"
+
+		"ItemCost"						"250"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"AbilityCooldown"				"15"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"mp_recover"				"600"
+			}
+		}
+	}
 	//BONUS STATS
 	"item_bonus_str_1"
 	{

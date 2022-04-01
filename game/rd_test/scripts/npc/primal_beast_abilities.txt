@@ -9,12 +9,16 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
 
-		"AbilityCooldown"					"10"
+		"AbilityCooldown"					"8"
+		"AbilityManaCost"					"50 60 70 80"
 
 		"AbilityValues"
 		{
-			"damage"						"200"
+			"damage"						"60 120 180 240"
 			"wave_speed"					"900"
 			"wave_start_width"				"300"
 			"wave_end_width"				"300"
@@ -37,16 +41,20 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
 
-		"AbilityCooldown"					"10"
+		"AbilityCooldown"					"15"
+		"AbilityManaCost"					"100"
 		"AbilityCastPoint"					"0.25"
 
 		"AbilityValues"
 		{
 			"radius"						"1000"
-			"damage"						"200"
-			"as_reduction"					"100"
-			"reduction_duration"			"5"
+			"damage"						"100 200 300 400"
+			"as_reduction"					"15 30 45 60"
+			"reduction_duration"			"6"
 		}
 	}
 	"primal_beast_armor"
@@ -55,10 +63,13 @@
 		"ScriptFile"						"abilities/heroes/hero_primal_beast/armor"
 
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
 
 		"AbilityValues"
 		{
-			"damage_reduction_pct"			"30"
+			"damage_reduction_pct"			"10 15 20 25"
 		}
 	}
 	"primal_beast_pulverize_custom"
@@ -71,16 +82,20 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"RequiredLevel"				"8"
+		"LevelsBetweenUpgrades"		"8"
+		"MaxLevel"					"3"
 
-		"AbilityCooldown"					"10"
+		"AbilityCooldown"					"60 50 40"
+		"AbilityManaCost"					"100"
 
 		"AbilityValues"
 		{
 			"duration"						"5"
-			"radius"						"1000"
+			"radius"						"750"
 			"stack_duration"				"4"
-			"damage"						"200"
-			"max_stacks"					"5"
+			"damage"						"125 250 375"
+			"max_stacks"					"5 7 9"
 			"attack_interval"				"1"
 			"dmg_red_pct_per_stack" 		"5"
 		}

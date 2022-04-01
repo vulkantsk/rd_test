@@ -1237,6 +1237,15 @@
 		"BaseClass"             		"ability_datadriven"
 		"AbilityTextureName"			"ability_name"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"respawn_time"		"30"
+			}
+		}
 
 		"OnOwnerDied"
 		{

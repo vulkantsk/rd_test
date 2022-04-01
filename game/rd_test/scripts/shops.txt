@@ -3,12 +3,10 @@
 	"consumables"
 	{
 		"item" "item_ward_observer"
-		"item" "item_clarity_custom"
-		"item" "item_cheese"
-		"item" "item_bonus_str_10_shop"
-		"item" "item_bonus_agi_10_shop"
-		"item" "item_bonus_int_10_shop"
-		"item" "item_bonus_stats_10_shop"
+		"item" "item_flask_hp_1"
+		"item" "item_flask_hp_2"
+		"item" "item_flask_mp_1"
+		"item" "item_flask_mp_2"
 	}
 
 	"attributes"

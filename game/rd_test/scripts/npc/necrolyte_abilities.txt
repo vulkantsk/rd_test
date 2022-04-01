@@ -4,18 +4,21 @@
 	{
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_summon"
-
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT"
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
 
-		"AbilityCooldown"					"5"
+		"AbilityCooldown"					"15 14 13 12"
+		"AbilityManaCost"					"70 80 90 100"
 
 		"AbilityValues"
 		{
 			"skeleton_count"				"3"
-			"skeleton_duration"				"10"
-			"skeleton_hp"					"1000"
-			"skeleton_damage"				"200"
-			"skeleton_armor"				"10"
+			"skeleton_duration"				"30"
+			"skeleton_hp"					"250 400 550 700"
+			"skeleton_damage"				"20 35 50 75"
+			"skeleton_armor"				"0 2 4 8"
 			"skeleton_BAT"					"1.0"
 		}
 	}
@@ -28,15 +31,19 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
 
 		"AbilityCooldown"					"10"
+		"AbilityManaCost"					"50 75 100 125"
 
 		"AbilityValues"
 		{
-			"radius"						"600"
-			"damage_per_sec"				"100"
+			"radius"						"450"
+			"damage_per_sec"				"25 50 75 100"
 			"damage_interval"				"0.5"
-			"duration"						"8"
+			"duration"						"5"
 		}
 	}
 	"necrolyte_breath_of_death"
@@ -48,33 +55,40 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
 
-		"AbilityCooldown"					"10"
+		"AbilityCooldown"					"40 35 30 25"
+		"AbilityManaCost"					"125 150 175 200"
 
 		"AbilityValues"
 		{
-			"radius"						"600"
+			"radius"						"550"
 			"duration"						"10"
-			"damage_per_sec"				"100"
+			"damage_per_sec"				"10 20 30 40"
 			"damage_interval"				"0.2"
-			"live_duration"					"10"
-			"stats_reduction_pct"			"20"
+			"live_duration"					"60"
+			"stats_reduction_pct"			"0"
 		}
 	}
 	"necrolyte_skeleton_mage_summon"
 	{
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_mage_summon"
-
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT"
+		"RequiredLevel"				"8"
+		"LevelsBetweenUpgrades"		"8"
+		"MaxLevel"					"3"
 
-		"AbilityCooldown"					"10"
+		"AbilityCooldown"					"80"
+		"AbilityManaCost"					"200 300 400"
 
 		"AbilityValues"
 		{
-			"skeleton_duration"				"10"
-			"skeleton_hp"					"1000"
-			"skeleton_damage"				"200"
+			"skeleton_duration"				"30"
+			"skeleton_hp"					"1000 2000 3000"
+			"skeleton_damage"				"125 250 500"
 			"skeleton_armor"				"10"
 			"skeleton_BAT"					"1.0"
 		}
@@ -91,13 +105,14 @@
 		"AbilitySound"						"Hero_Pugna.NetherBlast"
 
 		"AbilityCooldown"					"10"
+		"AbilityManaCost"					"100"
 
 		"AbilityValues"
 		{
-			"structure_damage_pct"				"100"
+			"structure_damage_pct"				"100 200 300"
 			"delay"								"0.5"
 			"radius"							"500"
-			"blast_damage"						"100"
+			"blast_damage"						"250 500 750"
 		}
 	}
 	"necrolyte_skeleton_mage_summon_splash"
@@ -112,8 +127,8 @@
 
 		"AbilityValues"
 		{
-			"radius"						"500"
-			"damage_pct"					"80"
+			"radius"						"350"
+			"damage_pct"					"50"
 		}
 	}
 }
