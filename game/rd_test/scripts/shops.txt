@@ -2,11 +2,15 @@
 {
 	"consumables"
 	{
-		"item" "item_ward_observer"
 		"item" "item_flask_hp_1"
 		"item" "item_flask_hp_2"
+		"item" "item_flask_hp_3"
+		"item" "item_flask_hp_4"
 		"item" "item_flask_mp_1"
 		"item" "item_flask_mp_2"
+		"item" "item_flask_mp_3"
+		"item" "item_flask_mp_4"
+		"item" "item_ward_observer"
 	}
 
 	"attributes"

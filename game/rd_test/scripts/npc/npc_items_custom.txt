@@ -1,0 +1,1417 @@
+"DOTAAbilities"
+{
+	"item_flask_hp_1"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_flask"
+		"Model"							"models/props_gameplay/salve.vmdl"
+
+		"ItemCost"						"100"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"ItemStockTime"					"1"			  
+		"ItemStockInitial"				"0"
+//		"ItemStockMax"					"1"
+		"ItemInitialStockTime"			"300.0"
+
+		"AbilityCooldown"				"12"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"hp_recover"				"250"
+			}
+		}
+	}
+	"item_flask_hp_2"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_flask"
+		"Model"							"models/props_gameplay/salve.vmdl"
+
+		"ItemCost"						"250"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"ItemStockTime"					"1"			  
+		"ItemStockInitial"				"0"
+//		"ItemStockMax"					"1"
+		"ItemInitialStockTime"			"300.0"
+
+		"AbilityCooldown"				"12"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"hp_recover"				"750"
+			}
+		}
+	}
+	"item_flask_hp_3"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_flask"
+		"Model"							"models/props_gameplay/salve.vmdl"
+
+		"ItemCost"						"600"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"ItemStockTime"					"1"			  
+		"ItemStockInitial"				"0"
+//		"ItemStockMax"					"1"
+		"ItemInitialStockTime"			"900.0"
+
+		"AbilityCooldown"				"12"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"hp_recover"				"2500"
+			}
+		}
+	}
+	"item_flask_hp_4"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_flask"
+		"Model"							"models/props_gameplay/salve.vmdl"
+
+		"ItemCost"						"1000"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"ItemStockTime"					"1"			  
+		"ItemStockInitial"				"0"
+//		"ItemStockMax"					"1"
+		"ItemInitialStockTime"			"1800.0"
+
+		"AbilityCooldown"				"12"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"hp_recover"				"7500"
+			}
+		}
+	}
+	"item_flask_mp_1"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_clarity"
+		"Model"							"models/props_gameplay/clarity.vmdl"
+
+		"ItemCost"						"100"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"ItemStockTime"					"1"			  
+		"ItemStockInitial"				"0"
+//		"ItemStockMax"					"1"
+		"ItemInitialStockTime"			"0.0"
+
+		"AbilityCooldown"				"15"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"mp_recover"				"150"
+			}
+		}
+	}
+	"item_flask_mp_2"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_clarity"
+		"Model"							"models/props_gameplay/clarity.vmdl"
+
+		"ItemCost"						"250"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"ItemStockTime"					"1"			  
+		"ItemStockInitial"				"0"
+//		"ItemStockMax"					"1"
+		"ItemInitialStockTime"			"300.0"
+
+		"AbilityCooldown"				"12"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"mp_recover"				"350"
+			}
+		}
+	}
+	"item_flask_mp_3"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_clarity"
+		"Model"							"models/props_gameplay/clarity.vmdl"
+
+		"ItemCost"						"600"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"ItemStockTime"					"1"			  
+		"ItemStockInitial"				"0"
+//		"ItemStockMax"					"1"
+		"ItemInitialStockTime"			"900.0"
+
+		"AbilityCooldown"				"12"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"mp_recover"				"1500"
+			}
+		}
+	}
+	"item_flask_mp_4"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_flask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"item_clarity"
+		"Model"							"models/props_gameplay/clarity.vmdl"
+
+		"ItemCost"						"1000"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemDroppable" 				"1"
+	 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	    "ItemQuality"    "artifact"
+	    "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemInitialCharges"            "3"
+		"ItemStackable"					"1"
+
+		"ItemStockTime"					"1"			  
+		"ItemStockInitial"				"0"
+//		"ItemStockMax"					"1"
+		"ItemInitialStockTime"			"1800.0"
+
+		"AbilityCooldown"				"12"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"mp_recover"				"3500"
+			}
+		}
+	}
+	//BONUS STATS
+	"item_base_str_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_str"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_belt_of_strength"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_str"				"6"
+			}			
+		}
+	}
+	"item_base_str_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_str"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_ogre_axe"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_str"				"10"
+			}			
+		}
+	}
+	"item_base_str_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_str"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_reaver"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_str"				"25"
+			}			
+		}
+	}
+	"item_base_str_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_str"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/stone_str_1"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_str"				"50"
+			}			
+		}
+	}
+	"item_base_agi_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_agi"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_boots_of_elves"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agi"				"6"
+			}			
+		}
+	}
+	"item_base_agi_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_agi"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_blade_of_alacrity"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agi"				"10"
+			}			
+		}
+	}
+	"item_base_agi_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_agi"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_eagle"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agi"				"25"
+			}			
+		}
+	}
+	"item_base_agi_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_agi"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/stone_agi_1"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agi"				"50"
+			}			
+		}
+	}
+	"item_base_int_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_int"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_robe"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_int"				"6"
+			}			
+		}
+	}
+	"item_base_int_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_int"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_staff_of_wizardry"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_int"				"10"
+			}			
+		}
+	}
+	"item_base_int_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_int"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_mystic_staff"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_int"				"25"
+			}			
+		}
+	}
+	"item_base_int_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_int"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/stone_int_1"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_int"				"50"
+			}			
+		}
+	}
+	"item_base_allstats_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_crown"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_circlet"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_allstats"				"3"
+			}			
+		}
+	}
+	"item_base_allstats_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_crown"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_crown"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_allstats"				"10"
+			}			
+		}
+	}
+	"item_base_allstats_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_crown"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_ultimate_orb"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_allstats"				"20"
+			}			
+		}
+	}
+	"item_base_allstats_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_crown"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/imba_arcane_nexus"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_allstats"				"40"
+			}			
+		}
+	}
+	"item_base_health_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_health"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/health_1"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"				"180"
+			}			
+		}
+	}
+	"item_base_health_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_health"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/health_2"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"				"300"
+			}			
+		}
+	}
+	"item_base_health_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_health"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/health_3"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"				"750"
+			}			
+		}
+	}
+	"item_base_health_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_stone_health"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/health_4"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"				"1500"
+			}			
+		}
+	}
+	"item_base_damage_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_sword"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_blades_of_attack"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"				"10"
+			}			
+		}
+	}
+	"item_base_damage_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_sword"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_broadsword"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"				"20"
+			}			
+		}
+	}
+	"item_base_damage_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_sword"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_claymore"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"				"50"
+			}			
+		}
+	}
+	"item_base_damage_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_sword"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_demon_edge"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"				"100"
+			}			
+		}
+	}
+	"item_base_attack_speed_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_attack_speed"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_gloves"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"				"18"
+			}			
+		}
+	}
+	"item_base_attack_speed_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_attack_speed"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_blitz_knuckles"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"				"30"
+			}			
+		}
+	}
+	"item_base_attack_speed_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_attack_speed"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_hyperstone"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"				"75"
+			}			
+		}
+	}
+	"item_base_attack_speed_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_attack_speed"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_moon_shard"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"				"150"
+			}			
+		}
+	}
+	"item_base_mana_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_mana"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/mp_1_1"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"				"120"
+			}			
+		}
+	}
+	"item_base_mana_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_mana"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/mp_2_1"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"				"200"
+			}			
+		}
+	}
+	"item_base_mana_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_mana"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/mp_3_1"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"				"500"
+			}			
+		}
+	}
+	"item_base_mana_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_mana"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/mp_4_1"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"				"1000"
+			}			
+		}
+	}
+	"item_base_hp_regen_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_ring"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_ring_of_regen"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_hp_regen"				"6"
+			}			
+		}
+	}
+	"item_base_hp_regen_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_ring"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_ring_of_tarrasque"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_hp_regen"				"10"
+			}			
+		}
+	}
+	"item_base_hp_regen_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_ring"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_ring_of_health"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_hp_regen"				"25"
+			}			
+		}
+	}
+	"item_base_hp_regen_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_ring"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_soul_ring"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_hp_regen"				"50"
+			}			
+		}
+	}
+	"item_base_mp_regen_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_mage_ring"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_sobi_mask"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mp_regen"				"3"
+			}			
+		}
+	}
+	"item_base_mp_regen_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_mage_ring"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_ring_of_basilius"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mp_regen"				"5"
+			}			
+		}
+	}
+	"item_base_mp_regen_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_mage_ring"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_arcane_ring"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mp_regen"				"13"
+			}			
+		}
+	}
+	"item_base_mp_regen_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_mage_ring"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_void_stone"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mp_regen"				"25"
+			}			
+		}
+	}
+	"item_base_armor_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_chainmail"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/chainmail_1"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"				"3"
+			}			
+		}
+	}
+	"item_base_armor_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_chainmail"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/chainmail_2"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"				"5"
+			}			
+		}
+	}
+	"item_base_armor_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_chainmail"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/chainmail_3"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"				"13"
+			}			
+		}
+	}
+	"item_base_armor_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_chainmail"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"item_platemail"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"				"25"
+			}			
+		}
+	}
+	"item_base_shield_1"
+	{
+		"BaseClass"                     "item_lua"
+		"ScriptFile"                    "items/baseitems/item_base_shield"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"baseitems/shield_1"
+
+		"ItemCost"						"450"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_block"			"20"
+			}
+		}
+	}
+	"item_base_shield_2"
+	{
+		"BaseClass"                     "item_lua"
+		"ScriptFile"                    "items/baseitems/item_base_shield"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"baseitems/shield_2"
+
+		"ItemCost"						"1000"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_block"			"50"
+			}
+		}
+	}
+	"item_base_shield_3"
+	{
+		"BaseClass"                     "item_lua"
+		"ScriptFile"                    "items/baseitems/item_base_shield"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"baseitems/shield_3"
+
+		"ItemCost"						"3000"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_block"			"100"
+			}
+		}
+	}
+	"item_base_shield_4"
+	{
+		"BaseClass"                     "item_lua"
+		"ScriptFile"                    "items/baseitems/item_base_shield"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"baseitems/shield_4"
+
+		"ItemCost"						"10000"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_block"			"250"
+			}
+		}
+	}
+
+}

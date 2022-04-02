@@ -8,14 +8,17 @@ modifier_primal_beast_armor = class({
 	IsHidden = function() return true end,
 	IsPurgable = function() return false end,
 	DeclareFunctions = function() return {
-		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE
+		MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK
 	} end,
-	GetModifierIncomingDamage_Percentage = function(self) return self.damage_reduction_pct end
 })
+
+function modifier_primal_beast_armor:GetModifierPhysical_ConstantBlockh()
+	return self.damage_block
+end
 
 function modifier_primal_beast_armor:OnCreated()
 	self.ability = self:GetAbility()
-	self.damage_reduction_pct = self.ability:GetSpecialValueFor("damage_reduction_pct")
+	self.damage_block = self.ability:GetSpecialValueFor("damage_block")
 end
 
 function modifier_primal_beast_armor:OnRefresh()

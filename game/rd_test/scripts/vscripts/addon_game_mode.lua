@@ -34,8 +34,54 @@ function Activate()
 end
 
 function GameMode:InitGameMode()
+	ListenToGameEvent('entity_killed', Dynamic_Wrap(GameMode, 'OnEntityKilled'), GameMode)
+	ListenToGameEvent('npc_spawned', Dynamic_Wrap(GameMode, 'OnNPCSpawned'), GameMode)
+
 	GameRules:GetGameModeEntity():SetUseCustomHeroLevels(true)
 	GameRules:GetGameModeEntity():SetCustomXPRequiredToReachNextLevel(XP_PER_LEVEL_TABLE)
+end
+
+function GameMode:OnEntityKilled( keys )
+--	print( '[BAREBONES] OnEntityKilled Called' )
+--	DeepPrintTable( keys )
+
+	-- The Unit that was Killed
+	local killedUnit = EntIndexToHScript( keys.entindex_killed )
+	-- The Killing entity
+	local killerEntity = nil
+	local team= killedUnit:GetTeam()
+	
+	if killedUnit:IsRealHero() and killedUnit:IsReincarnating() == false then
+		killedUnit:SetTimeUntilRespawn( 1 )
+--		PlayerResource:SetCustomBuybackCost(killedUnit:GetPlayerID(), CUSTOM_BUYBACK_COST)
+	end
+	
+	if keys.entindex_attacker ~= nil then
+		killerEntity = EntIndexToHScript( keys.entindex_attacker )
+	end
+
+	-- Put code here to handle when an entity gets killed
+end
+
+function GameMode:OnNPCSpawned(keys)
+--	print("[BAREBONES] NPC Spawned")
+--	DeepPrintTable(keys)
+	local npc = EntIndexToHScript(keys.entindex)
+	local name = npc:GetUnitName()
+	
+	if npc:IsRealHero() and npc.bFirstSpawned == nil then
+--		GameSettings:OnHeroInGame(npc)			
+		npc.bFirstSpawned = true
+		local playerID = npc:GetPlayerID()
+		local steamID = PlayerResource:GetSteamAccountID(playerID)
+
+		if FirstSpawned == nil then
+			FirstSpawned = {}
+		end
+		
+		npc:AddItemByName(item_flask_hp_1)
+		npc:AddItemByName(item_flask_mp_1)
+	end	
 end
 
 function CDOTA_BaseNPC:GetAverageTrueAttackDamageDisplay()

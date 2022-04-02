@@ -6,10 +6,10 @@ function item_base_mage_ring:GetIntrinsicModifierName()
 	return "modifier_item_base_mage_ring"
 end
 
-item_base_mana_regeneration_1 = class(item_base_mage_ring)
-item_base_mana_regeneration_2 = class(item_base_mage_ring)
-item_base_mana_regeneration_3 = class(item_base_mage_ring)
-item_base_mana_regeneration_4 = class(item_base_mage_ring)
+item_base_mp_regen_1 = class(item_base_mage_ring)
+item_base_mp_regen_2 = class(item_base_mage_ring)
+item_base_mp_regen_3 = class(item_base_mage_ring)
+item_base_mp_regen_4 = class(item_base_mage_ring)
 
 modifier_item_base_mage_ring = class({
 	IsHidden 		= function(self) return true end,
@@ -19,5 +19,5 @@ modifier_item_base_mage_ring = class({
 })
 
 function modifier_item_base_mage_ring:GetModifierConstantManaRegen()
-	return self:GetAbility():GetSpecialValueFor("bonus_mana_regeneration")
+	return self:GetAbility():GetSpecialValueFor("bonus_mp_regen")
 end

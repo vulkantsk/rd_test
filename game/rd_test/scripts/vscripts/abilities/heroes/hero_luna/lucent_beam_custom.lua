@@ -15,6 +15,8 @@ function luna_lucent_beam_custom:OnSpellStart()
 	if not IsServer() then return end
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
+	local max_stacks = self:GetSpecialValueFor("max_stacks")
+	
 	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_luna/luna_lucent_beam.vpcf", PATTACH_CUSTOMORIGIN, target)
 	ParticleManager:SetParticleControl(particle, 0, target:GetOrigin())
 	ParticleManager:SetParticleControlEnt(particle, 1, target, PATTACH_ABSORIGIN_FOLLOW, "attach_hitloc", Vector(), true)
@@ -29,7 +31,11 @@ function luna_lucent_beam_custom:OnSpellStart()
 		damage_type = self:GetAbilityDamageType(),
 		ability = self
 	})
-	caster:AddNewModifier(caster, self, "modifier_luna_lucent_beam_custom_buff", {duration = self:GetSpecialValueFor("buff_duration")})
+	local modifier = caster:AddNewModifier(caster, self, "modifier_luna_lucent_beam_custom_buff", {duration = self:GetSpecialValueFor("buff_duration")})
+	local modifier_stacks = modifier:GetStackCount()
+	if modifier_stacks < max_stacks then
+		modifier:IncrementStackCount()
+	end
 	EmitSoundOn("Hero_Luna.LucentBeam.Cast", self:GetCaster())
 	EmitSoundOn("Hero_Luna.LucentBeam.Target", target)
 end
@@ -41,9 +47,9 @@ modifier_luna_lucent_beam_custom_buff = class({
 		MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
 		MODIFIER_PROPERTY_STATS_AGILITY_BONUS_PERCENTAGE
 	} end,
-	GetModifierBonusStats_Agility = function(self) return self.agility_bonus end,
+	GetModifierBonusStats_Agility = function(self) return self.agility_bonus*self:GetStackCount() end,
 	GetModifierBonusStats_Agility_Percentage = function(self) return self.agility_bonus_pct end,
-	GetAttributes = function() return MODIFIER_ATTRIBUTE_MULTIPLE end
+--	GetAttributes = function() return MODIFIER_ATTRIBUTE_MULTIPLE end
 })
 
 function modifier_luna_lucent_beam_custom_buff:OnCreated()

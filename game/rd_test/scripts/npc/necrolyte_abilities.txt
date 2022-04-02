@@ -5,6 +5,7 @@
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_summon"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"				"necrolyte_death_pulse"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
@@ -31,6 +32,7 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"				"necrolyte_heartstopper_aura"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
@@ -40,10 +42,10 @@
 
 		"AbilityValues"
 		{
+			"duration"						"5"
 			"radius"						"450"
 			"damage_per_sec"				"25 50 75 100"
 			"damage_interval"				"0.5"
-			"duration"						"5"
 		}
 	}
 	"necrolyte_breath_of_death"
@@ -55,6 +57,7 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"				"necrolyte_reapers_scythe"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
@@ -64,8 +67,8 @@
 
 		"AbilityValues"
 		{
-			"radius"						"550"
 			"duration"						"10"
+			"radius"						"550"
 			"damage_per_sec"				"10 20 30 40"
 			"damage_interval"				"0.2"
 			"live_duration"					"60"
@@ -77,6 +80,7 @@
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_mage_summon"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"				"necrolyte_sadist"
 		"RequiredLevel"				"8"
 		"LevelsBetweenUpgrades"		"8"
 		"MaxLevel"					"3"
@@ -109,10 +113,10 @@
 
 		"AbilityValues"
 		{
-			"structure_damage_pct"				"100 200 300"
-			"delay"								"0.5"
 			"radius"							"500"
 			"blast_damage"						"250 500 750"
+			"structure_damage_pct"				"50"
+			"delay"								"0.5"
 		}
 	}
 	"necrolyte_skeleton_mage_summon_splash"

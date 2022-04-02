@@ -35,6 +35,10 @@ end
 
 item_flask_hp_1 = class(item_flask_hp)
 item_flask_hp_2 = class(item_flask_hp)
+item_flask_hp_3 = class(item_flask_hp)
+item_flask_hp_4 = class(item_flask_hp)
 
 item_flask_mp_1 = class(item_flask_mp)
 item_flask_mp_2 = class(item_flask_mp)
+item_flask_mp_3 = class(item_flask_mp)
+item_flask_mp_4 = class(item_flask_mp)
