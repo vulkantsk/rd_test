@@ -4,33 +4,36 @@
 "Tokens"
 {
 	// Переменные из доты
-	//dota_ability_variable_health"			"к здоровью"					// $health
-	//dota_ability_variable_mana"			"к мане"						// $mana
-	//dota_ability_variable_armor"			"к броне"						// $armor
-	//dota_ability_variable_damage"			"к урону"					// $damage
-	//dota_ability_variable_str"				"к силе"					// $str
-	//dota_ability_variable_int"				"к интеллекту"				// $int
-	//dota_ability_variable_agi"				"к ловкости"					// $agi
-	//dota_ability_variable_all"				"ко всем атрибутам"			// $all
-	//dota_ability_variable_primary_attribute" "к основному атрибуту"		// $primary_attribute
-	//dota_ability_variable_attack"			"к скорости атаки"				// $attack
-	//dota_ability_variable_hp_regen"		"к восстановлению здоровья"			// $hp_regen
-	//dota_ability_variable_mana_regen"		"к восстановлению маны"			// $mana_regen
-	//dota_ability_variable_mana_regen_aura"		"к восстановлению маны в ауре"			// $mana_regen_aura
-	//dota_ability_variable_spell_amp"       "к урону от заклинаний"				// $spell_amp
-	//dota_ability_variable_debuff_amp"       "к длительности отрицательных эффектов"			// $debuff_amp
-	//dota_ability_variable_move_speed"		"к скорости передвижения"			// $move_speed
-	//dota_ability_variable_evasion"			"к уклонению"					// $evasion
-	//dota_ability_variable_spell_resist"	"к сопротивлению магии"			// $spell_resist
-	//dota_ability_variable_spell_lifesteal_creep"	"к вампиризму заклинаниями (от крипов)"			// $spell_lifesteal_creep
-	//dota_ability_variable_spell_lifesteal_hero"	"к вампиризму заклинаниями (от героев)"			// $spell_lifesteal_hero
-	//dota_ability_variable_selected_attrib"	"к выбранному атрибуту"		// $selected_attribute
-	//dota_ability_variable_attack_range"	"к дальности атаки <font color='#7d7d7d'>(в дальнем бою)</font>"    // $attack_range
-	//dota_ability_variable_attack_range_melee"	"к дальности атаки <font color='#7d7d7d'>(в ближнем бою)</font>"    // $attack_range_melee
-	//dota_ability_variable_cast_range"	    "к дальности применения заклинаний"                // $cast_range
-	//dota_ability_variable_status_resist"	"к сопротивлению эффектам"         // $status_resist
-	//dota_ability_variable_projectile_speed"	"к скорости снарядов"         // $projectile_speed
-	//dota_ability_variable_manacost_reduction"	"к уменьшению расхода маны"         // $manacost_reduction
+	//"dota_ability_variable_health"				"к здоровью"					// $health
+	//"dota_ability_variable_mana"				"к мане"						// $mana
+	//"dota_ability_variable_armor"				"к броне"						// $armor
+	//"dota_ability_variable_damage"				"к урону"					// $damage
+	//"dota_ability_variable_str"					"к силе"					// $str
+	//"dota_ability_variable_int"					"к интеллекту"				// $int
+	//"dota_ability_variable_agi"					"к ловкости"					// $agi
+	//"dota_ability_variable_all"					"ко всем атрибутам"			// $all
+	//"dota_ability_variable_primary_attribute"	"к основному атрибуту"			// $primary_attribute
+	//"dota_ability_variable_attack"				"к скорости атаки"				// $attack
+	//"dota_ability_variable_hp_regen"			"к восстановлению здоровья"		// $hp_regen
+	//"dota_ability_variable_lifesteal"			"к вампиризму"					// $lifesteal
+	//"dota_ability_variable_mana_regen"			"к восстановлению маны"			// $mana_regen
+	//"dota_ability_variable_mana_regen_aura"		"к восстановлению маны в ауре"	// $mana_regen_aura
+	//"dota_ability_variable_spell_amp"			"к урону от заклинаний"				// $spell_amp
+	//"dota_ability_variable_debuff_amp"			"к длительности отрицательных эффектов"			// $debuff_amp
+	//"dota_ability_variable_move_speed"			"к скорости передвижения"			// $move_speed
+	//"dota_ability_variable_evasion"				"к уклонению"					// $evasion
+	//"dota_ability_variable_spell_resist"		"к сопротивлению магии"			// $spell_resist
+	//"dota_ability_variable_spell_lifesteal"		"к вампиризму заклинаниями"			// $spell_lifesteal
+	//"dota_ability_variable_spell_lifesteal_creep"	"к вампиризму заклинаниями (от крипов)"	// $spell_lifesteal_creep
+	//"dota_ability_variable_spell_lifesteal_hero"	"к вампиризму заклинаниями (от героев)"	// $spell_lifesteal_hero
+	//"dota_ability_variable_selected_attrib"		"к выбранному атрибуту"		// $selected_attribute
+	//"dota_ability_variable_attack_range"		"к дальности атаки <font color='#7d7d7d'>(в дальнем бою)</font>"	// $attack_range
+	//"dota_ability_variable_attack_range_melee"	"к дальности атаки <font color='#7d7d7d'>(в ближнем бою)</font>"	// $attack_range_melee
+	//"dota_ability_variable_cast_range"			"к дальности применения заклинаний"				// $cast_range
+	//"dota_ability_variable_status_resist"		"к сопротивлению эффектам"			// $status_resist
+	//"dota_ability_variable_projectile_speed"	"к скорости снарядов"			// $projectile_speed
+	//"dota_ability_variable_manacost_reduction"	"к уменьшению расхода маны"		// $manacost_reduction
+	//"dota_ability_variable_cooldown_reduction"	"к уменьшению перезарядок заклинаний"		// $cooldown_reduction 
 	// Кастомные
 	"DOTA_Ability_Variable_exp_per_tick"					"опыта в секунду"
 	"DOTA_Ability_Variable_gold_per_tick"					"золота в секунду"
@@ -10743,6 +10746,38 @@
 
 	"DOTA_Tooltip_ability_item_base_armor_4"						"ARMOR 4"
 	"DOTA_Tooltip_ability_item_base_armor_4_bonus_armor"			"+$armor"
+	
+	"DOTA_Tooltip_ability_item_flask_hp_1"						"Lesser healing potion"
+	"DOTA_Tooltip_ability_item_flask_hp_1_Description"			"Восстановливает здоровье"
+	"DOTA_Tooltip_ability_item_flask_hp_1_hp_recover"			"ВОССТАНАВЛИВАЕТ ЗДОРОВЬЯ:"
+
+	"DOTA_Tooltip_ability_item_flask_hp_2"						"Healing potion"
+	"DOTA_Tooltip_ability_item_flask_hp_2_Description"			"Восстановливает здоровье"
+	"DOTA_Tooltip_ability_item_flask_hp_2_hp_recover"			"ВОССТАНАВЛИВАЕТ ЗДОРОВЬЯ:"
+
+	"DOTA_Tooltip_ability_item_flask_hp_3"						"Great healing potion"
+	"DOTA_Tooltip_ability_item_flask_hp_3_Description"			"Восстановливает здоровье"
+	"DOTA_Tooltip_ability_item_flask_hp_3_hp_recover"			"ВОССТАНАВЛИВАЕТ ЗДОРОВЬЯ:"
+
+	"DOTA_Tooltip_ability_item_flask_hp_4"						"Super healing potion"
+	"DOTA_Tooltip_ability_item_flask_hp_4_Description"			"Восстановливает здоровье"
+	"DOTA_Tooltip_ability_item_flask_hp_4_hp_recover"			"ВОССТАНАВЛИВАЕТ ЗДОРОВЬЯ:"
+
+	"DOTA_Tooltip_ability_item_flask_mp_1"						"Lesser mana potion"
+	"DOTA_Tooltip_ability_item_flask_mp_1_Description"			"Восстановливает ману"
+	"DOTA_Tooltip_ability_item_flask_mp_1_mp_recover"			"ВОССТАНАВЛИВАЕТ МАНЫ:"
+
+	"DOTA_Tooltip_ability_item_flask_mp_2"						"Mana potion"
+	"DOTA_Tooltip_ability_item_flask_mp_2_Description"			"Восстановливает ману"
+	"DOTA_Tooltip_ability_item_flask_mp_2_mp_recover"			"ВОССТАНАВЛИВАЕТ МАНЫ:"
+
+	"DOTA_Tooltip_ability_item_flask_mp_3"						"Great mana potion"
+	"DOTA_Tooltip_ability_item_flask_mp_3_Description"			"Восстановливает ману"
+	"DOTA_Tooltip_ability_item_flask_mp_3_mp_recover"			"ВОССТАНАВЛИВАЕТ МАНЫ:"
+
+	"DOTA_Tooltip_ability_item_flask_mp_4"						"Super mana potion"
+	"DOTA_Tooltip_ability_item_flask_mp_4_Description"			"Восстановливает ману"
+	"DOTA_Tooltip_ability_item_flask_mp_4_mp_recover"			"ВОССТАНАВЛИВАЕТ МАНЫ:"
 	}
 }
 

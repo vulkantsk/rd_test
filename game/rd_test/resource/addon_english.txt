@@ -3416,21 +3416,23 @@
 	"DOTA_Tooltip_ability__Description"			"description"
 	"DOTA_Tooltip_ability__"			""
 
+	"dota_ability_variable_block"						"damage block"
+
 	"DOTA_Tooltip_Ability_item_base_shield_1"                         			"shield tier 1"
 	"DOTA_Tooltip_ability_item_base_shield_1_Description"           				"Bonus shield"
-	"DOTA_Tooltip_ability_item_base_shield_1_bonus_block"                        	"+block:"
+	"DOTA_Tooltip_ability_item_base_shield_1_bonus_block"                        	"+$block"
 
 	"DOTA_Tooltip_Ability_item_base_shield_2"                         			"shield tier 2"
 	"DOTA_Tooltip_ability_item_base_shield_2_Description"           				"Bonus shield"
-	"DOTA_Tooltip_ability_item_base_shield_2_bonus_block"                        	"+block:"
+	"DOTA_Tooltip_ability_item_base_shield_2_bonus_block"                        	"+$block"
 
 	"DOTA_Tooltip_Ability_item_base_shield_3"                         			"shield tier 3"
 	"DOTA_Tooltip_ability_item_base_shield_3_Description"           				"Bonus shield"
-	"DOTA_Tooltip_ability_item_base_shield_3_bonus_block"                        	"+block:"
+	"DOTA_Tooltip_ability_item_base_shield_3_bonus_block"                        	"+$block"
 
 	"DOTA_Tooltip_Ability_item_base_shield_4"                         			"shield tier 4"
 	"DOTA_Tooltip_ability_item_base_shield_4_Description"           				"Bonus shield"
-	"DOTA_Tooltip_ability_item_base_shield_4_bonus_block"                        	"+block:"
+	"DOTA_Tooltip_ability_item_base_shield_4_bonus_block"                        	"+$block"
 
 	"DOTA_Tooltip_Ability_item_base_armor_1"                         			"armor tier 1"
 	"DOTA_Tooltip_ability_item_base_armor_1_Description"           				"Bonus armor"
