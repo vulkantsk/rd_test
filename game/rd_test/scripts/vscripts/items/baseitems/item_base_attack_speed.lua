@@ -13,6 +13,7 @@ item_base_attack_speed_4 = class(item_base_attack_speed)
 
 modifier_item_base_attack_speed = class({
 	IsHidden 		= function(self) return true end,
+	GetAttributes 	= function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
 	DeclareFunctions  = function(self) return {
 		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT
 	}end,

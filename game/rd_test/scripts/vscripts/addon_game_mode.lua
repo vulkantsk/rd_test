@@ -79,8 +79,8 @@ function GameMode:OnNPCSpawned(keys)
 			FirstSpawned = {}
 		end
 		
-		npc:AddItemByName(item_flask_hp_1)
-		npc:AddItemByName(item_flask_mp_1)
+		npc:AddItemByName("item_flask_hp_1")
+		npc:AddItemByName("item_flask_mp_1")
 	end	
 end
 

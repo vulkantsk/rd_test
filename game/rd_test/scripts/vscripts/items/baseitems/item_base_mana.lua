@@ -13,6 +13,7 @@ item_base_mana_4 = class(item_base_mana)
 
 modifier_item_base_mana = class({
 	IsHidden 		= function(self) return true end,
+	GetAttributes 	= function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
 	DeclareFunctions  = function(self) return {
 		MODIFIER_PROPERTY_MANA_BONUS,
 		MODIFIER_PROPERTY_EXTRA_MANA_BONUS,
