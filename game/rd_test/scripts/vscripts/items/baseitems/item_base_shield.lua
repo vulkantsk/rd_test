@@ -20,5 +20,9 @@ modifier_item_base_shield = class({
 })
 
 function modifier_item_base_shield:GetModifierPhysical_ConstantBlock()
-	return self:GetAbility():GetSpecialValueFor("bonus_block")
+	if RollPercentage(50) then
+		return self:GetAbility():GetSpecialValueFor("bonus_block")
+	else
+		return 
+	end
 end

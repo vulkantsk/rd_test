@@ -3,9 +3,9 @@
 	"item_flask_hp_1"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_flask"
+		"ScriptFile"					"items/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityTextureName"			"item_flask"
+		"AbilityTextureName"			"baseitems/potion_hp_1"
 		"Model"							"models/props_gameplay/salve.vmdl"
 
 		"ItemCost"						"100"
@@ -22,7 +22,7 @@
 		"ItemStockTime"					"1"			  
 		"ItemStockInitial"				"0"
 //		"ItemStockMax"					"1"
-		"ItemInitialStockTime"			"300.0"
+//		"ItemInitialStockTime"			"300.0"
 
 		"AbilityCooldown"				"12"
 
@@ -35,12 +35,12 @@
 			}
 		}
 	}
-	"item_flask_hp_2"
+	"item_potion_hp_2"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_flask"
+		"ScriptFile"					"items/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityTextureName"			"item_flask"
+		"AbilityTextureName"			"baseitems/potion_hp_2"
 		"Model"							"models/props_gameplay/salve.vmdl"
 
 		"ItemCost"						"250"
@@ -70,12 +70,12 @@
 			}
 		}
 	}
-	"item_flask_hp_3"
+	"item_potion_hp_3"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_flask"
+		"ScriptFile"					"items/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityTextureName"			"item_flask"
+		"AbilityTextureName"			"baseitems/potion_hp_3"
 		"Model"							"models/props_gameplay/salve.vmdl"
 
 		"ItemCost"						"600"
@@ -105,12 +105,12 @@
 			}
 		}
 	}
-	"item_flask_hp_4"
+	"item_potion_hp_4"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_flask"
+		"ScriptFile"					"items/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityTextureName"			"item_flask"
+		"AbilityTextureName"			"baseitems/potion_hp_4"
 		"Model"							"models/props_gameplay/salve.vmdl"
 
 		"ItemCost"						"1000"
@@ -140,12 +140,12 @@
 			}
 		}
 	}
-	"item_flask_mp_1"
+	"item_potion_mp_1"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_flask"
+		"ScriptFile"					"items/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityTextureName"			"item_clarity"
+		"AbilityTextureName"			"baseitems/potion_mp_1"
 		"Model"							"models/props_gameplay/clarity.vmdl"
 
 		"ItemCost"						"100"
@@ -162,7 +162,7 @@
 		"ItemStockTime"					"1"			  
 		"ItemStockInitial"				"0"
 //		"ItemStockMax"					"10"
-		"ItemInitialStockTime"			"0.0"
+//		"ItemInitialStockTime"			"0.0"
 
 		"AbilityCooldown"				"15"
 
@@ -175,12 +175,12 @@
 			}
 		}
 	}
-	"item_flask_mp_2"
+	"item_potion_mp_2"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_flask"
+		"ScriptFile"					"items/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityTextureName"			"item_clarity"
+		"AbilityTextureName"			"baseitems/potion_mp_2"
 		"Model"							"models/props_gameplay/clarity.vmdl"
 
 		"ItemCost"						"250"
@@ -210,12 +210,12 @@
 			}
 		}
 	}
-	"item_flask_mp_3"
+	"item_potion_mp_3"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_flask"
+		"ScriptFile"					"items/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityTextureName"			"item_clarity"
+		"AbilityTextureName"			"baseitems/potion_mp_3"
 		"Model"							"models/props_gameplay/clarity.vmdl"
 
 		"ItemCost"						"600"
@@ -245,12 +245,12 @@
 			}
 		}
 	}
-	"item_flask_mp_4"
+	"item_potion_mp_4"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_flask"
+		"ScriptFile"					"items/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityTextureName"			"item_clarity"
+		"AbilityTextureName"			"baseitems/potion_mp_4"
 		"Model"							"models/props_gameplay/clarity.vmdl"
 
 		"ItemCost"						"1000"
@@ -286,7 +286,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_str"
+		"ScriptFile"					"items/baseitems/item_base_str"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/str_1"	
 		
@@ -310,7 +310,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_str"
+		"ScriptFile"					"items/baseitems/item_base_str"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/str_2"	
 		
@@ -334,7 +334,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_str"
+		"ScriptFile"					"items/baseitems/item_base_str"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/str_3"	
 		
@@ -358,7 +358,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_str"
+		"ScriptFile"					"items/baseitems/item_base_str"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/str_4"	
 		
@@ -382,7 +382,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_agi"
+		"ScriptFile"					"items/baseitems/item_base_agi"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/agi_1"	
 		
@@ -406,7 +406,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_agi"
+		"ScriptFile"					"items/baseitems/item_base_agi"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/agi_2"	
 		
@@ -430,7 +430,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_agi"
+		"ScriptFile"					"items/baseitems/item_base_agi"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/agi_3"	
 		
@@ -454,7 +454,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_agi"
+		"ScriptFile"					"items/baseitems/item_base_agi"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/agi_4"	
 		
@@ -478,7 +478,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_int"
+		"ScriptFile"					"items/baseitems/item_base_int"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/int_1"	
 		
@@ -502,7 +502,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_int"
+		"ScriptFile"					"items/baseitems/item_base_int"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/int_2"	
 		
@@ -526,7 +526,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_int"
+		"ScriptFile"					"items/baseitems/item_base_int"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/int_3"	
 		
@@ -550,7 +550,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_int"
+		"ScriptFile"					"items/baseitems/item_base_int"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/int_4"	
 		
@@ -574,7 +574,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_crown"
+		"ScriptFile"					"items/baseitems/item_base_allstats"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/allstats_1"	
 		
@@ -598,7 +598,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_crown"
+		"ScriptFile"					"items/baseitems/item_base_allstats"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/allstats_2"	
 		
@@ -622,7 +622,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_crown"
+		"ScriptFile"					"items/baseitems/item_base_allstats"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/allstats_3"	
 		
@@ -646,7 +646,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_crown"
+		"ScriptFile"					"items/baseitems/item_base_allstats"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/allstats_4"	
 		
@@ -670,7 +670,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_health"
+		"ScriptFile"					"items/baseitems/item_base_health"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/health_1"	
 		
@@ -694,7 +694,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_health"
+		"ScriptFile"					"items/baseitems/item_base_health"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/health_2"	
 		
@@ -718,7 +718,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_health"
+		"ScriptFile"					"items/baseitems/item_base_health"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/health_3"	
 		
@@ -742,7 +742,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_stone_health"
+		"ScriptFile"					"items/baseitems/item_base_health"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/health_4"	
 		
@@ -766,7 +766,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_sword"
+		"ScriptFile"					"items/baseitems/item_base_damage"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/damage_1"	
 		
@@ -790,7 +790,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_sword"
+		"ScriptFile"					"items/baseitems/item_base_damage"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/damage_2"	
 		
@@ -814,7 +814,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_sword"
+		"ScriptFile"					"items/baseitems/item_base_damage"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/damage_3"	
 		
@@ -838,7 +838,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_sword"
+		"ScriptFile"					"items/baseitems/item_base_damage"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/damage_4"	
 		
@@ -1054,7 +1054,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_ring"
+		"ScriptFile"					"items/baseitems/item_base_hp_regen"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/hp_regen_1"	
 		
@@ -1078,7 +1078,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_ring"
+		"ScriptFile"					"items/baseitems/item_base_hp_regen"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/hp_regen_2"	
 		
@@ -1102,7 +1102,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_ring"
+		"ScriptFile"					"items/baseitems/item_base_hp_regen"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/hp_regen_3"	
 		
@@ -1126,7 +1126,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_ring"
+		"ScriptFile"					"items/baseitems/item_base_hp_regen"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/hp_regen_4"	
 		
@@ -1150,7 +1150,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_mage_ring"
+		"ScriptFile"					"items/baseitems/item_base_mp_regen"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/mp_regen_1"	
 		
@@ -1174,7 +1174,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_mage_ring"
+		"ScriptFile"					"items/baseitems/item_base_mp_regen"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/mp_regen_2"	
 		
@@ -1198,7 +1198,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_mage_ring"
+		"ScriptFile"					"items/baseitems/item_base_mp_regen"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/mp_regen_3"	
 		
@@ -1222,7 +1222,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_mage_ring"
+		"ScriptFile"					"items/baseitems/item_base_mp_regen"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/mp_regen_4"	
 		
@@ -1246,7 +1246,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_chainmail"
+		"ScriptFile"					"items/baseitems/item_base_armor"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/armor_1"	
 		
@@ -1270,7 +1270,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_chainmail"
+		"ScriptFile"					"items/baseitems/item_base_armor"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/armor_2"	
 		
@@ -1294,7 +1294,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_chainmail"
+		"ScriptFile"					"items/baseitems/item_base_armor"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/armor_3"	
 		
@@ -1318,7 +1318,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/baseitems/item_base_chainmail"
+		"ScriptFile"					"items/baseitems/item_base_armor"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"baseitems/armor_4"	
 		

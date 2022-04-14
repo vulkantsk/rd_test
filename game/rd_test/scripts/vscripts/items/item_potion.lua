@@ -1,7 +1,7 @@
 
-item_flask_hp = class({})
+item_potion_hp = class({})
 
-function item_flask_hp:OnSpellStart()
+function item_potion_hp:OnSpellStart()
 	local item = self
 	local caster = self:GetCaster()
 	local hp_recover = item:GetSpecialValueFor("hp_recover")
@@ -16,9 +16,9 @@ function item_flask_hp:OnSpellStart()
 	end
 end
 
-item_flask_mp = class({})
+item_potion_mp = class({})
 
-function item_flask_mp:OnSpellStart()
+function item_potion_mp:OnSpellStart()
 	local item = self
 	local caster = self:GetCaster()
 	local mp_recover = item:GetSpecialValueFor("mp_recover")
@@ -33,12 +33,12 @@ function item_flask_mp:OnSpellStart()
 	end
 end
 
-item_flask_hp_1 = class(item_flask_hp)
-item_flask_hp_2 = class(item_flask_hp)
-item_flask_hp_3 = class(item_flask_hp)
-item_flask_hp_4 = class(item_flask_hp)
+item_potion_hp_1 = class(item_potion_hp)
+item_potion_hp_2 = class(item_potion_hp)
+item_potion_hp_3 = class(item_potion_hp)
+item_potion_hp_4 = class(item_potion_hp)
 
-item_flask_mp_1 = class(item_flask_mp)
-item_flask_mp_2 = class(item_flask_mp)
-item_flask_mp_3 = class(item_flask_mp)
-item_flask_mp_4 = class(item_flask_mp)
+item_potion_mp_1 = class(item_potion_mp)
+item_potion_mp_2 = class(item_potion_mp)
+item_potion_mp_3 = class(item_potion_mp)
+item_potion_mp_4 = class(item_potion_mp)
