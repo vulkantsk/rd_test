@@ -10,6 +10,7 @@ item_base_str_1 = class(item_base_str)
 item_base_str_2 = class(item_base_str)
 item_base_str_3 = class(item_base_str)
 item_base_str_4 = class(item_base_str)
+item_base_str_5 = class(item_base_str)
 
 modifier_item_base_str = class({
 	IsHidden 		= function(self) return true end,

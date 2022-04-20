@@ -10,6 +10,7 @@ item_base_damage_1 = class(item_base_damage)
 item_base_damage_2 = class(item_base_damage)
 item_base_damage_3 = class(item_base_damage)
 item_base_damage_4 = class(item_base_damage)
+item_base_damage_5 = class(item_base_damage)
 
 modifier_item_base_damage = class({
 	IsHidden 		= function(self) return true end,

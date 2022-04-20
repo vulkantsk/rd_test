@@ -6,6 +6,12 @@ function item_base_armor:GetIntrinsicModifierName()
 	return "modifier_item_base_armor"
 end
 
+item_base_armor_1 = class(item_base_armor)
+item_base_armor_2 = class(item_base_armor)
+item_base_armor_3 = class(item_base_armor)
+item_base_armor_4 = class(item_base_armor)
+item_base_armor_5 = class(item_base_armor)
+
 modifier_item_base_armor = class({
 	IsHidden 		= function(self) return true end,
 	GetAttributes 	= function(self) return MODIFIER_ATTRIBUTE_MULTIPLE end,
@@ -18,7 +24,3 @@ function modifier_item_base_armor:GetModifierPhysicalArmorBonus()
 	return self:GetAbility():GetSpecialValueFor("bonus_armor")
 end
 
-item_base_armor_1 = class(item_base_armor)
-item_base_armor_2 = class(item_base_armor)
-item_base_armor_3 = class(item_base_armor)
-item_base_armor_4 = class(item_base_armor)

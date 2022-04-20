@@ -10,6 +10,7 @@ item_base_allstats_1 = class(item_base_allstats)
 item_base_allstats_2 = class(item_base_allstats)
 item_base_allstats_3 = class(item_base_allstats)
 item_base_allstats_4 = class(item_base_allstats)
+item_base_allstats_5 = class(item_base_allstats)
 
 modifier_item_base_allstats = class({
 	IsHidden 		= function(self) return true end,

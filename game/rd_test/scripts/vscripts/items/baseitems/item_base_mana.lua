@@ -10,6 +10,7 @@ item_base_mana_1 = class(item_base_mana)
 item_base_mana_2 = class(item_base_mana)
 item_base_mana_3 = class(item_base_mana)
 item_base_mana_4 = class(item_base_mana)
+item_base_mana_5 = class(item_base_mana)
 
 modifier_item_base_mana = class({
 	IsHidden 		= function(self) return true end,

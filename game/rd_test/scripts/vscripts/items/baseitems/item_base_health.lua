@@ -10,6 +10,7 @@ item_base_health_1 = class(item_base_health)
 item_base_health_2 = class(item_base_health)
 item_base_health_3 = class(item_base_health)
 item_base_health_4 = class(item_base_health)
+item_base_health_5 = class(item_base_health)
 
 modifier_item_base_health = class({
 	IsHidden 		= function(self) return true end,

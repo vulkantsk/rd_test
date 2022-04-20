@@ -10,6 +10,7 @@ item_base_attack_speed_1 = class(item_base_attack_speed)
 item_base_attack_speed_2 = class(item_base_attack_speed)
 item_base_attack_speed_3 = class(item_base_attack_speed)
 item_base_attack_speed_4 = class(item_base_attack_speed)
+item_base_attack_speed_5 = class(item_base_attack_speed)
 
 modifier_item_base_attack_speed = class({
 	IsHidden 		= function(self) return true end,

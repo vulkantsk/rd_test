@@ -377,6 +377,30 @@
 			}			
 		}
 	}
+	"item_base_str_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_str"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/str_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_str"				"150"
+			}			
+		}
+	}
 	"item_base_agi_1"
 	{
 		// General
@@ -470,6 +494,30 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"bonus_agi"				"50"
+			}			
+		}
+	}
+	"item_base_agi_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_agi"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/agi_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agi"				"150"
 			}			
 		}
 	}
@@ -569,6 +617,30 @@
 			}			
 		}
 	}
+	"item_base_int_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_int"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/int_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_int"				"150"
+			}			
+		}
+	}
 	"item_base_allstats_1"
 	{
 		// General
@@ -580,7 +652,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"450"
+		"ItemCost"						"350"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -604,7 +676,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"1000"
+		"ItemCost"						"1500"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -628,7 +700,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"3000"
+		"ItemCost"						"5000"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -637,7 +709,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_allstats"				"20"
+				"bonus_allstats"				"25"
 			}			
 		}
 	}
@@ -652,7 +724,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"10000"
+		"ItemCost"						"15000"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -661,7 +733,31 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_allstats"				"40"
+				"bonus_allstats"				"50"
+			}			
+		}
+	}
+	"item_base_allstats_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_allstats"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/allstats_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"75000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_allstats"				"150"
 			}			
 		}
 	}
@@ -761,6 +857,30 @@
 			}			
 		}
 	}
+	"item_base_health_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_health"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/health_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"				"4500"
+			}			
+		}
+	}
 	"item_base_damage_1"
 	{
 		// General
@@ -854,6 +974,30 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"bonus_damage"				"100"
+			}			
+		}
+	}
+	"item_base_damage_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_damage"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/damage_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"				"300"
 			}			
 		}
 	}
@@ -953,6 +1097,30 @@
 			}			
 		}
 	}
+	"item_base_attack_speed_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_attack_speed"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/attack_speed_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"				"450"
+			}			
+		}
+	}
 	"item_base_mana_1"
 	{
 		// General
@@ -1046,6 +1214,30 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"bonus_mana"				"1000"
+			}			
+		}
+	}
+	"item_base_mana_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_mana"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/mana_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"				"3000"
 			}			
 		}
 	}
@@ -1145,6 +1337,30 @@
 			}			
 		}
 	}
+	"item_base_hp_regen_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_hp_regen"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/hp_regen_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_hp_regen"				"150"
+			}			
+		}
+	}
 	"item_base_mp_regen_1"
 	{
 		// General
@@ -1238,6 +1454,30 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"bonus_mp_regen"				"25"
+			}			
+		}
+	}
+	"item_base_mp_regen_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_mp_regen"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/mp_regen_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mp_regen"				"75"
 			}			
 		}
 	}
@@ -1337,6 +1577,30 @@
 			}			
 		}
 	}
+	"item_base_armor_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/baseitems/item_base_armor"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"baseitems/armor_5"	
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50000"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"				"75"
+			}			
+		}
+	}
 	"item_base_shield_1"
 	{
 		"BaseClass"                     "item_lua"
@@ -1410,6 +1674,25 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"bonus_block"			"250"
+			}
+		}
+	}
+	"item_base_shield_5"
+	{
+		"BaseClass"                     "item_lua"
+		"ScriptFile"                    "items/baseitems/item_base_shield"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"baseitems/shield_4"
+
+		"ItemCost"						"50000"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_block"			"750"
 			}
 		}
 	}

@@ -67,6 +67,26 @@
 
 	}
 
+	"secretshop"
+	{
+		"item" "item_base_health_1"
+		"item" "item_base_health_2"
+		"item" "item_base_health_3"
+		"item" "item_base_health_4"
+		"item" "item_base_hp_regen_1"
+		"item" "item_base_hp_regen_2"
+		"item" "item_base_hp_regen_3"
+		"item" "item_base_hp_regen_4"
+		"item" "item_base_mana_1"
+		"item" "item_base_mana_2"
+		"item" "item_base_mana_3"
+		"item" "item_base_mana_4"
+		"item" "item_base_mp_regen_1"
+		"item" "item_base_mp_regen_2"
+		"item" "item_base_mp_regen_3"
+		"item" "item_base_mp_regen_4"
+	}
+
 	// Level 1 - Green Recipes
 	"basics"
 	{
@@ -151,26 +171,6 @@
 	"sideshop2"
 	{
 
-	}
-
-	"secretshop"
-	{
-		"item" "item_base_health_1"
-		"item" "item_base_health_2"
-		"item" "item_base_health_3"
-		"item" "item_base_health_4"
-		"item" "item_base_hp_regen_1"
-		"item" "item_base_hp_regen_2"
-		"item" "item_base_hp_regen_3"
-		"item" "item_base_hp_regen_4"
-		"item" "item_base_mana_1"
-		"item" "item_base_mana_2"
-		"item" "item_base_mana_3"
-		"item" "item_base_mana_4"
-		"item" "item_base_mp_regen_1"
-		"item" "item_base_mp_regen_2"
-		"item" "item_base_mp_regen_3"
-		"item" "item_base_mp_regen_4"
 	}
 
 	"pregame"

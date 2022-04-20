@@ -10,6 +10,7 @@ item_base_agi_1 = class(item_base_agi)
 item_base_agi_2 = class(item_base_agi)
 item_base_agi_3 = class(item_base_agi)
 item_base_agi_4 = class(item_base_agi)
+item_base_agi_5 = class(item_base_agi)
 
 modifier_item_base_agi = class({
 	IsHidden 		= function(self) return true end,

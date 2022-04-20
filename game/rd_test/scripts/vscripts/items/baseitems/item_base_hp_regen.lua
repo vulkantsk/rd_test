@@ -10,6 +10,7 @@ item_base_hp_regen_1 = class(item_base_hp_regen)
 item_base_hp_regen_2 = class(item_base_hp_regen)
 item_base_hp_regen_3 = class(item_base_hp_regen)
 item_base_hp_regen_4 = class(item_base_hp_regen)
+item_base_hp_regen_5 = class(item_base_hp_regen)
 
 modifier_item_base_hp_regen = class({
 	IsHidden 		= function(self) return true end,

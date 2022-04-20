@@ -10,6 +10,7 @@ item_base_shield_1 = class(item_base_shield)
 item_base_shield_2 = class(item_base_shield)
 item_base_shield_3 = class(item_base_shield)
 item_base_shield_4 = class(item_base_shield)
+item_base_shield_5 = class(item_base_shield)
 
 modifier_item_base_shield = class({
 	IsHidden 		= function(self) return true end,
