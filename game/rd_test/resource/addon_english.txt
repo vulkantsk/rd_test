@@ -3419,243 +3419,243 @@
 	"dota_ability_variable_block"						"damage block"
 
 	"DOTA_Tooltip_Ability_item_base_shield_1"                         			"Fragile  shield"
-	"DOTA_Tooltip_ability_item_base_shield_1_Description"           				"The shield can protect against some attacks."
+	"DOTA_Tooltip_ability_item_base_shield_1_Lore"           				"The shield can protect against some attacks."
 	"DOTA_Tooltip_ability_item_base_shield_1_bonus_block"                        	"+$block"
 
 	"DOTA_Tooltip_Ability_item_base_shield_2"                         			"Stout shield"
-	"DOTA_Tooltip_ability_item_base_shield_2_Description"           				"The shield can protect against most attacks."
+	"DOTA_Tooltip_ability_item_base_shield_2_Lore"           				"The shield can protect against most attacks."
 	"DOTA_Tooltip_ability_item_base_shield_2_bonus_block"                        	"+$block"
 
 	"DOTA_Tooltip_Ability_item_base_shield_3"                         			"Poormans shield"
-	"DOTA_Tooltip_ability_item_base_shield_3_Description"           				"The shield can protect against most attacks."
+	"DOTA_Tooltip_ability_item_base_shield_3_Lore"           				"The shield can protect against most attacks."
 	"DOTA_Tooltip_ability_item_base_shield_3_bonus_block"                        	"+$block"
 
 	"DOTA_Tooltip_Ability_item_base_shield_4"                         			"Copper shield"
-	"DOTA_Tooltip_ability_item_base_shield_4_Description"           				"The shield can protect against some attacks."
+	"DOTA_Tooltip_ability_item_base_shield_4_Lore"           				"The shield can protect against some attacks."
 	"DOTA_Tooltip_ability_item_base_shield_4_bonus_block"                        	"+$block"
 
 	"DOTA_Tooltip_Ability_item_base_shield_5"                         			"shield tier 5"
-	"DOTA_Tooltip_ability_item_base_shield_5_Description"           				"The shield can protect against most attacks."
+	"DOTA_Tooltip_ability_item_base_shield_5_Lore"           				"The shield can protect against most attacks."
 	"DOTA_Tooltip_ability_item_base_shield_5_bonus_block"                        	"+$block"
 
 	"DOTA_Tooltip_Ability_item_base_armor_1"                         			"Chaimail"
-	"DOTA_Tooltip_ability_item_base_armor_1_Description"           				"A medium weave of metal chains."
+	"DOTA_Tooltip_ability_item_base_armor_1_Lore"           				"A medium weave of metal chains."
 	"DOTA_Tooltip_ability_item_base_armor_1_bonus_armor"                        	"+$armor"
 
 	"DOTA_Tooltip_Ability_item_base_armor_2"                         			"armor tier 2"
-	"DOTA_Tooltip_ability_item_base_armor_2_Description"           				"Bonus armor"
+	"DOTA_Tooltip_ability_item_base_armor_2_Lore"           				"Bonus armor"
 	"DOTA_Tooltip_ability_item_base_armor_2_bonus_armor"                        	"+$armor"
 
 	"DOTA_Tooltip_Ability_item_base_armor_3"                         			"armor tier 3"
-	"DOTA_Tooltip_ability_item_base_armor_3_Description"           				"Bonus armor"
+	"DOTA_Tooltip_ability_item_base_armor_3_Lore"           				"Bonus armor"
 	"DOTA_Tooltip_ability_item_base_armor_3_bonus_armor"                        	"+$armor"
 
 	"DOTA_Tooltip_Ability_item_base_armor_4"                         			"Platemail"
-	"DOTA_Tooltip_ability_item_base_armor_4_Description"           				"Thick metal plates that protect the entire upper body. Avoid dropping on feet."
+	"DOTA_Tooltip_ability_item_base_armor_4_Lore"           				"Thick metal plates that protect the entire upper body. Avoid dropping on feet."
 	"DOTA_Tooltip_ability_item_base_armor_4_bonus_armor"                        	"+$armor"
 
 	"DOTA_Tooltip_Ability_item_base_armor_5"                         			"armor tier 5"
-	"DOTA_Tooltip_ability_item_base_armor_5_Description"           				"Bonus armor"
+	"DOTA_Tooltip_ability_item_base_armor_5_Lore"           				"Bonus armor"
 	"DOTA_Tooltip_ability_item_base_armor_5_bonus_armor"                        	"+$armor"
 
 	"DOTA_Tooltip_Ability_item_base_mp_regen_1"                         			"Sage's Mask"
-	"DOTA_Tooltip_ability_item_base_mp_regen_1_Description"           				"A mask commonly used by mages and warlocks for various rituals"
+	"DOTA_Tooltip_ability_item_base_mp_regen_1_Lore"           				"A mask commonly used by mages and warlocks for various rituals"
 	"DOTA_Tooltip_ability_item_base_mp_regen_1_bonus_mp_regen"                        	"+$mana_regen"
 
 	"DOTA_Tooltip_Ability_item_base_mp_regen_2"                         			"Void Stone"
-	"DOTA_Tooltip_ability_item_base_mp_regen_2_Description"           				"Jewelry that was once used to channel nether realm magic, this ring pulses with energy."
+	"DOTA_Tooltip_ability_item_base_mp_regen_2_Lore"           				"Jewelry that was once used to channel nether realm magic, this ring pulses with energy."
 	"DOTA_Tooltip_ability_item_base_mp_regen_2_bonus_mp_regen"                        	"+$mana_regen"
 
 	"DOTA_Tooltip_Ability_item_base_mp_regen_3"                         			"Magician ring"
-	"DOTA_Tooltip_ability_item_base_mp_regen_3_Description"           				"Jewelry that was once used to channel nether realm magic, this ring pulses with energy."
+	"DOTA_Tooltip_ability_item_base_mp_regen_3_Lore"           				"Jewelry that was once used to channel nether realm magic, this ring pulses with energy."
 	"DOTA_Tooltip_ability_item_base_mp_regen_3_bonus_mp_regen"                        	"+$mana_regen"
 
 	"DOTA_Tooltip_Ability_item_base_mp_regen_4"                         			"Sage ring"
-	"DOTA_Tooltip_ability_item_base_mp_regen_4_Description"           				"Jewelry that was once used to channel nether realm magic, this ring pulses with energy."
+	"DOTA_Tooltip_ability_item_base_mp_regen_4_Lore"           				"Jewelry that was once used to channel nether realm magic, this ring pulses with energy."
 	"DOTA_Tooltip_ability_item_base_mp_regen_4_bonus_mp_regen"                        	"+$mana_regen"
 
 	"DOTA_Tooltip_Ability_item_base_mp_regen_5"                         			"mp_regen tier 5"
-	"DOTA_Tooltip_ability_item_base_mp_regen_5_Description"           				"Bonus mp_regen"
+	"DOTA_Tooltip_ability_item_base_mp_regen_5_Lore"           				"Bonus mp_regen"
 	"DOTA_Tooltip_ability_item_base_mp_regen_5_bonus_mp_regen"                        	"+$mana_regen"
 
 	"DOTA_Tooltip_Ability_item_base_hp_regen_1"                         			"Ring of Regen"
-	"DOTA_Tooltip_ability_item_base_hp_regen_1_Description"           				"This ring is considered a good luck charm among the Gnomes."
+	"DOTA_Tooltip_ability_item_base_hp_regen_1_Lore"           				"This ring is considered a good luck charm among the Gnomes."
 	"DOTA_Tooltip_ability_item_base_hp_regen_1_bonus_hp_regen"                        	"+$hp_regen"
 
 	"DOTA_Tooltip_Ability_item_base_hp_regen_2"                         			"Ring of Health"
-	"DOTA_Tooltip_ability_item_base_hp_regen_2_Description"           				"A shiny ring found beneath a fat halfling's corpse."
+	"DOTA_Tooltip_ability_item_base_hp_regen_2_Lore"           				"A shiny ring found beneath a fat halfling's corpse."
 	"DOTA_Tooltip_ability_item_base_hp_regen_2_bonus_hp_regen"                        	"+$hp_regen"
 
 	"DOTA_Tooltip_Ability_item_base_hp_regen_3"                         			"Golden ring"
-	"DOTA_Tooltip_ability_item_base_hp_regen_3_Description"           				"A shiny ring found beneath a fat halfling's corpse."
+	"DOTA_Tooltip_ability_item_base_hp_regen_3_Lore"           				"A shiny ring found beneath a fat halfling's corpse."
 	"DOTA_Tooltip_ability_item_base_hp_regen_3_bonus_hp_regen"                        	"+$hp_regen"
 
 	"DOTA_Tooltip_Ability_item_base_hp_regen_4"                         			"Blood ring"
-	"DOTA_Tooltip_ability_item_base_hp_regen_4_Description"           				"A shiny ring found beneath a fat halfling's corpse."
+	"DOTA_Tooltip_ability_item_base_hp_regen_4_Lore"           				"A shiny ring found beneath a fat halfling's corpse."
 	"DOTA_Tooltip_ability_item_base_hp_regen_4_bonus_hp_regen"                        	"+$hp_regen"
 
 	"DOTA_Tooltip_Ability_item_base_hp_regen_5"                         			"hp_regen tier 5"
-	"DOTA_Tooltip_ability_item_base_hp_regen_5_Description"           				"Bonus hp_regen"
+	"DOTA_Tooltip_ability_item_base_hp_regen_5_Lore"           				"Bonus hp_regen"
 	"DOTA_Tooltip_ability_item_base_hp_regen_5_bonus_hp_regen"                        	"+$hp_regen"
 
 	"DOTA_Tooltip_Ability_item_base_mana_1"                         			"Blue stone"
-	"DOTA_Tooltip_ability_item_base_mana_1_Description"           				"This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat."
+	"DOTA_Tooltip_ability_item_base_mana_1_Lore"           				"This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat."
 	"DOTA_Tooltip_ability_item_base_mana_1_bonus_mana"                        	"+$mana"
 
 	"DOTA_Tooltip_Ability_item_base_mana_2"                         			"Energy Booster"
-	"DOTA_Tooltip_ability_item_base_mana_2_Description"           				"This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat."
+	"DOTA_Tooltip_ability_item_base_mana_2_Lore"           				"This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat."
 	"DOTA_Tooltip_ability_item_base_mana_2_bonus_mana"                        	"+$mana"
 
 	"DOTA_Tooltip_Ability_item_base_mana_3"                         			"Violent stone"
-	"DOTA_Tooltip_ability_item_base_mana_3_Description"           				"This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat."
+	"DOTA_Tooltip_ability_item_base_mana_3_Lore"           				"This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat."
 	"DOTA_Tooltip_ability_item_base_mana_3_bonus_mana"                        	"+$mana"
 
 	"DOTA_Tooltip_Ability_item_base_mana_4"                         			"Vegeta stone"
-	"DOTA_Tooltip_ability_item_base_mana_4_Description"           				"This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat."
+	"DOTA_Tooltip_ability_item_base_mana_4_Lore"           				"This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat."
 	"DOTA_Tooltip_ability_item_base_mana_4_bonus_mana"                        	"+$mana"
 
 	"DOTA_Tooltip_Ability_item_base_mana_5"                         			"mana tier 5"
-	"DOTA_Tooltip_ability_item_base_mana_5_Description"           				"Bonus mana"
+	"DOTA_Tooltip_ability_item_base_mana_5_Lore"           				"Bonus mana"
 	"DOTA_Tooltip_ability_item_base_mana_5_bonus_mana"                        	"+$mana"
 
 	"DOTA_Tooltip_Ability_item_base_attack_speed_1"                         			"Gloves of Haste"
-	"DOTA_Tooltip_ability_item_base_attack_speed_1_Description"           				"A pair of magical gloves that seems to render weapons weightless."
+	"DOTA_Tooltip_ability_item_base_attack_speed_1_Lore"           				"A pair of magical gloves that seems to render weapons weightless."
 	"DOTA_Tooltip_ability_item_base_attack_speed_1_bonus_attack_speed"                        	"+$attack"
 
 	"DOTA_Tooltip_Ability_item_base_attack_speed_2"                         			"Blitz Knuckles"
-	"DOTA_Tooltip_ability_item_base_attack_speed_2_Description"           				"An underground arcanist's update of a back-alley classic."
+	"DOTA_Tooltip_ability_item_base_attack_speed_2_Lore"           				"An underground arcanist's update of a back-alley classic."
 	"DOTA_Tooltip_ability_item_base_attack_speed_2_bonus_attack_speed"                        	"+$attack"
 
 	"DOTA_Tooltip_Ability_item_base_attack_speed_3"                         			"Hyperstone"
-	"DOTA_Tooltip_ability_item_base_attack_speed_3_Description"           				"A mystical, carved stone that boosts the fervor of the holder."
+	"DOTA_Tooltip_ability_item_base_attack_speed_3_Lore"           				"A mystical, carved stone that boosts the fervor of the holder."
 	"DOTA_Tooltip_ability_item_base_attack_speed_3_bonus_attack_speed"                        	"+$attack"
 
 	"DOTA_Tooltip_Ability_item_base_attack_speed_4"                         			"Moon shard"
-	"DOTA_Tooltip_ability_item_base_attack_speed_4_Description"           				"Said to be a tear from the lunar goddess Selemene."
+	"DOTA_Tooltip_ability_item_base_attack_speed_4_Lore"           				"Said to be a tear from the lunar goddess Selemene."
 	"DOTA_Tooltip_ability_item_base_attack_speed_4_bonus_attack_speed"                        	"+$attack"
 
 	"DOTA_Tooltip_Ability_item_base_attack_speed_5"                         			"attack_speed tier 5"
-	"DOTA_Tooltip_ability_item_base_attack_speed_5_Description"           				"Bonus attack_speed"
+	"DOTA_Tooltip_ability_item_base_attack_speed_5_Lore"           				"Bonus attack_speed"
 	"DOTA_Tooltip_ability_item_base_attack_speed_5_bonus_attack_speed"                        	"+$attack"
 
 	"DOTA_Tooltip_Ability_item_base_damage_1"                         			"Blades of Attack"
-	"DOTA_Tooltip_ability_item_base_damage_1_Description"           				"The damage of these small, concealable blades should not be underestimated."
+	"DOTA_Tooltip_ability_item_base_damage_1_Lore"           				"The damage of these small, concealable blades should not be underestimated."
 	"DOTA_Tooltip_ability_item_base_damage_1_bonus_damage"                        	"+$damage"
 
 	"DOTA_Tooltip_Ability_item_base_damage_2"                         			"Broadsword"
-	"DOTA_Tooltip_ability_item_base_damage_2_Description"           				"The classic weapon of choice for knights, this blade is sturdy and reliable for slaying enemies."
+	"DOTA_Tooltip_ability_item_base_damage_2_Lore"           				"The classic weapon of choice for knights, this blade is sturdy and reliable for slaying enemies."
 	"DOTA_Tooltip_ability_item_base_damage_2_bonus_damage"                        	"+$damage"
 
 	"DOTA_Tooltip_Ability_item_base_damage_3"                         			"Demon edge"
-	"DOTA_Tooltip_ability_item_base_damage_3_Description"           				"One of the oldest weapons forged by the Demon-Smith Abzidian, it killed its maker when he tested its edge."
+	"DOTA_Tooltip_ability_item_base_damage_3_Lore"           				"One of the oldest weapons forged by the Demon-Smith Abzidian, it killed its maker when he tested its edge."
 	"DOTA_Tooltip_ability_item_base_damage_3_bonus_damage"                        	"+$damage"
 
 	"DOTA_Tooltip_Ability_item_base_damage_4"                         			"Sacred relic"
-	"DOTA_Tooltip_ability_item_base_damage_4_Description"           				"An ancient weapon that often turns the tides of war."
+	"DOTA_Tooltip_ability_item_base_damage_4_Lore"           				"An ancient weapon that often turns the tides of war."
 	"DOTA_Tooltip_ability_item_base_damage_4_bonus_damage"                        	"+$damage"
 
 	"DOTA_Tooltip_Ability_item_base_damage_5"                         			"Cursed relic"
-	"DOTA_Tooltip_ability_item_base_damage_5_Description"           				"An ancient weapon that often turns the tides of war."
+	"DOTA_Tooltip_ability_item_base_damage_5_Lore"           				"An ancient weapon that often turns the tides of war."
 	"DOTA_Tooltip_ability_item_base_damage_5_bonus_damage"                        	"+$damage"
 
 	"DOTA_Tooltip_Ability_item_base_health_1"                         			"Fluffy Hat"
-	"DOTA_Tooltip_ability_item_base_health_1_Description"           				"Fine and functional foppery for the fashion-forward fighter."
+	"DOTA_Tooltip_ability_item_base_health_1_Lore"           				"Fine and functional foppery for the fashion-forward fighter."
 	"DOTA_Tooltip_ability_item_base_health_1_bonus_health"                        	"+$health"
 
 	"DOTA_Tooltip_Ability_item_base_health_2"                         			"Vitality Booster"
-	"DOTA_Tooltip_ability_item_base_health_2_Description"           				"A ruby gemstone that has been passed down through generations of warrior kin."
+	"DOTA_Tooltip_ability_item_base_health_2_Lore"           				"A ruby gemstone that has been passed down through generations of warrior kin."
 	"DOTA_Tooltip_ability_item_base_health_2_bonus_health"                        	"+$health"
 
 	"DOTA_Tooltip_Ability_item_base_health_3"                         			"Vitality Booster"
-	"DOTA_Tooltip_ability_item_base_health_3_Description"           				"A ruby gemstone that has been passed down through generations of warrior kin."
+	"DOTA_Tooltip_ability_item_base_health_3_Lore"           				"A ruby gemstone that has been passed down through generations of warrior kin."
 	"DOTA_Tooltip_ability_item_base_health_3_bonus_health"                        	"+$health"
 
 	"DOTA_Tooltip_Ability_item_base_health_4"                         			"Vitality Booster"
-	"DOTA_Tooltip_ability_item_base_health_4_Description"           				"A ruby gemstone that has been passed down through generations of warrior kin."
+	"DOTA_Tooltip_ability_item_base_health_4_Lore"           				"A ruby gemstone that has been passed down through generations of warrior kin."
 	"DOTA_Tooltip_ability_item_base_health_4_bonus_health"                        	"+$health"
 
 	"DOTA_Tooltip_Ability_item_base_health_5"                         			"Vitality Booster"
-	"DOTA_Tooltip_ability_item_base_health_5_Description"           				"A ruby gemstone that has been passed down through generations of warrior kin."
+	"DOTA_Tooltip_ability_item_base_health_5_Lore"           				"A ruby gemstone that has been passed down through generations of warrior kin."
 	"DOTA_Tooltip_ability_item_base_health_5_bonus_health"                        	"+$health"
 
 	"DOTA_Tooltip_Ability_item_base_allstats_1"                         			"Circlet"
-	"DOTA_Tooltip_ability_item_base_allstats_1_Description"           				"An elegant circlet designed for human princesses."
+	"DOTA_Tooltip_ability_item_base_allstats_1_Lore"           				"An elegant circlet designed for human princesses."
 	"DOTA_Tooltip_ability_item_base_allstats_1_bonus_allstats"                        	"+$all"
 
 	"DOTA_Tooltip_Ability_item_base_allstats_2"                         			"Crown"
-	"DOTA_Tooltip_ability_item_base_allstats_2_Description"           				"A stately crown created to ensure a well-meaning but ungifted heir could fend off usurpers and govern with a strong hand."
+	"DOTA_Tooltip_ability_item_base_allstats_2_Lore"           				"A stately crown created to ensure a well-meaning but ungifted heir could fend off usurpers and govern with a strong hand."
 	"DOTA_Tooltip_ability_item_base_allstats_2_bonus_allstats"                        	"+$all"
 
 	"DOTA_Tooltip_Ability_item_base_allstats_3"                         			"Ultimate Orb"
-	"DOTA_Tooltip_ability_item_base_allstats_3_Description"           				"A mystical orb containing the essence of life."
+	"DOTA_Tooltip_ability_item_base_allstats_3_Lore"           				"A mystical orb containing the essence of life."
 	"DOTA_Tooltip_ability_item_base_allstats_3_bonus_allstats"                        	"+$all"
 
 	"DOTA_Tooltip_Ability_item_base_allstats_4"                         			"Diffusion sphere"
-	"DOTA_Tooltip_ability_item_base_allstats_4_Description"           				"A mystical orb containing the essence of life."
+	"DOTA_Tooltip_ability_item_base_allstats_4_Lore"           				"A mystical orb containing the essence of life."
 	"DOTA_Tooltip_ability_item_base_allstats_4_bonus_allstats"                        	"+$all"
 
 	"DOTA_Tooltip_Ability_item_base_allstats_5"                         			"allstats tier 5"
-	"DOTA_Tooltip_ability_item_base_allstats_5_Description"           				"A mystical orb containing the essence of life."
+	"DOTA_Tooltip_ability_item_base_allstats_5_Lore"           				"A mystical orb containing the essence of life."
 	"DOTA_Tooltip_ability_item_base_allstats_5_bonus_allstats"                        	"+$all"
 
 	"DOTA_Tooltip_Ability_item_base_int_1"                         			"Robe of the Magi"
-	"DOTA_Tooltip_ability_item_base_int_1_Description"           				"This robe corrupts the soul of the user, but provides wisdom in return"
+	"DOTA_Tooltip_ability_item_base_int_1_Lore"           				"This robe corrupts the soul of the user, but provides wisdom in return"
 	"DOTA_Tooltip_ability_item_base_int_1_bonus_int"                        	"+$int"
 
 	"DOTA_Tooltip_Ability_item_base_int_2"                         			"Staff of Wizardry"
-	"DOTA_Tooltip_ability_item_base_int_2_Description"           				"A staff of magical powers passed down from the eldest mages"
+	"DOTA_Tooltip_ability_item_base_int_2_Lore"           				"A staff of magical powers passed down from the eldest mages"
 	"DOTA_Tooltip_ability_item_base_int_2_bonus_int"                        	"+$int"
 
 	"DOTA_Tooltip_Ability_item_base_int_3"                         			"Mystic Staff"
-	"DOTA_Tooltip_ability_item_base_int_3_Description"           				"Enigmatic staff made of only the most expensive crystals."
+	"DOTA_Tooltip_ability_item_base_int_3_Lore"           				"Enigmatic staff made of only the most expensive crystals."
 	"DOTA_Tooltip_ability_item_base_int_3_bonus_int"                        	"+$int"
 
 	"DOTA_Tooltip_Ability_item_base_int_4"                         			"Sphere of intelligence"
-	"DOTA_Tooltip_ability_item_base_int_4_Description"           				"Enigmatic staff made of only the most expensive crystals."
+	"DOTA_Tooltip_ability_item_base_int_4_Lore"           				"Enigmatic staff made of only the most expensive crystals."
 	"DOTA_Tooltip_ability_item_base_int_4_bonus_int"                        	"+$int"
 
 	"DOTA_Tooltip_Ability_item_base_int_5"                         			"int tier 5"
-	"DOTA_Tooltip_ability_item_base_int_5_Description"           				"Enigmatic staff made of only the most expensive crystals."
+	"DOTA_Tooltip_ability_item_base_int_5_Lore"           				"Enigmatic staff made of only the most expensive crystals."
 	"DOTA_Tooltip_ability_item_base_int_5_bonus_int"                        	"+$int"
 
-	"DOTA_Tooltip_Ability_item_base_agi_1"                         			"agi tier 1"
-	"DOTA_Tooltip_ability_item_base_agi_1_Description"           				"Bonus agi"
+	"DOTA_Tooltip_Ability_item_base_agi_1"                         			"Band of Elvenskin"
+	"DOTA_Tooltip_ability_item_base_agi_1_Lore"           				"A tensile fabric often used for its light weight and ease of movement."
 	"DOTA_Tooltip_ability_item_base_agi_1_bonus_agi"                        	"+$agi"
 
-	"DOTA_Tooltip_Ability_item_base_agi_2"                         			"agi tier 2"
-	"DOTA_Tooltip_ability_item_base_agi_2_Description"           				"Bonus agi"
+	"DOTA_Tooltip_Ability_item_base_agi_2"                         			"Blade of Alacrity"
+	"DOTA_Tooltip_ability_item_base_agi_2_Lore"           				"A long blade imbued with time magic."
 	"DOTA_Tooltip_ability_item_base_agi_2_bonus_agi"                        	"+$agi"
 
-	"DOTA_Tooltip_Ability_item_base_agi_3"                         			"agi tier 3"
-	"DOTA_Tooltip_ability_item_base_agi_3_Description"           				"Bonus agi"
+	"DOTA_Tooltip_Ability_item_base_agi_3"                         			"Eaglesong"
+	"DOTA_Tooltip_ability_item_base_agi_3_Lore"           				"Capturing the majestic call of an eagle, this mystical horn brings limitless dexterity to those who hear it."
 	"DOTA_Tooltip_ability_item_base_agi_3_bonus_agi"                        	"+$agi"
 
-	"DOTA_Tooltip_Ability_item_base_agi_4"                         			"agi tier 4"
-	"DOTA_Tooltip_ability_item_base_agi_4_Description"           				"Bonus agi"
+	"DOTA_Tooltip_Ability_item_base_agi_4"                         			"Sphere of agility"
+	"DOTA_Tooltip_ability_item_base_agi_4_Lore"           				"Ancient sphere was found in temple."
 	"DOTA_Tooltip_ability_item_base_agi_4_bonus_agi"                        	"+$agi"
 
 	"DOTA_Tooltip_Ability_item_base_agi_5"                         			"agi tier 5"
-	"DOTA_Tooltip_ability_item_base_agi_5_Description"           				"Bonus agi"
+	"DOTA_Tooltip_ability_item_base_agi_5_Lore"           				"Bonus agi"
 	"DOTA_Tooltip_ability_item_base_agi_5_bonus_agi"                        	"+$agi"
 
-	"DOTA_Tooltip_Ability_item_base_str_1"                         			"base_str tier 1"
-	"DOTA_Tooltip_ability_item_base_str_1_Description"           				"Bonus base_str"
+	"DOTA_Tooltip_Ability_item_base_str_1"                         			"Belt of Strength"
+	"DOTA_Tooltip_ability_item_base_str_1_Lore"           				"A valued accessory for improving vitality."
 	"DOTA_Tooltip_ability_item_base_str_1_bonus_str"                        	"+$str"
 
-	"DOTA_Tooltip_Ability_item_base_str_2"                         			"base_str tier 2"
-	"DOTA_Tooltip_ability_item_base_str_2_Description"           				"Bonus base_str"
+	"DOTA_Tooltip_Ability_item_base_str_2"                         			"Ogre axe"
+	"DOTA_Tooltip_ability_item_base_str_2_Lore"           				"You grow stronger just by holding it."
 	"DOTA_Tooltip_ability_item_base_str_2_bonus_str"                        	"+$str"
 
-	"DOTA_Tooltip_Ability_item_base_str_3"                         			"base_str tier 3"
-	"DOTA_Tooltip_ability_item_base_str_3_Description"           				"Bonus base_str"
+	"DOTA_Tooltip_Ability_item_base_str_3"                         			"Reaver"
+	"DOTA_Tooltip_ability_item_base_str_3_Lore"           				"A massive axe capable of tearing whole mountains down."
 	"DOTA_Tooltip_ability_item_base_str_3_bonus_str"                        	"+$str"
 
-	"DOTA_Tooltip_Ability_item_base_str_4"                         			"base_str tier 4"
-	"DOTA_Tooltip_ability_item_base_str_4_Description"           				"Bonus base_str"
+	"DOTA_Tooltip_Ability_item_base_str_4"                         			"Sphere of strength"
+	"DOTA_Tooltip_ability_item_base_str_4_Lore"           				"This relic was stolen from ancient temple."
 	"DOTA_Tooltip_ability_item_base_str_4_bonus_str"                        	"+$str"
 
 	"DOTA_Tooltip_Ability_item_base_str_5"                         			"base_str tier 5"
-	"DOTA_Tooltip_ability_item_base_str_5_Description"           				"Bonus base_str"
+	"DOTA_Tooltip_ability_item_base_str_5_Lore"           				"Bonus base_str"
 	"DOTA_Tooltip_ability_item_base_str_5_bonus_str"                        	"+$str"
 
 	"DOTA_Tooltip_ability_item_flask_hp_1"						"Lesser healing potion"

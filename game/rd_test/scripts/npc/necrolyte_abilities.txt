@@ -1,10 +1,32 @@
 "DOTAAbilities"
 {
+	"necrolyte_death_rage"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/death_rage"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityTextureName"				"necrolyte_death_pulse"
+		"MaxLevel"					"1"
+
+		"AbilityCastRange"				"50"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCooldown"					"20"
+		"AbilityManaCost"					"50"
+
+		"AbilityValues"
+		{
+			"buff_duration"				"15"
+			"bonus_as"					"50"
+		}
+	}
 	"necrolyte_skeleton_summon"
 	{
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_summon"
-		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName"				"necrolyte_death_pulse"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
@@ -48,10 +70,32 @@
 			"damage_interval"				"0.5"
 		}
 	}
-	"necrolyte_breath_of_death"
+	"necrolyte_skeleton_mage_summon"
 	{
 		"BaseClass"							"ability_lua"
-		"ScriptFile"						"abilities/heroes/hero_necrolyte/breath_of_death"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_mage_summon"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"				"necrolyte_sadist"
+		"RequiredLevel"				"8"
+		"LevelsBetweenUpgrades"		"8"
+		"MaxLevel"					"3"
+
+		"AbilityCooldown"					"80"
+		"AbilityManaCost"					"200 300 400"
+
+		"AbilityValues"
+		{
+			"skeleton_duration"				"30"
+			"skeleton_hp"					"1000 2000 3000"
+			"skeleton_damage"				"125 250 500"
+			"skeleton_armor"				"10"
+			"skeleton_BAT"					"1.0"
+		}
+	}
+	"necrolyte_shadow_of_death"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/shadow_of_death"
 
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -62,24 +106,24 @@
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
 
-		"AbilityCooldown"					"40 35 30 25"
+		"AbilityCooldown"					"80"
 		"AbilityManaCost"					"125 150 175 200"
 
 		"AbilityValues"
 		{
 			"duration"						"10"
 			"radius"						"550"
-			"damage_per_sec"				"10 20 30 40"
+			"damage_per_sec"				"50"
 			"damage_interval"				"0.2"
-			"live_duration"					"60"
+			"live_duration"					"40"
 			"stats_reduction_pct"			"0"
 		}
 	}
-	"necrolyte_skeleton_mage_summon"
+	"necrolyte_summon_death_knight"
 	{
 		"BaseClass"							"ability_lua"
-		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_mage_summon"
-		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/summon_death_knight"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName"				"necrolyte_sadist"
 		"RequiredLevel"				"8"
 		"LevelsBetweenUpgrades"		"8"
@@ -135,4 +179,76 @@
 			"damage_pct"					"50"
 		}
 	}
+	"necrolyte_death_knight_dark_sword"
+	{
+		"ScriptFile"					"heroes/hero_necrolyte/death_knight_dark_sword"
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"abaddon_frostmourne"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Abaddon.DeathCoil.Cast"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.25"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"5.5"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"skeleton_duration"				"30"
+			"skeleton_hp"					"250 400 550 700"
+			"skeleton_damage"				"20 35 50 75"
+			"skeleton_armor"				"0 2 4 8"
+			"skeleton_BAT"					"1.0"
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	"ability_mist_coil"
+	{
+		"ScriptFile"					"heroes/abaddon/mist_coil"
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"abaddon_death_coil"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES_ENEMIES_NO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Abaddon.DeathCoil.Cast"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.25"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"7.5"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"250"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"target_damage"				"500"
+			"heal_amount"				"250"
+			"stun_duration"				"1.5"
+			"missile_speed"				"1300"
+		}
+
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}	
 }

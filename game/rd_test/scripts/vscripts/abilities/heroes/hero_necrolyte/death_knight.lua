@@ -1,6 +1,6 @@
-necrolyte_skeleton_mage_summon = class({})
+necrolyte_summon_death_knight = class({})
 
-function necrolyte_skeleton_mage_summon:OnSpellStart()
+function necrolyte_summon_death_knight:OnSpellStart()
 	if not IsServer() then return end
 	local count = self:GetSpecialValueFor("skeleton_count")
 	local duration = self:GetSpecialValueFor("skeleton_duration")
