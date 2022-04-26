@@ -151,6 +151,7 @@
 		"AbilityUnitTargetFlags"			"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
 		"AbilitySound"						"Hero_Pugna.NetherBlast"
+		"AbilityTextureName"				"pugna_nether_blast"
 
 		"AbilityCooldown"					"10"
 		"AbilityManaCost"					"100"
@@ -172,6 +173,7 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_PHYSICAL"
+		"AbilityTextureName"				"black_dragon_splash_attack"
 
 		"AbilityValues"
 		{

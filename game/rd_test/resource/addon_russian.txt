@@ -3905,7 +3905,142 @@
 	"DOTA_Tooltip_ability_marci_eviscerate_custom_stack_duration"								"ДЛИТЕЛЬНОСТЬ:"
 	"DOTA_Tooltip_modifier_marci_eviscerate_custom_debuff"						"Eviscerate"
 	"DOTA_Tooltip_modifier_marci_eviscerate_custom_debuff_Description"						"Получаемый урон увеличен на %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%."
-		
+
+// Luna
+ 	"DOTA_Tooltip_ability_luna_lucent_beam_custom"						"Lucent Beam"
+	"DOTA_Tooltip_ability_luna_lucent_beam_custom_Description"			"Направляет во врага луч лунной энергии, наносит урон, ненадолго оглушает его. За каждого пораженного противника временно дарует владельцу бонусную ловкость."
+	"DOTA_Tooltip_ability_luna_lucent_beam_custom_stun_duration"			"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:"
+	"DOTA_Tooltip_ability_luna_lucent_beam_custom_damage"					"УРОН:"
+	"DOTA_Tooltip_ability_luna_lucent_beam_custom_agility_bonus"			"БОНУС ЛОВКОСТИ:"
+	"DOTA_Tooltip_ability_luna_lucent_beam_custom_buff_duration"			"ДЛИТЕЛЬНОСТЬ БОНУСА:"
+	"DOTA_Tooltip_ability_luna_lucent_beam_custom_max_stacks"			"МАКСИМУМ СТАКОВ:"
+	"DOTA_Tooltip_modifier_luna_lucent_beam_custom_buff"				"Lucent beam"
+	"DOTA_Tooltip_modifier_luna_lucent_beam_custom_buff_Description"	"Ловкость героя увеличена на %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%."
+
+ 	"DOTA_Tooltip_ability_luna_moon_glaive_custom"						"Moon Glaives"
+	"DOTA_Tooltip_ability_luna_moon_glaive_custom_Description"			"Заклинает глефы героя, позволяя им отскакивать по нескольким врагам. Каждый следующий отскок наносит меньше урона."
+	"DOTA_Tooltip_ability_luna_moon_glaive_custom_range"			"РАДИУС ОТСКОКОВ:"
+	"DOTA_Tooltip_ability_luna_moon_glaive_custom_bounces"			"ОТСКОКОВ:"
+	"DOTA_Tooltip_ability_luna_moon_glaive_custom_damage_reduction_pct"			"%СНИЖЕНИЕ УРОНА ЗА ОТСКОК:"
+
+ 	"DOTA_Tooltip_ability_luna_lunar_blessing_custom"						"Lunar Blessing"
+	"DOTA_Tooltip_ability_luna_lunar_blessing_custom_Description"			"Повышает урон от атак владельца способности и союзных героев неподалёку."
+	"DOTA_Tooltip_ability_luna_lunar_blessing_custom_radius"			"РАДИУС:"
+	"DOTA_Tooltip_ability_luna_lunar_blessing_custom_bonus_damage_pct"			"%БОНУС УРОНА:"
+	"DOTA_Tooltip_modifier_luna_lunar_blessing_custom_aura_buff"				"Lunar blessing"
+	"DOTA_Tooltip_modifier_luna_lunar_blessing_custom_aura_buff_Description"	"Урон увеличен на %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%."
+
+ 	"DOTA_Tooltip_ability_luna_eclipse_custom"					"Elcipse"
+	"DOTA_Tooltip_ability_luna_eclipse_custom_Description"		"Повышает скорость атаки и убирает штраф от способности <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Moon Glaives</span></span></span>."
+	"DOTA_Tooltip_ability_luna_eclipse_custom_as_bonus"			"БОНУС СКОРОСТИ АТАКИ:"
+	"DOTA_Tooltip_ability_luna_eclipse_custom_duration"			"ДЛИТЕЛЬНОСТЬ:"
+	"DOTA_Tooltip_modifier_luna_eclipse_custom"					"Elcipse"
+	"DOTA_Tooltip_modifier_luna_eclipse_custom_Description"		"Скорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%, отскоки от способности Moon Glaives наносят полный урон."
+
+// Necrolyte
+ 	"DOTA_Tooltip_ability_necrolyte_skeleton_summon"						"Summon Skeletons"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_summon_Description"			"Призывает несколько скелетов для помощи в бою."
+	"DOTA_Tooltip_ability_necrolyte_skeleton_summon_skeleton_duration"			"ДЛИТЕЛЬНОСТЬ:"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_summon_skeleton_count"			"КОЛИЧЕСТВО СКЕЛЕТОВ:"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_summon_skeleton_hp"			"ЗДОРОВЬЕ СКЕЛЕТОВ:"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_summon_skeleton_damage"			"УРОН СКЕЛЕТОВ:"
+
+	"necrolyte_skeleton_summon"			"Skeleton"
+
+ 	"DOTA_Tooltip_ability_necrolyte_plague_cloud"						"Plague Cloud"
+	"DOTA_Tooltip_ability_necrolyte_plague_cloud_Description"			"Создает токсичное облако, которое наносит периодический урон все врагам."
+	"DOTA_Tooltip_ability_necrolyte_plague_cloud_radius"			"РАДИУС:"
+	"DOTA_Tooltip_ability_necrolyte_plague_cloud_damage_per_sec"			"УРОН В СЕКУНДУ:"
+	"DOTA_Tooltip_ability_necrolyte_plague_cloud_duration"			"ДЛИТЕЛЬНОСТЬ:"
+	"DOTA_Tooltip_modifier_necrolyte_plague_cloud_debuff"			"Plague Cloud"
+	"DOTA_Tooltip_modifier_necrolyte_plague_cloud_debuff_Description"		"Страдает от урона."
+
+ 	"DOTA_Tooltip_ability_necrolyte_breath_of_death"						"Breathe of death"
+	"DOTA_Tooltip_ability_necrolyte_breath_of_death_Description"			"description"
+	"DOTA_Tooltip_ability_necrolyte_breath_of_death_radius"			"RADIUS:"
+	"DOTA_Tooltip_ability_necrolyte_breath_of_death_duration"			"DEBUFF DURATION:"
+	"DOTA_Tooltip_ability_necrolyte_breath_of_death_damage_per_sec"			"DAMAGE PER SECOND:"
+	"DOTA_Tooltip_ability_necrolyte_breath_of_death_live_duration"			"LIVE DURATION:"
+
+ 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon"						"Summon skeleton mage"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_Description"			"Призывает сильного скелета мага. Скелет маг обладает магическим умением и атакой по площади."
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_skeleton_duration"			"ДЛИТЕЛЬНОСТЬ:"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_skeleton_hp"			"ЗДОРОВЬЕ СКЕЛЕТА МАГА:"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_skeleton_damage"			"УРОН СКЕЛЕТА МАГА:"
+
+	"necrolyte_skeleton_mage_summon"		"Skeleton Mage"
+
+ 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_nether_blast"						"Nether blast"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_nether_blast_Description"			"Создает взрыв астральной энергии, который наносит урон врагам и постройкам в области действия."
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_nether_blast_blast_damage"			"УРОН:"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_nether_blast_structure_damage_pct"			"%УРОН ПОСТРОЙКАМ:"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_nether_blast_radius"			"РАДИУС:"
+
+
+ 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_splash"						"Splash"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_splash_Description"			"Атаки существа наносят часть урона всем врагам в области."
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_splash_radius"			"РАДИУС:"
+	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_splash_damage_pct"			"%УРОН ПО ОБЛАСТИ:"
+
+//Primal beast
+
+ 	"DOTA_Tooltip_ability_primal_beast_wave"						"Shock Wave"
+	"DOTA_Tooltip_ability_primal_beast_wave_Description"			"Герой отправляет в указанном направлении ударную волну, наносящую им урон и ненадолго оглушающую их."
+	"DOTA_Tooltip_ability_primal_beast_wave_damage"					"УРОН:"
+	"DOTA_Tooltip_ability_primal_beast_wave_wave_distance"			"ДАЛЬНОСТЬ:"
+	"DOTA_Tooltip_ability_primal_beast_wave_stun_duration"			"ВРЕМЯ ОГЛУШЕНИЯ:"
+
+ 	"DOTA_Tooltip_ability_primal_beast_clap"						"Beast clap"
+	"DOTA_Tooltip_ability_primal_beast_clap_Description"			"Герой ударяет по земле, нанося урон врагам и замедляя их скорость атаки."
+	"DOTA_Tooltip_ability_primal_beast_clap_radius"			"РАДИУС:"
+	"DOTA_Tooltip_ability_primal_beast_clap_damage"			"УРОН:"
+	"DOTA_Tooltip_ability_primal_beast_clap_as_reduction"			"СНИЖЕНИЕ СКОРОСТИ АТАКИ:"
+	"DOTA_Tooltip_ability_primal_beast_clap_reduction_duration"			"ДЛИТЕЛЬНОСТЬ:"
+	"DOTA_Tooltip_modifier_primal_beast_clap"						"Beast clap"
+	"DOTA_Tooltip_modifier_primal_beast_clap_Description"			"Скорость атаки снижена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+
+ 	"DOTA_Tooltip_ability_primal_beast_armor"						"Hard armor"
+	"DOTA_Tooltip_ability_primal_beast_armor_Description"			"Толстая кожа героя позволяет блокировать часть урон от атаки врага."
+	"DOTA_Tooltip_ability_primal_beast_armor_damage_block"			"БЛОК УРОНА:"
+
+ 	"DOTA_Tooltip_ability_primal_beast_pulverize_custom"				"Pulverize"
+	"DOTA_Tooltip_ability_primal_beast_pulverize_custom_Description"	"Герой несколько раз ударяет об землю, нанося урон всем врагам в области действия и снижает их урон."
+	"DOTA_Tooltip_ability_primal_beast_pulverize_custom_duration"		"ДЛИТЕЛЬНОСТЬ:"
+	"DOTA_Tooltip_ability_primal_beast_pulverize_custom_radius"			"РАДИУС:"
+	"DOTA_Tooltip_ability_primal_beast_pulverize_custom_damage"			"УРОН:"
+	"DOTA_Tooltip_ability_primal_beast_pulverize_custom_max_stacks"		"КОЛИЧЕСТВО УДАРОВ:"
+	"DOTA_Tooltip_ability_primal_beast_pulverize_custom_dmg_red_pct_per_stack"	"%СНИЖЕНИЕ УРОНА ЗА СТАК:"
+	"DOTA_Tooltip_modifier_primal_beast_pulverize_custom_debuff"		"Pulverize"
+	"DOTA_Tooltip_modifier_primal_beast_pulverize_custom_debuff_Description"		"Урон снижен на %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%."
+
+//Batrider
+
+ 	"DOTA_Tooltip_ability_batrider_fireball"						"Firewave"
+	"DOTA_Tooltip_ability_batrider_fireball_Description"			"Герой создает поток жидкого пламени, который держится некоторое время и ежесекундно наносит урон вражеским существам."
+	"DOTA_Tooltip_ability_batrider_fireball_proj_damage"			"УРОН ОТ ПОПАДАНИЯ:"
+	"DOTA_Tooltip_ability_batrider_fireball_damage_per_sec"			"УРОН В СЕКУНДУ:"
+	"DOTA_Tooltip_ability_batrider_fireball_fire_duration"			"ДЛИТЕЛЬНОСТЬ:"
+
+ 	"DOTA_Tooltip_ability_batrider_bomb"						"Flamebreak"
+	"DOTA_Tooltip_ability_batrider_bomb_Description"			"Кидает бутылку горючей смеси, которая взрывается в указанном месте, наносит урон и ненадолго оглушает врагов."
+	"DOTA_Tooltip_ability_batrider_bomb_radius"					"РАДИУС:"
+	"DOTA_Tooltip_ability_batrider_bomb_damage"					"УРОН:"
+	"DOTA_Tooltip_ability_batrider_bomb_stun_duration"			"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:"
+
+ 	"DOTA_Tooltip_ability_batrider_spell_amp_passive"						"Sticky Napalm"
+	"DOTA_Tooltip_ability_batrider_spell_amp_passive_Description"			"Попадание способностями по врагам на время увеличивает урон от способностей героя."
+	"DOTA_Tooltip_ability_batrider_spell_amp_passive_stack_duration"		"ДЛИТЕЛЬНОСТЬ СТАКА:"
+	"DOTA_Tooltip_ability_batrider_spell_amp_passive_max_stacks"			"ЛИМИТ СТАКОВ:"
+	"DOTA_Tooltip_ability_batrider_spell_amp_passive_spell_amp_per_stack"	"%УСИЛЕНИЕ СПОСОБНОСТЕЙ:"
+	"DOTA_Tooltip_modifier_batrider_spell_amp_passive"						"Sticky Napalm"
+	"DOTA_Tooltip_modifier_batrider_spell_amp_passive_Description"			"Урон от способностей увеличен на %dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%%."
+
+ 	"DOTA_Tooltip_ability_batrider_bombs"						"Bombarding"
+	"DOTA_Tooltip_ability_batrider_bombs_Description"			"В течении %duration% секунд герой постоянно применяет способность <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Flamebreak</span></span></span> в случайную цель."
+	"DOTA_Tooltip_ability_batrider_bombs_radius"				"РАДИУС:"
+	"DOTA_Tooltip_ability_batrider_bombs_bombs_count"			"КОЛИЧЕСТВО БОМБ ОТ СПОСОБНОСТИ FLAMEBREAKE ЗА ВЫСТРЕЛ:"
+	"DOTA_Tooltip_ability_batrider_bombs_duration"				"ДЛИТЕЛЬНОСТЬ:"
+	"DOTA_Tooltip_ability_batrider_bombs_interval"				"ИНТЕРВАЛ ПРИМЕНЕНИЯ:"	
  //Abilities
 	"DOTA_Tooltip_ability_"						"name"
 	"DOTA_Tooltip_ability__Description"			"description"
@@ -10615,136 +10750,136 @@
 
 //NEW BASE ITEMS
 
-	"DOTA_Tooltip_ability_item_base_str_1"					"STR 1"
+	"DOTA_Tooltip_ability_item_base_str_1"					"Belt of Strength"
 	"DOTA_Tooltip_ability_item_base_str_1_bonus_str"		"+$str"
 
-	"DOTA_Tooltip_ability_item_base_str_2"					"STR 2"
+	"DOTA_Tooltip_ability_item_base_str_2"					"Ogre Axe"
 	"DOTA_Tooltip_ability_item_base_str_2_bonus_str"		"+$str"
 
-	"DOTA_Tooltip_ability_item_base_str_3"					"STR 3"
+	"DOTA_Tooltip_ability_item_base_str_3"					"Reaver"
 	"DOTA_Tooltip_ability_item_base_str_3_bonus_str"		"+$str"
 
-	"DOTA_Tooltip_ability_item_base_str_4"					"STR 4"
+	"DOTA_Tooltip_ability_item_base_str_4"					"Strength stone"
 	"DOTA_Tooltip_ability_item_base_str_4_bonus_str"		"+$str"
 
-	"DOTA_Tooltip_ability_item_base_agi_1"					"AGI 1"
+	"DOTA_Tooltip_ability_item_base_agi_1"					"Band of Elvenskin"
 	"DOTA_Tooltip_ability_item_base_agi_1_bonus_agi"		"+$agi"
 
-	"DOTA_Tooltip_ability_item_base_agi_2"					"AGI 2"
+	"DOTA_Tooltip_ability_item_base_agi_2"					"Blade of Alacrity"
 	"DOTA_Tooltip_ability_item_base_agi_2_bonus_agi"		"+$agi"
 
-	"DOTA_Tooltip_ability_item_base_agi_3"					"AGI 3"
+	"DOTA_Tooltip_ability_item_base_agi_3"					"Eaglesong"
 	"DOTA_Tooltip_ability_item_base_agi_3_bonus_agi"		"+$agi"
 
-	"DOTA_Tooltip_ability_item_base_agi_4"					"AGI 4"
+	"DOTA_Tooltip_ability_item_base_agi_4"					"Agility stone"
 	"DOTA_Tooltip_ability_item_base_agi_4_bonus_agi"		"+$agi"
 
-	"DOTA_Tooltip_ability_item_base_int_1"					"INT 1"
+	"DOTA_Tooltip_ability_item_base_int_1"					"Robe of the Magi"
 	"DOTA_Tooltip_ability_item_base_int_1_bonus_int"		"+$int"
 
-	"DOTA_Tooltip_ability_item_base_int_2"					"INT 2"
+	"DOTA_Tooltip_ability_item_base_int_2"					"Staff of Wizardy"
 	"DOTA_Tooltip_ability_item_base_int_2_bonus_int"		"+$int"
 
-	"DOTA_Tooltip_ability_item_base_int_3"					"INT 3"
+	"DOTA_Tooltip_ability_item_base_int_3"					"Mystic Staff"
 	"DOTA_Tooltip_ability_item_base_int_3_bonus_int"		"+$int"
 
-	"DOTA_Tooltip_ability_item_base_int_4"					"INT 4"
+	"DOTA_Tooltip_ability_item_base_int_4"					"Intelegent stone"
 	"DOTA_Tooltip_ability_item_base_int_4_bonus_int"		"+$int"
 
-	"DOTA_Tooltip_ability_item_base_allstats_1"						"ALLSTATS 1"
+	"DOTA_Tooltip_ability_item_base_allstats_1"						"Circlet"
 	"DOTA_Tooltip_ability_item_base_allstats_1_bonus_allstats"		"+$all"
 
-	"DOTA_Tooltip_ability_item_base_allstats_2"						"ALLSTATS 2"
+	"DOTA_Tooltip_ability_item_base_allstats_2"						"Crown"
 	"DOTA_Tooltip_ability_item_base_allstats_2_bonus_allstats"		"+$all"
 
-	"DOTA_Tooltip_ability_item_base_allstats_3"						"ALLSTATS 3"
+	"DOTA_Tooltip_ability_item_base_allstats_3"						"Ultimate orb"
 	"DOTA_Tooltip_ability_item_base_allstats_3_bonus_allstats"		"+$all"
 
-	"DOTA_Tooltip_ability_item_base_allstats_4"						"ALLSTATS 4"
+	"DOTA_Tooltip_ability_item_base_allstats_4"						"Power orb"
 	"DOTA_Tooltip_ability_item_base_allstats_4_bonus_allstats"		"+$all"
 
-	"DOTA_Tooltip_ability_item_base_health_1"						"HEALTH 1"
+	"DOTA_Tooltip_ability_item_base_health_1"						"Endurance Orb"
 	"DOTA_Tooltip_ability_item_base_health_1_bonus_health"			"+$health"
 
-	"DOTA_Tooltip_ability_item_base_health_2"						"HEALTH 2"
+	"DOTA_Tooltip_ability_item_base_health_2"						"Health Orb"
 	"DOTA_Tooltip_ability_item_base_health_2_bonus_health"			"+$health"
 
-	"DOTA_Tooltip_ability_item_base_health_3"						"HEALTH 3"
+	"DOTA_Tooltip_ability_item_base_health_3"						"Survival Orb"
 	"DOTA_Tooltip_ability_item_base_health_3_bonus_health"			"+$health"
 
-	"DOTA_Tooltip_ability_item_base_health_4"						"HEALTH 4"
+	"DOTA_Tooltip_ability_item_base_health_4"						"Life Orb"
 	"DOTA_Tooltip_ability_item_base_health_4_bonus_health"			"+$health"
 
-	"DOTA_Tooltip_ability_item_base_damage_1"						"DAMAGE 1"
+	"DOTA_Tooltip_ability_item_base_damage_1"						"Blade of attack"
 	"DOTA_Tooltip_ability_item_base_damage_1_bonus_damage"			"+$damage"
 
-	"DOTA_Tooltip_ability_item_base_damage_2"						"DAMAGE 2"
+	"DOTA_Tooltip_ability_item_base_damage_2"						"Broadsword"
 	"DOTA_Tooltip_ability_item_base_damage_2_bonus_damage"			"+$damage"
 
-	"DOTA_Tooltip_ability_item_base_damage_3"						"DAMAGE 3"
+	"DOTA_Tooltip_ability_item_base_damage_3"						"Demon Edge"
 	"DOTA_Tooltip_ability_item_base_damage_3_bonus_damage"			"+$damage"
 
-	"DOTA_Tooltip_ability_item_base_damage_4"						"DAMAGE 4"
+	"DOTA_Tooltip_ability_item_base_damage_4"						"Sacred Relic"
 	"DOTA_Tooltip_ability_item_base_damage_4_bonus_damage"			"+$damage"
 
-	"DOTA_Tooltip_ability_item_base_attack_speed_1"						"ATTACK SPEED 1"
+	"DOTA_Tooltip_ability_item_base_attack_speed_1"						"Gloves of Haste"
 	"DOTA_Tooltip_ability_item_base_attack_speed_1_bonus_attack_speed"	"+$attack"
 
-	"DOTA_Tooltip_ability_item_base_attack_speed_2"						"ATTACK SPEED 2"
+	"DOTA_Tooltip_ability_item_base_attack_speed_2"						"Blitz Knuckles"
 	"DOTA_Tooltip_ability_item_base_attack_speed_2_bonus_attack_speed"	"+$attack"
 
-	"DOTA_Tooltip_ability_item_base_attack_speed_3"						"ATTACK SPEED 3"
+	"DOTA_Tooltip_ability_item_base_attack_speed_3"						"Hyperstone"
 	"DOTA_Tooltip_ability_item_base_attack_speed_3_bonus_attack_speed"	"+$attack"
 
-	"DOTA_Tooltip_ability_item_base_attack_speed_4"						"ATTACK SPEED 4"
+	"DOTA_Tooltip_ability_item_base_attack_speed_4"						"Moon Shard"
 	"DOTA_Tooltip_ability_item_base_attack_speed_4_bonus_attack_speed"	"+$attack"
 
-	"DOTA_Tooltip_ability_item_base_mana_1"						"MANA 1"
+	"DOTA_Tooltip_ability_item_base_mana_1"						"Apprentice mage Orb"
 	"DOTA_Tooltip_ability_item_base_mana_1_bonus_mana"			"+$mana"
 
-	"DOTA_Tooltip_ability_item_base_mana_2"						"MANA 2"
+	"DOTA_Tooltip_ability_item_base_mana_2"						"Mage Orb"
 	"DOTA_Tooltip_ability_item_base_mana_2_bonus_mana"			"+$mana"
 
-	"DOTA_Tooltip_ability_item_base_mana_3"						"MANA 3"
+	"DOTA_Tooltip_ability_item_base_mana_3"						"Grandmage Orb"
 	"DOTA_Tooltip_ability_item_base_mana_3_bonus_mana"			"+$mana"
 
-	"DOTA_Tooltip_ability_item_base_mana_4"						"MANA 4"
+	"DOTA_Tooltip_ability_item_base_mana_4"						"Archmage Orb"
 	"DOTA_Tooltip_ability_item_base_mana_4_bonus_mana"			"+$mana"
 
-	"DOTA_Tooltip_ability_item_base_health_regeneration_1"						"HEALTH REGENERATION 1"
+	"DOTA_Tooltip_ability_item_base_health_regeneration_1"						"Ring of Regen"
 	"DOTA_Tooltip_ability_item_base_health_regeneration_1_bonus_health_regeneration"			"+$hp_regen"
 
-	"DOTA_Tooltip_ability_item_base_health_regeneration_2"						"HEALTH REGENERATION 2"
+	"DOTA_Tooltip_ability_item_base_health_regeneration_2"						"Ring of Health"
 	"DOTA_Tooltip_ability_item_base_health_regeneration_2_bonus_health_regeneration"			"+$hp_regen"
 
-	"DOTA_Tooltip_ability_item_base_health_regeneration_3"						"HEALTH REGENERATION 3"
+	"DOTA_Tooltip_ability_item_base_health_regeneration_3"						"Golden ring"
 	"DOTA_Tooltip_ability_item_base_health_regeneration_3_bonus_health_regeneration"			"+$hp_regen"
 
-	"DOTA_Tooltip_ability_item_base_health_regeneration_4"						"HEALTH REGENERATION 4"
+	"DOTA_Tooltip_ability_item_base_health_regeneration_4"						"Blood ring"
 	"DOTA_Tooltip_ability_item_base_health_regeneration_4_bonus_health_regeneration"			"+$hp_regen"
 
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_1"						"MANA REGENERATION 1"
+	"DOTA_Tooltip_ability_item_base_mana_regeneration_1"						"Mana Ring"
 	"DOTA_Tooltip_ability_item_base_mana_regeneration_1_bonus_mana_regeneration"			"+$mana_regen"
 
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_2"						"MANA REGENERATION 2"
+	"DOTA_Tooltip_ability_item_base_mana_regeneration_2"						"Arcane Ring"
 	"DOTA_Tooltip_ability_item_base_mana_regeneration_2_bonus_mana_regeneration"			"+$mana_regen"
 
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_3"						"MANA REGENERATION 3"
+	"DOTA_Tooltip_ability_item_base_mana_regeneration_3"						"Magician Ring"
 	"DOTA_Tooltip_ability_item_base_mana_regeneration_3_bonus_mana_regeneration"			"+$mana_regen"
 
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_4"						"MANA REGENERATION 4"
+	"DOTA_Tooltip_ability_item_base_mana_regeneration_4"						"Sage Ring"
 	"DOTA_Tooltip_ability_item_base_mana_regeneration_4_bonus_mana_regeneration"			"+$mana_regen"
 
-	"DOTA_Tooltip_ability_item_base_armor_1"						"ARMOR 1"
+	"DOTA_Tooltip_ability_item_base_armor_1"						"Chainmail"
 	"DOTA_Tooltip_ability_item_base_armor_1_bonus_armor"			"+$armor"
 
-	"DOTA_Tooltip_ability_item_base_armor_2"						"ARMOR 2"
+	"DOTA_Tooltip_ability_item_base_armor_2"						"Lamellar Armor"
 	"DOTA_Tooltip_ability_item_base_armor_2_bonus_armor"			"+$armor"
 
-	"DOTA_Tooltip_ability_item_base_armor_3"						"ARMOR 3"
+	"DOTA_Tooltip_ability_item_base_armor_3"						"Laminar Armor"
 	"DOTA_Tooltip_ability_item_base_armor_3_bonus_armor"			"+$armor"
 
-	"DOTA_Tooltip_ability_item_base_armor_4"						"ARMOR 4"
+	"DOTA_Tooltip_ability_item_base_armor_4"						"Platemail"
 	"DOTA_Tooltip_ability_item_base_armor_4_bonus_armor"			"+$armor"
 	
 	"DOTA_Tooltip_ability_item_flask_hp_1"						"Lesser healing potion"

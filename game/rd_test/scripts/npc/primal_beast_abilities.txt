@@ -9,7 +9,7 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
-		"AbilityTextureName"				"primal_beast_pulverize"
+		"AbilityTextureName"				"primal_beast_onslaught"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
@@ -23,7 +23,7 @@
 			"wave_speed"					"900"
 			"wave_start_width"				"300"
 			"wave_end_width"				"300"
-			"stun_duration"					"0.05"
+			"stun_duration"					"0.5"
 			"wave_distance"					"1000"
 			"vision_radius"					"200"
 		}
@@ -41,7 +41,7 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
-		"AbilityTextureName"				"primal_beast_pulverize"
+		"AbilityTextureName"				"primal_beast_trample"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
@@ -62,7 +62,7 @@
 	{
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_primal_beast/armor"
-		"AbilityTextureName"				"primal_beast_pulverize"
+		"AbilityTextureName"				"primal_beast_uproar"
 
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"RequiredLevel"				"1"
