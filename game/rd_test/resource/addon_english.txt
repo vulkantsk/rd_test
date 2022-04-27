@@ -1768,6 +1768,12 @@
 		"DOTA_Tooltip_modifier_marci_eviscerate_custom_debuff_Description"						"Incoming damage increased by %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%."
 // Luna
 
+ 	"DOTA_Tooltip_ability_luna_moon_light"						"Moon light"
+	"DOTA_Tooltip_ability_luna_moon_light_Description"			"Give bonuses in night time."
+	"DOTA_Tooltip_ability_luna_moon_light_bonus_ms_pct"				"%MOVESPEED BONUS:"
+	"DOTA_Tooltip_ability_luna_moon_light_bonus_evasion"			"%BONUS EVASION:"
+	"DOTA_Tooltip_ability_luna_moon_light_bonus_magic_resist"		"%BONUS MAGIC RESISTANCE:"
+
  	"DOTA_Tooltip_ability_luna_lucent_beam_custom"						"Lucent Beam"
 	"DOTA_Tooltip_ability_luna_lucent_beam_custom_Description"			"Calls a beam of lunar energy down upon an enemy, dealing damage, briefly stunning them. For each enemy hit, temporarily grants a bonus agility to the hero."
 	"DOTA_Tooltip_ability_luna_lucent_beam_custom_stun_duration"			"STUN DURATION:"
@@ -1791,22 +1797,34 @@
 	"DOTA_Tooltip_modifier_luna_lunar_blessing_custom_aura_buff"				"Lunar blessing"
 	"DOTA_Tooltip_modifier_luna_lunar_blessing_custom_aura_buff_Description"	"Damage increased by %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%."
 
- 	"DOTA_Tooltip_ability_luna_eclipse_custom"						"Elcipse"
-	"DOTA_Tooltip_ability_luna_eclipse_custom_Description"			"Increases attack speed and removes penalty from <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Moon Glaives</span></span></span>."
-	"DOTA_Tooltip_ability_luna_eclipse_custom_as_bonus"			"ATTACKSPEED BONUS:"
-	"DOTA_Tooltip_ability_luna_eclipse_custom_duration"			"DURATION:"
-	"DOTA_Tooltip_modifier_luna_eclipse_custom"					"Elcipse"
-	"DOTA_Tooltip_modifier_luna_eclipse_custom_Description"		"Attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%, the bounces from Moon Glaives deal full damage."
+ 	"DOTA_Tooltip_ability_luna_lumina_bless"						"Lumina bless"
+	"DOTA_Tooltip_ability_luna_lumina_bless_Description"			"Increases attack speed and removes penalty from <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Moon Glaives</span></span></span>."
+	"DOTA_Tooltip_ability_luna_lumina_bless_as_bonus"			"ATTACKSPEED BONUS:"
+	"DOTA_Tooltip_ability_luna_lumina_bless_duration"			"DURATION:"
+	"DOTA_Tooltip_modifier_luna_lumina_bless"					"Elcipse"
+	"DOTA_Tooltip_modifier_luna_lumina_bless_Description"		"Attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%, the bounces from Moon Glaives deal full damage."
+
+	"DOTA_Tooltip_ability_luna_eclipse_custom"						"Elcipse"
+	"DOTA_Tooltip_ability_luna_eclipse_custom_Description"			"Summon beam from sky, removes the upper limit on agility stacks from Lucent beam."
+	"DOTA_Tooltip_ability_luna_eclipse_custom_duration"			"DURATION::"
+	"DOTA_Tooltip_ability_luna_eclipse_custom_beam_interval"	"BEAM INTERVAL:"
+	"DOTA_Tooltip_ability_luna_eclipse_custom_radius"			"RADIUS::"
+
 // Necrolyte
+	"npc_dota_hero_necrolyte"		"Sandro"
 
- 	"DOTA_Tooltip_ability_necrolyte_skeleton_summon"						"Summon Skeletons"
-	"DOTA_Tooltip_ability_necrolyte_skeleton_summon_Description"			"Summons several skeletons to help in combat."
-	"DOTA_Tooltip_ability_necrolyte_skeleton_summon_skeleton_duration"			"DURATION:"
-	"DOTA_Tooltip_ability_necrolyte_skeleton_summon_skeleton_count"			"SKELETON COUNT:"
-	"DOTA_Tooltip_ability_necrolyte_skeleton_summon_skeleton_hp"			"SKELETON HEALTH:"
-	"DOTA_Tooltip_ability_necrolyte_skeleton_summon_skeleton_damage"			"SKELETON DAMAGE:"
+ 	"DOTA_Tooltip_ability_necrolyte_death_rage"						"Death rage"
+	"DOTA_Tooltip_ability_necrolyte_death_rage_Description"			"Increase attack speed of ally target."
+	"DOTA_Tooltip_ability_necrolyte_death_rage_buff_duration"		"DURATION:"
+	"DOTA_Tooltip_ability_necrolyte_death_rage_bonus_as"			"BONUS AS:"
 
-	"necrolyte_skeleton_summon"			"Skeleton"
+ 	"DOTA_Tooltip_ability_necrolyte_summon_skeleton"						"Summon Skeletons"
+	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_Description"			"Summons several skeletons to help in combat."
+	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_skeleton_duration"			"DURATION:"
+	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_skeleton_count"			"SKELETON COUNT:"
+	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_skeleton_hp"			"SKELETON HEALTH:"
+	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_skeleton_damage"			"SKELETON DAMAGE:"
+
 
  	"DOTA_Tooltip_ability_necrolyte_plague_cloud"						"Plague Cloud"
 	"DOTA_Tooltip_ability_necrolyte_plague_cloud_Description"			"Creates a toxic cloud that deals damage over time to all enemies."
@@ -1814,20 +1832,19 @@
 	"DOTA_Tooltip_ability_necrolyte_plague_cloud_damage_per_sec"			"DAMAGE PER SECOND:"
 	"DOTA_Tooltip_ability_necrolyte_plague_cloud_duration"			"DURATION:"
 
- 	"DOTA_Tooltip_ability_necrolyte_breath_of_death"						"Breathe of Death"
-	"DOTA_Tooltip_ability_necrolyte_breath_of_death_Description"			"description"
-	"DOTA_Tooltip_ability_necrolyte_breath_of_death_radius"			"RADIUS:"
-	"DOTA_Tooltip_ability_necrolyte_breath_of_death_duration"			"DEBUFF DURATION:"
-	"DOTA_Tooltip_ability_necrolyte_breath_of_death_damage_per_sec"			"DAMAGE PER SECOND:"
-	"DOTA_Tooltip_ability_necrolyte_breath_of_death_live_duration"			"LIVE DURATION:"
+ 	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_mage"						"Summon Skeleton Mage"
+	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_mage_Description"			"Summons a strong Skeleton Mage. The skeleton mage has a magic skill and a splash attack."
+	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_mage_skeleton_duration"			"DURATION:"
+	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_mage_skeleton_hp"			"HEALTH:"
+	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_mage_skeleton_damage"			"DAMAGE:"
 
- 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon"						"Summon Skeleton Mage"
-	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_Description"			"Summons a strong Skeleton Mage. The skeleton mage has a magic skill and a splash attack."
-	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_skeleton_duration"			"DURATION:"
-	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_skeleton_hp"			"HEALTH:"
-	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_skeleton_damage"			"DAMAGE:"
+ 	"DOTA_Tooltip_ability_necrolyte_shadow_of_death"						"Shadow of death"
+	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_Description"			"description"
+	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_radius"			"RADIUS:"
+	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_duration"			"DEBUFF DURATION:"
+	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_damage_per_sec"			"DAMAGE PER SECOND:"
+	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_live_duration"			"LIVE DURATION:"
 
-	"necrolyte_skeleton_mage_summon"		"Skeleton Mage"
 
  	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_nether_blast"						"Nether Blast"
 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_nether_blast_Description"			"An exploding pulse deals damage to enemies and structures in the area."
@@ -1840,6 +1857,29 @@
 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_splash_radius"			"RADIUS:"
 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_splash_damage_pct"			"%SPLASH:"
 
+
+ 	"DOTA_Tooltip_ability_necrolyte_summon_death_knight"						"Summon Death knight"
+	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_Description"			"Summons powerful Death knight."
+	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_skeleton_duration"		"DURATION:"
+	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_skeleton_hp"			"HEALTH:"
+	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_skeleton_damage"		"DAMAGE:"
+
+ 	"DOTA_Tooltip_ability_necrolyte_death_knight_dark_sword"						"Dark sword"
+	"DOTA_Tooltip_ability_necrolyte_death_knight_dark_sword_Description"			"Every kill from dark sword summon fallen minion."
+	"DOTA_Tooltip_ability_necrolyte_death_knight_dark_sword_skeleton_duration"		"DURATION:"
+	"DOTA_Tooltip_ability_necrolyte_death_knight_dark_sword_skeleton_hp"			"HEALTH:"
+	"DOTA_Tooltip_ability_necrolyte_death_knight_dark_sword_skeleton_damage"		"DAMAGE:"
+
+ 	"DOTA_Tooltip_ability_necrolyte_death_knight_death_coil"						"Death coil"
+	"DOTA_Tooltip_ability_necrolyte_death_knight_death_coil_Description"			"Concetrage magic of death, damage enemies or heal allies."
+	"DOTA_Tooltip_ability_necrolyte_death_knight_death_coil_skeleton_target_damage"		"DAMAGE:"
+	"DOTA_Tooltip_ability_necrolyte_death_knight_death_coil_heal_amount"			"HEAL:"
+	"DOTA_Tooltip_ability_necrolyte_death_knight_death_coil_stun_duration"		"STUN DURATION:"
+
+	"npc_necrolyte_summon_skeleton"			"Skeleton"
+	"npc_necrolyte_summon_skeleton_mage"		"Skeleton Mage"
+	"npc_necrolyte_summon_death_knight"			"Death knight"
+	"npc_necrolyte_death_knight_minion"			"Fallen minion"
 //Primal beast
 
  	"DOTA_Tooltip_ability_primal_beast_wave"						"Wave"
@@ -1873,6 +1913,13 @@
 
 //Batrider
 
+ 	"DOTA_Tooltip_ability_batrider_sticky_masut"						"Sticky masut"
+	"DOTA_Tooltip_ability_batrider_sticky_masut_Description"			"Slow units in radius and decrease their magical resistance."
+	"DOTA_Tooltip_ability_batrider_sticky_masut_debuff_duration"			"DURATION:"
+	"DOTA_Tooltip_ability_batrider_sticky_masut_fire_radius"			"RADIUS:"
+	"DOTA_Tooltip_ability_batrider_sticky_masut_proj_decrease_resist"			"%DECREASE MAGIC RESIST:"
+	"DOTA_Tooltip_ability_batrider_sticky_masut_proj_decrease_ms"			"%MS SLOW:"
+
  	"DOTA_Tooltip_ability_batrider_fireball"						"Fireball"
 	"DOTA_Tooltip_ability_batrider_fireball_Description"			"The hero creates a stream of liquid flame that lasts for some time and deals damage to enemy creatures every second."
 	"DOTA_Tooltip_ability_batrider_fireball_damage_per_sec"			"DAMAGE PER SECOND:"
@@ -1885,20 +1932,38 @@
 	"DOTA_Tooltip_ability_batrider_bomb_damage"			"DAMAGE:"
 	"DOTA_Tooltip_ability_batrider_bomb_stun_duration"			"STUN DURATION:"
 
- 	"DOTA_Tooltip_ability_batrider_spell_amp_passive"						"Sticky napalm"
-	"DOTA_Tooltip_ability_batrider_spell_amp_passive_Description"			"Hitting enemies with abilities temporarily increases the hero's spell amplification."
-	"DOTA_Tooltip_ability_batrider_spell_amp_passive_stack_duration"		"STACK DURATION:"
-	"DOTA_Tooltip_ability_batrider_spell_amp_passive_max_stacks"			"MAX STACKS:"
-	"DOTA_Tooltip_ability_batrider_spell_amp_passive_spell_amp_per_stack"	"SPELL AMPLIFICATION PER STACK:"
-	"DOTA_Tooltip_modifier_batrider_spell_amp_passive"						"Sticky Napalm"
-	"DOTA_Tooltip_modifier_batrider_spell_amp_passive_Description"			"Spell amplification increased by %dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%%."
+ 	"DOTA_Tooltip_ability_batrider_inner_bensol"						"Inner bensol"
+	"DOTA_Tooltip_ability_batrider_inner_bensol_Description"			"Hitting enemies with abilities add bonus magical damage.."
+	"DOTA_Tooltip_ability_batrider_inner_bensol_stack_duration"		"STACK DURATION:"
+	"DOTA_Tooltip_ability_batrider_inner_bensol_max_stacks"			"MAX STACKS:"
+	"DOTA_Tooltip_ability_batrider_inner_bensol_damage_per_stack"	"DAMAGE PER STACK:"
+	"DOTA_Tooltip_modifier_batrider_inner_bensol_debuff"						"Inner bensol"
+	"DOTA_Tooltip_modifier_batrider_inner_bensol_debuff_Description"			"Nope"
 
- 	"DOTA_Tooltip_ability_batrider_bombs"					"Bombarding"
-	"DOTA_Tooltip_ability_batrider_bombs_Description"		"For %duration% seconds, the hero continuously casts the ability <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Flamebreak</span></span></span> on a random target."
-	"DOTA_Tooltip_ability_batrider_bombs_radius"			"RADIUS:"
-	"DOTA_Tooltip_ability_batrider_bombs_bombs_count"		"BOMB PER EACH CAST:"
-	"DOTA_Tooltip_ability_batrider_bombs_duration"			"DURATION:"
-	"DOTA_Tooltip_ability_batrider_bombs_interval"			"CAST INTERVAL:"
+ 	"DOTA_Tooltip_ability_batrider_bombardier"					"Bombarding"
+	"DOTA_Tooltip_ability_batrider_bombardier_Description"		"For %duration% seconds, the hero continuously casts the ability <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Flamebreak</span></span></span> on a random target."
+	"DOTA_Tooltip_ability_batrider_bombardier_radius"			"RADIUS:"
+	"DOTA_Tooltip_ability_batrider_bombardier_bombs_count"		"BOMBS PER INTERVAL:"
+	"DOTA_Tooltip_ability_batrider_bombardier_duration"			"DURATION:"
+	"DOTA_Tooltip_ability_batrider_bombardier_interval"			"INTERVAL:"
+
+ 	"DOTA_Tooltip_ability_batrider_combusition"					"Bombarding"
+	"DOTA_Tooltip_ability_batrider_combusition_Description"		"For %duration% seconds, the hero continuously casts the ability <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Flamebreak</span></span></span> on a random target."
+	"DOTA_Tooltip_ability_batrider_combusition_duration"			"DURATION:"
+	"DOTA_Tooltip_ability_batrider_combusition_burn_damage"			"DAMAGE PER SECOND:"
+	"DOTA_Tooltip_ability_batrider_combusition_decrease_regen"		"%DECREASE REGENERATION:"
+//Kunkka
+
+ 	"DOTA_Tooltip_ability_kunkka_hard_blow"						"Hard blow"
+	"DOTA_Tooltip_ability_kunkka_hard_blow_Description"			"Increase damage for next attack"
+	"DOTA_Tooltip_ability_kunkka_hard_blow_buff_duration"			"BUFF DURATION:"
+	"DOTA_Tooltip_ability_kunkka_hard_blow_bonus_damage_pct"		"%BONUS DAMAGE:"
+
+ 	"DOTA_Tooltip_ability_kunkka_seasickness_immunity"						"Seasickness immunity"
+	"DOTA_Tooltip_ability_kunkka_seasickness_immunity_Description"			"Increases the capacity of the body."
+	"DOTA_Tooltip_ability_kunkka_seasickness_immunity_bonus_base_damage"		"BASE DAMAGE BONUS:"
+	"DOTA_Tooltip_ability_kunkka_seasickness_immunity_bonus_armor"				"BONUS ARMOR:"
+	"DOTA_Tooltip_ability_kunkka_seasickness_immunity_bonus_status_resist"		"BONUS STATUS RESISTANCE:"
 
 //Abilities
 

@@ -1,27 +1,248 @@
-LinkLuaModifier("modifier_luna_eclipse_custom", "abilities/heroes/hero_luna/eclipse_custom", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier( "modifier_luna_eclipse_custom", "abilities/heroes/hero_luna/eclipse_custom", LUA_MODIFIER_MOTION_NONE )
 
-luna_eclipse_custom = class({})
+luna_eclipse_custom = {}
+
+function luna_eclipse_custom:GetAOERadius()
+	if self:GetCaster():HasScepter() then
+		return self:GetSpecialValueFor( "radius" )
+	end
+	return 0
+end
+
+function luna_eclipse_custom:GetBehavior()
+	if self:GetCaster():HasScepter() then
+		return DOTA_ABILITY_BEHAVIOR_UNIT_TARGET + DOTA_ABILITY_BEHAVIOR_OPTIONAL_POINT + DOTA_ABILITY_BEHAVIOR_AOE
+	end
+
+	return DOTA_ABILITY_BEHAVIOR_NO_TARGET
+end
+
+function luna_eclipse_custom:GetCastRange( vLocation, hTarget )
+	if self:GetCaster():HasScepter() then
+		return self:GetSpecialValueFor( "cast_range_tooltip_scepter" )
+	end
+	return self:GetSpecialValueFor( "radius" )
+end
 
 function luna_eclipse_custom:OnSpellStart()
-	if not IsServer() then return end
 	local caster = self:GetCaster()
-	caster:AddNewModifier(caster, self, "modifier_luna_eclipse_custom", {duration = self:GetSpecialValueFor("duration")})
+	local target = self:GetCursorTarget()
+	local point = self:GetCursorPosition()
+
+	local damage = 0
+	if self.damage then
+		damage = self.damage
+	else
+		local ability = caster:FindAbilityByName( "luna_eclipse_custom" )
+		if ability and ability:GetLevel()>0 then
+			damage = ability:GetLevelSpecialValueFor( "beam_damage", ability:GetLevel()-1 )
+		end
+	end
+
+	local unit = caster
+	if caster:HasScepter() then
+		if target then
+			unit = target
+		else
+			unit = nil
+		end
+	end
+
+	if unit then
+		unit:AddNewModifier(
+			caster,
+			self,
+			"modifier_luna_eclipse_custom",
+			{ damage = damage }
+		)
+	else
+		caster:AddNewModifier(
+			caster,
+			self,
+			"modifier_luna_eclipse_custom",
+			{
+				duration = self:GetSpecialValueFor("duration"),
+				damage = damage,
+				point = 1,
+				pointx = point.x,
+				pointy = point.y,
+				pointz = point.z,
+			}
+		)
+	end
+
+	GameRules:BeginTemporaryNight( 10 )
 end
 
-modifier_luna_eclipse_custom = class({
-	IsHidden = function() return false end,
-	IsPurgable = function() return false end,
-	DeclareFunctions = function() return {
-		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT
-	} end,
-	GetModifierAttackSpeedBonus_Constant = function(self) return self.as_bonus end
-})
-
-function modifier_luna_eclipse_custom:OnCreated()
-	self.ability = self:GetAbility()
-	self.as_bonus = self.ability:GetSpecialValueFor("as_bonus")
+function luna_eclipse_custom:OnStolen( hSourceAbility )
+	self.damage = 0
+	local ability = hSourceAbility:GetCaster():FindAbilityByName( "ability_lucent_beam" )
+	if ability and ability:GetLevel()>0 then
+		self.damage = ability:GetLevelSpecialValueFor( "beam_damage", ability:GetLevel()-1 )
+	end
 end
 
-function modifier_luna_eclipse_custom:OnRefresh()
-	self:OnCreated()
+modifier_luna_eclipse_custom = {}
+
+function modifier_luna_eclipse_custom:IsHidden()
+	return false
+end
+
+function modifier_luna_eclipse_custom:IsDebuff()
+	return false
+end
+
+function modifier_luna_eclipse_custom:IsPurgable()
+	return false
+end
+
+function modifier_luna_eclipse_custom:GetAttributes()
+	return MODIFIER_ATTRIBUTE_MULTIPLE
+end
+
+function modifier_luna_eclipse_custom:OnCreated( kv )
+	self.duration = self:GetAbility():GetSpecialValueFor( "duration" )
+	self.beam_interval = self:GetAbility():GetSpecialValueFor( "beam_interval" )
+	self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
+	
+	self.beam_ability = self:GetCaster():FindAbilityByName("luna_lucent_beam_custom")
+
+
+	self.parent = self:GetParent()
+	self.caster = self:GetCaster()
+
+	if IsServer() then
+		if kv.point==1 then
+			self.point = Vector( kv.pointx, kv.pointy, kv.pointz )
+
+			AddFOWViewer( self:GetCaster():GetTeamNumber(), self.point, self.radius + 75, self.duration, true)
+		end
+		self.counter = 0
+		self.hits = {}
+
+
+		self.damageTable = {
+			attacker = self.caster,
+			damage = kv.damage,
+			damage_type = self:GetAbility():GetAbilityDamageType(),
+			ability = self:GetAbility()
+		}
+
+		self:StartIntervalThink( self.beam_interval )
+		self:OnIntervalThink()
+
+		local effect_cast = nil
+		if self.point then
+			effect_cast = ParticleManager:CreateParticle(
+				"particles/units/heroes/hero_luna/luna_eclipse.vpcf",
+				PATTACH_WORLDORIGIN,
+				nil
+			)
+			ParticleManager:SetParticleControl( effect_cast, 0, self.point )
+
+			EmitSoundOnLocationWithCaster( self.point, "Hero_Luna.Eclipse.Cast", self:GetParent() )
+		else
+			effect_cast = ParticleManager:CreateParticle(
+				"particles/units/heroes/hero_luna/luna_eclipse.vpcf",
+				PATTACH_ABSORIGIN_FOLLOW,
+				self:GetParent()
+			)
+
+			EmitSoundOn( "Hero_Luna.Eclipse.Cast", self:GetParent() )
+		end
+
+		ParticleManager:SetParticleControl( effect_cast, 1, Vector( self.radius, 0, 0 ) )
+
+		self:AddParticle(
+			effect_cast,
+			false,
+			false,
+			-1,
+			false,
+			false
+		)
+	end
+end
+
+function modifier_luna_eclipse_custom:OnIntervalThink()
+	local point = self.point or self.parent:GetOrigin()
+	local units = FindUnitsInRadius(
+		self.caster:GetTeamNumber(),
+		point,
+		nil,
+		self.radius,
+		DOTA_UNIT_TARGET_TEAM_ENEMY,
+		DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+		DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE + DOTA_UNIT_TARGET_FLAG_NO_INVIS,
+		0,
+		false
+	)
+
+	local unit = nil
+	if #units>0 then
+		for i=1,#units do
+			unit = units[i]
+			self.damageTable.victim = unit
+			ApplyDamage(self.damageTable)
+			self.beam_ability:BeamStackProc()
+			break
+		
+			unit = nil
+		end
+	end
+
+	if not unit then
+		local vector = point + RandomVector( RandomInt( 0, self.radius ) )
+		local effect_cast = ParticleManager:CreateParticle(
+			"particles/units/heroes/hero_luna/luna_lucent_beam.vpcf",
+			PATTACH_WORLDORIGIN,
+			nil
+		)
+		ParticleManager:SetParticleControl( effect_cast, 0, vector )
+		ParticleManager:SetParticleControl( effect_cast, 1, vector )
+		ParticleManager:SetParticleControl( effect_cast, 5, vector )
+		ParticleManager:SetParticleControl( effect_cast, 6, vector )
+		ParticleManager:ReleaseParticleIndex( effect_cast )
+
+		EmitSoundOnLocationWithCaster( vector, "Hero_Luna.Eclipse.NoTarget", self.caster )
+
+		return
+	end
+
+	local effect_cast = ParticleManager:CreateParticle(
+		"particles/units/heroes/hero_luna/luna_lucent_beam.vpcf",
+		PATTACH_ABSORIGIN_FOLLOW,
+		unit
+	)
+	ParticleManager:SetParticleControl( effect_cast, 0, unit:GetOrigin() )
+	ParticleManager:SetParticleControlEnt(
+		effect_cast,
+		1,
+		unit,
+		PATTACH_ABSORIGIN_FOLLOW,
+		"attach_hitloc",
+		Vector(),
+		true
+	)
+	ParticleManager:SetParticleControlEnt(
+		effect_cast,
+		5,
+		unit,
+		PATTACH_POINT_FOLLOW,
+		"attach_hitloc",
+		Vector(),
+		true
+	)
+	ParticleManager:SetParticleControlEnt(
+		effect_cast,
+		6,
+		unit,
+		PATTACH_POINT_FOLLOW,
+		"attach_hitloc",
+		Vector(),
+		true
+	)
+	ParticleManager:ReleaseParticleIndex( effect_cast )
+
+	EmitSoundOn( "Hero_Luna.Eclipse.Target", unit )
 end

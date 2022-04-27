@@ -15,7 +15,6 @@ function luna_lucent_beam_custom:OnSpellStart()
 	if not IsServer() then return end
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
-	local max_stacks = self:GetSpecialValueFor("max_stacks")
 	
 	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_luna/luna_lucent_beam.vpcf", PATTACH_CUSTOMORIGIN, target)
 	ParticleManager:SetParticleControl(particle, 0, target:GetOrigin())
@@ -31,15 +30,21 @@ function luna_lucent_beam_custom:OnSpellStart()
 		damage_type = self:GetAbilityDamageType(),
 		ability = self
 	})
-	local modifier = caster:AddNewModifier(caster, self, "modifier_luna_lucent_beam_custom_buff", {duration = self:GetSpecialValueFor("buff_duration")})
-	local modifier_stacks = modifier:GetStackCount()
-	if modifier_stacks < max_stacks then
-		modifier:IncrementStackCount()
-	end
+	self:BeamStackProc()
 	EmitSoundOn("Hero_Luna.LucentBeam.Cast", self:GetCaster())
 	EmitSoundOn("Hero_Luna.LucentBeam.Target", target)
 end
 
+function luna_lucent_beam_custom:BeamStackProc()
+	local max_stacks = self:GetSpecialValueFor("max_stacks")
+	
+	local modifier = caster:AddNewModifier(caster, self, "modifier_luna_lucent_beam_custom_buff", {duration = self:GetSpecialValueFor("buff_duration")})
+	if self:GetCaster():HasModifier("modifier_luna_eclipse_custom") or modifier_stacks < max_stacks then
+		modifier:IncrementStackCount()
+	else
+		modifier:SetStackCount(max_stacks)
+	end
+end
 modifier_luna_lucent_beam_custom_buff = class({
 	IsHidden = function() return false end,
 	IsPurgable = function() return false end,

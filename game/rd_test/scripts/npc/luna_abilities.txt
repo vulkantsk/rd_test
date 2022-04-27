@@ -1,5 +1,29 @@
 "DOTAAbilities"
 {
+	"luna_moon_light"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/hero_luna/moon_light"
+		"AbilityTextureName"			"luna_moon_glaive"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_ms_pct"						"20"
+			"bonus_evasion"						"20"
+			"bonus_magic_resist"				"20"
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+
 	"luna_lucent_beam_custom"
 	{
 		// General
@@ -102,12 +126,12 @@
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
-	"luna_eclipse_custom"
+	"luna_lumina_bless"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/heroes/hero_luna/eclipse_custom"
+		"ScriptFile"					"abilities/heroes/hero_luna/lumina_bless"
 		"AbilityTextureName"			"luna_eclipse"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
@@ -139,4 +163,34 @@
 			"duration"						"15"
 		}
 	}
+	"luna_eclipse_custom"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/hero_luna/eclipse_custom"
+		"AbilityTextureName"			"luna_eclipse"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.6"
+		"AbilityCooldown"				"140"
+		"AbilityManaCost"				"150 200 250"
+		"AbilityDuration"				"2.4 4.2 6.0"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		"AbilitySpecial"
+		{
+			"duration"					"5 7 9"
+			"beam_interval"				"0.5"
+			"radius"					"1000"
+		}
+	}	
 }

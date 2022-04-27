@@ -8,7 +8,7 @@ function necrolyte_death_rage:OnSpellStart()
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
 
-	target:AddNewModifier(caster, self, modifier_necrolyte_death_rage, {duration = buff_duration})
+	target:AddNewModifier(caster, self, "modifier_necrolyte_death_rage", {duration = buff_duration})
 end
 
 
@@ -20,8 +20,8 @@ modifier_necrolyte_death_rage = class({
 	} end
 })
 
-function modifier_necrolyte_death_rage:GetModifierAttackSpeedBonus_Constant()
-	return self:GetAbility():GetSpecialValueFor("bonus_as")
+function modifier_necrolyte_death_rage:GetEffectName()
+	return ""
 end
 
 function modifier_necrolyte_death_rage:GetModifierAttackSpeedBonus_Constant()

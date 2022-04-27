@@ -1,6 +1,6 @@
 "DOTAAbilities"
 {
-	"item_flask_hp_1"
+	"item_potion_hp_1"
 	{
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/item_potion"

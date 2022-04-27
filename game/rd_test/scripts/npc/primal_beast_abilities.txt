@@ -1,5 +1,28 @@
 "DOTAAbilities"
 {
+	"primal_beast_savage_blow"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_primal_beast/savage_blow"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"				"primal_beast_pulverize"
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
+
+		"AbilityCooldown"					"5"
+
+		"AbilityValues"
+		{
+			"damage"				"40"
+			"damage_str"			"75"
+			"radius"				"350"
+		}
+	}
 	"primal_beast_wave"
 	{
 		"BaseClass"							"ability_lua"
@@ -9,7 +32,7 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
-		"AbilityTextureName"				"primal_beast_onslaught"
+		"AbilityTextureName"				"primal_beast_pulverize"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
@@ -23,7 +46,7 @@
 			"wave_speed"					"900"
 			"wave_start_width"				"300"
 			"wave_end_width"				"300"
-			"stun_duration"					"0.5"
+			"stun_duration"					"0.05"
 			"wave_distance"					"1000"
 			"vision_radius"					"200"
 		}
@@ -41,7 +64,7 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
-		"AbilityTextureName"				"primal_beast_trample"
+		"AbilityTextureName"				"primal_beast_pulverize"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
@@ -62,7 +85,7 @@
 	{
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_primal_beast/armor"
-		"AbilityTextureName"				"primal_beast_uproar"
+		"AbilityTextureName"				"primal_beast_pulverize"
 
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"RequiredLevel"				"1"
@@ -102,4 +125,25 @@
 			"dmg_red_pct_per_stack" 		"5"
 		}
 	}
+	"primal_beast_primal_strength"
+	{
+		"BaseClass"							"ability_lua"
+		"ScriptFile"						"abilities/heroes/hero_primal_beast/primal_strength"
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"				"primal_beast_pulverize"
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"7"
+
+		"AbilityCooldown"			"100"
+
+		"AbilityValues"
+		{
+			"buff_duration"			"30"
+			"bonus_str"				"100"
+			"bonus_hp_regen"		"300"
+		}
+	}
+
 }

@@ -1,5 +1,6 @@
 #base "npc_talents_custom.txt"
 #base "luna_abilities.txt"
+#base "kunkka_abilities.txt"
 #base "batrider_abilities.txt"
 #base "primal_beast_abilities.txt"
 #base "necrolyte_abilities.txt"

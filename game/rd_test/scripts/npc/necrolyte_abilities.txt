@@ -22,10 +22,10 @@
 			"bonus_as"					"50"
 		}
 	}
-	"necrolyte_skeleton_summon"
+	"necrolyte_summon_skeleton"
 	{
 		"BaseClass"							"ability_lua"
-		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_summon"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/summon_skeleton"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName"				"necrolyte_death_pulse"
 		"RequiredLevel"				"1"
@@ -70,10 +70,10 @@
 			"damage_interval"				"0.5"
 		}
 	}
-	"necrolyte_skeleton_mage_summon"
+	"necrolyte_summon_skeleton_mage"
 	{
 		"BaseClass"							"ability_lua"
-		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_mage_summon"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/summon_skeleton_mage"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName"				"necrolyte_sadist"
 		"RequiredLevel"				"8"
@@ -151,7 +151,6 @@
 		"AbilityUnitTargetFlags"			"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
 		"AbilitySound"						"Hero_Pugna.NetherBlast"
-		"AbilityTextureName"				"pugna_nether_blast"
 
 		"AbilityCooldown"					"10"
 		"AbilityManaCost"					"100"
@@ -173,7 +172,6 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_PHYSICAL"
-		"AbilityTextureName"				"black_dragon_splash_attack"
 
 		"AbilityValues"
 		{
@@ -215,11 +213,11 @@
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
-	"ability_mist_coil"
+	"necrolyte_death_knight_death_coil"
 	{
 		"ScriptFile"					"heroes/abaddon/mist_coil"
 		"BaseClass"						"ability_lua"
-		"AbilityTextureName"			"abaddon_death_coil"
+		"AbilityTextureName"			"heroes/hero_necrolyte/death_knight_death_coil"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"

@@ -1,9 +1,9 @@
 "DOTAAbilities"
 {
-	"batrider_fireball"
+	"batrider_sticky_masut"
 	{
 		"BaseClass"					"ability_lua"
-		"ScriptFile"				"abilities/heroes/hero_batrider/fireball"
+		"ScriptFile"				"abilities/heroes/hero_batrider/sticky_masut"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -20,6 +20,22 @@
 
 		"AbilityValues"
 		{
+			"debuff_duration"		"1000"
+			"radius"				"200"
+			"decrease_resist"		"0.5"
+			"decrease_ms"			"20 40 60 80"
+		}
+	}
+	"batrider_fireball"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/heroes/hero_batrider/fireball"
+		"ScriptFile"				"abilities/heroes/hero_batrider/sticky_masut"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityValues"
+		{
 			"proj_speed"			"1000"
 			"fire_width"			"200"
 			"damage_interval"		"0.5"
@@ -31,7 +47,7 @@
 			"proj_damage"			"100"
 			"particle_distance_multiplier"	"1.25" //на неё множится fire_width чтобы нормально подгонять размер партикля
 		}
-	}
+	}						
 	"batrider_bomb"
 	{
 		"BaseClass"					"ability_lua"
@@ -59,7 +75,7 @@
 			"vision_radius"			"100"
 		}
 	}
-	"batrider_spell_amp_passive"
+	"batrider_inner_bensol"
 	{
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"abilities/heroes/hero_batrider/spell_amp_passive"
@@ -68,19 +84,19 @@
 
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
-		"MaxLevel"					"7"
+		"MaxLevel"					"9"
 
 		"AbilityValues"
 		{
-			"stack_duration"		"5"
+			"debuff_duration"		"5"
 			"max_stacks"			"5"
-			"spell_amp_per_stack"	"5 10 15 20"
+			"damage_per_stack"		"4 6 8 10 12 16 20 25 30"
 		}
 	}
-	"batrider_bombs"
+	"batrider_bombardier"
 	{
 		"BaseClass"					"ability_lua"
-		"ScriptFile"				"abilities/heroes/hero_batrider/bombs"
+		"ScriptFile"				"abilities/heroes/hero_batrider/bombardier"
 		"AbilityTextureName"				"batrider_flamebreak"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -90,7 +106,7 @@
 
 		"RequiredLevel"				"8"
 		"LevelsBetweenUpgrades"		"8"
-		"MaxLevel"					"3"
+		"MaxLevel"					"5"
 
 		"AbilityCastRange"			"1000"
 		"AbilityManaCost"			"150 225 300"
@@ -104,4 +120,54 @@
 			"interval"				"0.5"
 		}
 	}
+	"batrider_combusition"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/hero_batrider/combusition"
+		"AbilityTextureName"			"ogre_magi_ignite"
+		"FightRecapLevel"				"1"
+		"RequiredLevel"				"10"
+		"LevelsBetweenUpgrades"		"5"
+		"MaxLevel"					"3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.45"
+		"AbilityCooldown"				"90"
+		"AbilityManaCost"				"90"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"5 7 9"
+			}
+
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burn_damage"		"1000 1250 1500"
+			}		
+
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"		"1000"
+			}	
+
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"decrease_regen"	"50"
+			}
+		}
+	}	
 }

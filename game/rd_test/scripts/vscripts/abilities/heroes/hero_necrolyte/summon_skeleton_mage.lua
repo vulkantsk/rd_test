@@ -1,6 +1,6 @@
-necrolyte_summon_death_knight = class({})
+necrolyte_summon_skeleton_mage = class({})
 
-function necrolyte_summon_death_knight:OnSpellStart()
+function necrolyte_summon_skeleton_mage:OnSpellStart()
 	if not IsServer() then return end
 	local count = self:GetSpecialValueFor("skeleton_count")
 	local duration = self:GetSpecialValueFor("skeleton_duration")
@@ -13,7 +13,7 @@ function necrolyte_summon_death_knight:OnSpellStart()
 	local caster_fw = caster:GetForwardVector()
 	local point = caster:GetAbsOrigin() + caster_fw*100 + RandomVector(RandomInt(-50, 50))
 
-	local unit = CreateUnitByName("necrolyte_skeleton_mage_summon", point, true, caster, caster, caster:GetTeamNumber())
+	local unit = CreateUnitByName("npc_necrolyte_summon_skeleton_mage", point, true, caster, caster, caster:GetTeamNumber())
 	local pfx = ParticleManager:CreateParticle("particles/neutral_fx/skeleton_spawn.vpcf", PATTACH_WORLDORIGIN, nil)
 	ParticleManager:SetParticleControl(pfx, 0, point)
 	ParticleManager:ReleaseParticleIndex(pfx)
@@ -27,6 +27,11 @@ function necrolyte_summon_death_knight:OnSpellStart()
 	unit:SetBaseDamageMax(damage)
 	unit:SetPhysicalArmorBaseValue(armor)
 	unit:SetBaseAttackTime(BAT)
+
+	for i=1,unit:GetAbilityCount() do
+		unit:GetAbilityByIndex(i-1):SetLevel(self:GetLevel())
+	end
+	
 	local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_dark_willow/dark_willow_bramble_precast.vpcf", PATTACH_ABSORIGIN_FOLLOW, unit)
 	ParticleManager:SetParticleControl(pfx, 0, unit:GetAbsOrigin())
 	ParticleManager:SetParticleControl(pfx, 3, unit:GetAbsOrigin())

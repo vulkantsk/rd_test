@@ -1,6 +1,6 @@
-necrolyte_skeleton_summon = class({})
+necrolyte_summon_skeleton = class({})
 
-function necrolyte_skeleton_summon:OnSpellStart()
+function necrolyte_summon_skeleton:OnSpellStart()
 	if not IsServer() then return end
 	local count = self:GetSpecialValueFor("skeleton_count")
 	local duration = self:GetSpecialValueFor("skeleton_duration")
@@ -15,7 +15,7 @@ function necrolyte_skeleton_summon:OnSpellStart()
 
 	for i = 1, count do
 		local position = point + caster_fw*100 + RandomVector(RandomInt(-50, 50))
-		local unit = CreateUnitByName("necrolyte_skeleton_summon", position, true, caster, caster, caster:GetTeamNumber())
+		local unit = CreateUnitByName("npc_necrolyte_summon_skeleton", position, true, caster, caster, caster:GetTeamNumber())
 		local pfx = ParticleManager:CreateParticle("particles/neutral_fx/skeleton_spawn.vpcf", PATTACH_WORLDORIGIN, nil)
 		ParticleManager:SetParticleControl(pfx, 0, position)
 		ParticleManager:ReleaseParticleIndex(pfx)

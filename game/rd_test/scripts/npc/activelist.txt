@@ -10,5 +10,6 @@
 	"npc_dota_hero_luna"			"1"
 	"npc_dota_hero_primal_beast"			"1"
 	"npc_dota_hero_batrider"		"1"
+	"npc_dota_hero_kunkka"		"1"
 				
 }
