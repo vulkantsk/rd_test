@@ -13,7 +13,7 @@ end
 
 
 modifier_necrolyte_death_rage = class({
-	IsHidden = function() return true end,
+	IsHidden = function() return false end,
 	IsPurgable = function() return false end,
 	DeclareFunctions = function() return {
 		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT
@@ -21,7 +21,7 @@ modifier_necrolyte_death_rage = class({
 })
 
 function modifier_necrolyte_death_rage:GetEffectName()
-	return ""
+	return "particles/items2_fx/mask_of_madness.vpcf"
 end
 
 function modifier_necrolyte_death_rage:GetModifierAttackSpeedBonus_Constant()

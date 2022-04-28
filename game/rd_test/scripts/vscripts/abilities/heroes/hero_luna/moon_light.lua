@@ -14,7 +14,7 @@ modifier_luna_moon_light = class({
 })
 
 function modifier_luna_moon_light:OnCreated()
-	if not IsServer() then return end
+	if IsServer() then return end
 	self.ability = self:GetAbility()
 	self.bonus_ms_pct = self.ability:GetSpecialValueFor("bonus_ms_pct")
 	self.bonus_evasion = self.ability:GetSpecialValueFor("bonus_evasion")

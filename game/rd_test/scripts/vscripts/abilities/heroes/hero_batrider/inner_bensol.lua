@@ -35,7 +35,7 @@ function modifier_batrider_inner_bensol:OnTakeDamage(keys)
 	
 	if inflictor and inflictor ~= ability and attacker == caster and target and not (target:IsMagicImmune() or caster:PassivesDisabled() or target:IsBuilding()) then
 		target:AddNewModifier(caster, ability, "modifier_batrider_inner_bensol_debuff", {duration = debuff_duration})
-		local stack_count = target:GetModifierStackCount(modifier_batrider_inner_bensol_debuff, caster)
+		local stack_count = target:GetModifierStackCount("modifier_batrider_inner_bensol_debuff", caster)
 	
 		if stack_count < 1 then
 			mod:IncrementStackCount()

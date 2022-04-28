@@ -18,16 +18,15 @@ function batrider_sticky_masut:OnSpellStart(target)
 
 	local caster = self:GetCaster()
 	local radius = self:GetSpecialValueFor("radius")
-	local enemies_in_radius = FindUnitsInRadius(caster:GetTeamNumber(), vLocation, nil, radius, self:GetAbilityTargetTeam(), self:GetAbilityTargetType(), self:GetAbilityTargetFlags(), 0, false)
+	local enemies_in_radius = FindUnitsInRadius(caster:GetTeamNumber(), point, nil, radius, self:GetAbilityTargetTeam(), self:GetAbilityTargetType(), self:GetAbilityTargetFlags(), 0, false)
 	for _, enemy in pairs(enemies_in_radius) do
 		enemy:AddNewModifier(caster, self, "modifier_batrider_sticky_masut", {duration = self:GetSpecialValueFor("debuff_duration")})
 	end
 	
-	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_batrider/batrider_flamebreak_explosion.vpcf", PATTACH_WORLDORIGIN, nil)
+	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_batrider/batrider_stickynapalm_impact.vpcf", PATTACH_WORLDORIGIN, nil)
 	ParticleManager:SetParticleControl(particle, 0, vLocation);
-    ParticleManager:SetParticleControl(particle, 3, vLocation);
-    ParticleManager:SetParticleControl(particle, 5, vLocation);
-	ParticleManager:ReleaseParticleIndex(particle)
+    ParticleManager:SetParticleControl(particle, 1, Vector(radius,radius,radius));
+ 	ParticleManager:ReleaseParticleIndex(particle)
 
 	AddFOWViewer(caster:GetTeam(), point, radius, reveal_duration, true)
 	EmitSoundOn("Hero_Batrider.Flamebreak", caster)
@@ -50,6 +49,10 @@ end
 
 function modifier_batrider_sticky_masut:OnRefresh()
 	self:OnCreated()
+end
+
+function modifier_batrider_sticky_masut:GetEffectName()
+	return "particles/units/heroes/hero_batrider/batrider_stickynapalm_debuff.vpcf"
 end
 
 function modifier_batrider_sticky_masut:GetModifierMagicalResistanceBonus()

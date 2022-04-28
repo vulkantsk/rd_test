@@ -8,29 +8,28 @@
 		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
-		"AbilityTextureName"				"batrider_firefly"
+		"AbilityTextureName"		"batrider_sticky_napalm"
 
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
 
-		"AbilityCastRange"			"1000"
-		"AbilityManaCost"			"100 125 150 175"
-		"AbilityCooldown"			"20"
+		"AbilityCastRange"			"750"
+		"AbilityManaCost"			"50"
+		"AbilityCooldown"			"35"
 
 		"AbilityValues"
 		{
-			"debuff_duration"		"1000"
-			"radius"				"200"
-			"decrease_resist"		"0.5"
-			"decrease_ms"			"20 40 60 80"
+			"debuff_duration"		"10"
+			"radius"				"450"
+			"decrease_resist"		"35"
+			"decrease_ms"			"35"
 		}
 	}
 	"batrider_fireball"
 	{
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"abilities/heroes/hero_batrider/fireball"
-		"ScriptFile"				"abilities/heroes/hero_batrider/sticky_masut"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -78,9 +77,9 @@
 	"batrider_inner_bensol"
 	{
 		"BaseClass"					"ability_lua"
-		"ScriptFile"				"abilities/heroes/hero_batrider/spell_amp_passive"
+		"ScriptFile"				"abilities/heroes/hero_batrider/inner_bensol"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"				"batrider_sticky_napalm"
+		"AbilityTextureName"		"hero_batrider/inner_bensol"
 
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
@@ -97,11 +96,11 @@
 	{
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"abilities/heroes/hero_batrider/bombardier"
-		"AbilityTextureName"				"batrider_flamebreak"
+		"AbilityTextureName"		"hero_batrider/bombardier"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
 		"AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
 
 		"RequiredLevel"				"8"
@@ -124,7 +123,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/heroes/hero_batrider/combusition"
-		"AbilityTextureName"			"ogre_magi_ignite"
+		"AbilityTextureName"			"hero_batrider/combusition"
 		"FightRecapLevel"				"1"
 		"RequiredLevel"				"10"
 		"LevelsBetweenUpgrades"		"5"

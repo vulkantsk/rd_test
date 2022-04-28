@@ -7,7 +7,7 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityTextureName"				"necrolyte_death_pulse"
+		"AbilityTextureName"				"hero_necrolyte/death_rage"
 		"MaxLevel"					"1"
 
 		"AbilityCastRange"				"50"
@@ -27,7 +27,7 @@
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/summon_skeleton"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"				"necrolyte_death_pulse"
+		"AbilityTextureName"				"hero_necrolyte/summon_skeleton"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
@@ -54,7 +54,7 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
-		"AbilityTextureName"				"necrolyte_heartstopper_aura"
+		"AbilityTextureName"				"hero_necrolyte/plague_cloud"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
@@ -75,7 +75,7 @@
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/summon_skeleton_mage"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"				"necrolyte_sadist"
+		"AbilityTextureName"				"hero_necrolyte/summon_skeleton_mage"
 		"RequiredLevel"				"8"
 		"LevelsBetweenUpgrades"		"8"
 		"MaxLevel"					"3"
@@ -101,7 +101,7 @@
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
-		"AbilityTextureName"				"necrolyte_reapers_scythe"
+		"AbilityTextureName"				"hero_necrolyte/shadow_of_death"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"7"
@@ -124,7 +124,7 @@
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/summon_death_knight"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"				"necrolyte_sadist"
+		"AbilityTextureName"				"hero_necrolyte/summon_death_knight"
 		"RequiredLevel"				"8"
 		"LevelsBetweenUpgrades"		"8"
 		"MaxLevel"					"3"
@@ -144,29 +144,32 @@
 	"necrolyte_skeleton_mage_summon_nether_blast"
 	{
 		"BaseClass"							"ability_lua"
-		"ScriptFile"						"abilities/creature_nether_blast"
+		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_mage_nether_blast"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
 		"AbilityUnitTargetFlags"			"DOTA_UNIT_TARGET_FLAG_NONE"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"				"pugna_nether_blast"
 		"AbilitySound"						"Hero_Pugna.NetherBlast"
 
 		"AbilityCooldown"					"10"
 		"AbilityManaCost"					"100"
+		"AbilityCastRange"					"600"
 
 		"AbilityValues"
 		{
 			"radius"							"500"
-			"blast_damage"						"250 500 750"
+			"blast_damage"						"75 150 225 300 400 500 600 700 800"
 			"structure_damage_pct"				"50"
-			"delay"								"0.5"
+			"delay"								"0.75"
 		}
 	}
 	"necrolyte_skeleton_mage_summon_splash"
 	{
 		"BaseClass"							"ability_lua"
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/skeleton_mage_summon_splash"
+		"AbilityTextureName"				"hero_necrolyte/skeleton_mage_summon_splash"
 
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -181,9 +184,9 @@
 	}
 	"necrolyte_death_knight_dark_sword"
 	{
-		"ScriptFile"					"heroes/hero_necrolyte/death_knight_dark_sword"
 		"BaseClass"						"ability_lua"
-		"AbilityTextureName"			"abaddon_frostmourne"
+		"ScriptFile"					"abilities/heroes/hero_necrolyte/death_knight_dark_sword"
+		"AbilityTextureName"			"hero_necrolyte/death_knight_dark_sword"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Abaddon.DeathCoil.Cast"
@@ -215,9 +218,9 @@
 	}
 	"necrolyte_death_knight_death_coil"
 	{
-		"ScriptFile"					"heroes/abaddon/mist_coil"
 		"BaseClass"						"ability_lua"
-		"AbilityTextureName"			"heroes/hero_necrolyte/death_knight_death_coil"
+		"ScriptFile"					"abilities/heroes/hero_necrolyte/death_knight_death_coil"
+		"AbilityTextureName"			"abaddon_death_coil"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"

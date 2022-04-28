@@ -80,7 +80,7 @@ function modifier_batrider_combusition:IsPurgable()
 end
 
 function modifier_batrider_combusition:OnCreated( kv )
-	self.slow = self:GetAbility():GetSpecialValueFor( "slow_movement_speed_pct" )
+	self.decrease_regen = self:GetAbility():GetSpecialValueFor( "decrease_regen" )
 	local damage = self:GetAbility():GetSpecialValueFor( "burn_damage" )
 
 	if not IsServer() then return end
@@ -99,11 +99,9 @@ function modifier_batrider_combusition:OnCreated( kv )
 end
 
 function modifier_batrider_combusition:OnRefresh( kv )
-	self.decrease_regen = self:GetAbility():GetSpecialValueFor( "decrease_regen" )
 	local damage = self:GetAbility():GetSpecialValueFor( "burn_damage" )
 	
 	if not IsServer() then return end
-
 	self.damageTable.damage = damage
 end
 

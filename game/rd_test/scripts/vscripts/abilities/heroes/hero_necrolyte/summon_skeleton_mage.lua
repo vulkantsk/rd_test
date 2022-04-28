@@ -29,7 +29,9 @@ function necrolyte_summon_skeleton_mage:OnSpellStart()
 	unit:SetBaseAttackTime(BAT)
 
 	for i=1,unit:GetAbilityCount() do
-		unit:GetAbilityByIndex(i-1):SetLevel(self:GetLevel())
+		local ability = unit:GetAbilityByIndex(i-1)
+		print(ability:GetAbilityName())
+		ability:SetLevel(self:GetLevel())
 	end
 	
 	local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_dark_willow/dark_willow_bramble_precast.vpcf", PATTACH_ABSORIGIN_FOLLOW, unit)

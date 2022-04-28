@@ -63,6 +63,3 @@ function necrolyte_skeleton_mage_summon_nether_blast:OnSpellStart()
 		end
     end, self)
 end
-
-killer_nether_blast = class(necrolyte_skeleton_mage_summon_nether_blast)
-necrolyte_skeleton_mage_summon_nether_blast = class(necrolyte_skeleton_mage_summon_nether_blast)

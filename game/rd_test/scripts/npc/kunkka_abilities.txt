@@ -141,7 +141,7 @@
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"abilities/heroes/hero_kunkka/hard_blow"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"		"kunkka_tidebringer"
+		"AbilityTextureName"		"hero_kunkka/hard_blow"
 
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
@@ -328,7 +328,7 @@
 		"BaseClass"					"ability_lua"
 		"ScriptFile"				"abilities/heroes/hero_kunkka/seasickness_immunity"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"		"kunkka_tidebringer"
+		"AbilityTextureName"		"hero_kunkka/seasickness_immunity"
 
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"

@@ -5,7 +5,9 @@ luna_lumina_bless = class({})
 function luna_lumina_bless:OnSpellStart()
 	if not IsServer() then return end
 	local caster = self:GetCaster()
-	caster:AddNewModifier(caster, self, "modifier_luna_lumina_bless", {duration = self:GetSpecialValueFor("duration")})
+	local duration = self:GetSpecialValueFor("duration")
+	caster:AddNewModifier(caster, self, "modifier_luna_lumina_bless", {duration = duration})
+	GameRules:BeginTemporaryNight( duration )
 end
 
 modifier_luna_lumina_bless = class({

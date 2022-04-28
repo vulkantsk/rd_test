@@ -185,7 +185,7 @@ function modifier_luna_eclipse_custom:OnIntervalThink()
 			self.damageTable.victim = unit
 			ApplyDamage(self.damageTable)
 			self.beam_ability:BeamStackProc()
-			break
+--			break
 		
 			unit = nil
 		end

@@ -59,7 +59,7 @@
 		"Ability3"					"batrider_inner_bensol"
 		"Ability4"					"batrider_sticky_masut"
 		"Ability5"					"batrider_combusition"
-		"Ability6"					"batrider_bombs"
+		"Ability6"					"batrider_bombardier"
 
 
 		// Attack
@@ -103,8 +103,8 @@
 	{
 		"override_hero"				"npc_dota_hero_necrolyte"
 		"Ability1"					"necrolyte_summon_skeleton"
-		"Ability2"					"necrolyte_plague_cloud"
-		"Ability3"					"necrolyte_summon_skeleton_mage"
+		"Ability2"					"necrolyte_summon_skeleton_mage"
+		"Ability3"					"necrolyte_plague_cloud"
 		"Ability4"					"necrolyte_death_rage"
 		"Ability5"					"necrolyte_summon_death_knight"
 		"Ability6"					"necrolyte_shadow_of_death"

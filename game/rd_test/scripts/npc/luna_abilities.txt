@@ -6,7 +6,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/heroes/hero_luna/moon_light"
-		"AbilityTextureName"			"luna_moon_glaive"
+		"AbilityTextureName"			"hero_luna/moon_light"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"RequiredLevel"				"1"
@@ -132,7 +132,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/heroes/hero_luna/lumina_bless"
-		"AbilityTextureName"			"luna_eclipse"
+		"AbilityTextureName"			"hero_luna/lumina_bless"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
