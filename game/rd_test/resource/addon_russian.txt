@@ -3938,11 +3938,13 @@
 	"DOTA_Tooltip_modifier_luna_moon_light"							"Moon Light"
 	"DOTA_Tooltip_modifier_luna_moon_light_Description"				"Скорость передвижения увеличена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, шанс уклонения увеличен на %dMODIFIER_PROPERTY_EVASION_CONSTANT%%%, сопротивление магии увеличено на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
 
-	"DOTA_Tooltip_ability_luna_eclipse_custom"					"Elcipse"
+	"DOTA_Tooltip_ability_luna_eclipse_custom"					"Eclipse"
 	"DOTA_Tooltip_ability_luna_eclipse_custom_Description"		"Бьёт случайных врагов неподалёку лучами от способности <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Lucent Beam</span></span></span> текущего уровня, а также отключает лимит на стаки этой способности."
 	"DOTA_Tooltip_ability_luna_eclipse_custom_duration"			"ДЛИТЕЛЬНОСТЬ:"
 	"DOTA_Tooltip_ability_luna_eclipse_custom_beam_interval"	"ИНТЕРВАЛ ЛУЧЕЙ:"
 	"DOTA_Tooltip_ability_luna_eclipse_custom_radius"			"РАДИУС:"
+	"DOTA_Tooltip_modifier_luna_eclipse_custom"					"Eclipse"
+	"DOTA_Tooltip_modifier_luna_eclipse_custom_Description"		"Атакует случайных врагов лучами от способности Lucent Beam."
 
  	"DOTA_Tooltip_ability_luna_lumina_bless"					"Lumina Bless"
 	"DOTA_Tooltip_ability_luna_lumina_bless_Description"		"Повышает скорость атаки и убирает штраф от способности <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Moon Glaives</span></span></span>."

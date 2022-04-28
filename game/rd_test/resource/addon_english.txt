@@ -1797,11 +1797,13 @@
 	"DOTA_Tooltip_ability_luna_moon_light_bonus_magic_resist"	"%BONUS MAGIC RESISTANCE:"
 	"DOTA_Tooltip_modifier_luna_moon_light_Description"			"Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, evasion chance increased by %dMODIFIER_PROPERTY_EVASION_CONSTANT%%%, magical resistance increased by %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
 
-	"DOTA_Tooltip_ability_luna_eclipse_custom"					"Elcipse"
+	"DOTA_Tooltip_ability_luna_eclipse_custom"					"Eclipse"
 	"DOTA_Tooltip_ability_luna_eclipse_custom_Description"		"Summon beam from sky, removes the upper limit on agility stacks from Lucent beam."
-	"DOTA_Tooltip_ability_luna_eclipse_custom_duration"			"DURATION::"
+	"DOTA_Tooltip_ability_luna_eclipse_custom_duration"			"DURATION:"
 	"DOTA_Tooltip_ability_luna_eclipse_custom_beam_interval"	"BEAM INTERVAL:"
-	"DOTA_Tooltip_ability_luna_eclipse_custom_radius"			"RADIUS::"
+	"DOTA_Tooltip_ability_luna_eclipse_custom_radius"			"RADIUS:"
+	"DOTA_Tooltip_modifier_luna_eclipse_custom"					"Eclipse"
+	"DOTA_Tooltip_modifier_luna_eclipse_custom_Description"		"Attacks random enemies with beams from Lucent Beam."
 
  	"DOTA_Tooltip_ability_luna_lumina_bless"					"Lumina Bless"
 	"DOTA_Tooltip_ability_luna_lumina_bless_Description"		"Increases attack speed and removes penalty from <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Moon Glaives</span></span></span>."
