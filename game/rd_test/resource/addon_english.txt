@@ -1767,56 +1767,51 @@
 		"DOTA_Tooltip_modifier_marci_eviscerate_custom_debuff"						"Eviscerate"
 		"DOTA_Tooltip_modifier_marci_eviscerate_custom_debuff_Description"						"Incoming damage increased by %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%."
 // Luna
-
- 	"DOTA_Tooltip_ability_luna_moon_light"						"Moon light"
-	"DOTA_Tooltip_ability_luna_moon_light_Description"			"Give bonuses in night time."
-	"DOTA_Tooltip_ability_luna_moon_light_bonus_ms_pct"				"%MOVESPEED BONUS:"
-	"DOTA_Tooltip_ability_luna_moon_light_bonus_evasion"			"%BONUS EVASION:"
-	"DOTA_Tooltip_ability_luna_moon_light_bonus_magic_resist"		"%BONUS MAGIC RESISTANCE:"
-
  	"DOTA_Tooltip_ability_luna_lucent_beam_custom"						"Lucent Beam"
 	"DOTA_Tooltip_ability_luna_lucent_beam_custom_Description"			"Calls a beam of lunar energy down upon an enemy, dealing damage, briefly stunning them. For each enemy hit, temporarily grants a bonus agility to the hero."
-	"DOTA_Tooltip_ability_luna_lucent_beam_custom_stun_duration"			"STUN DURATION:"
-	"DOTA_Tooltip_ability_luna_lucent_beam_custom_damage"					"DAMAGE:"
-	"DOTA_Tooltip_ability_luna_lucent_beam_custom_agility_bonus"			"AGILITY BONUS:"
-	"DOTA_Tooltip_ability_luna_lucent_beam_custom_buff_duration"			"BUFF DURATION:"
+	"DOTA_Tooltip_ability_luna_lucent_beam_custom_stun_duration"		"STUN DURATION:"
+	"DOTA_Tooltip_ability_luna_lucent_beam_custom_damage"				"DAMAGE:"
+	"DOTA_Tooltip_ability_luna_lucent_beam_custom_agility_bonus"		"AGILITY BONUS:"
+	"DOTA_Tooltip_ability_luna_lucent_beam_custom_buff_duration"		"BUFF DURATION:"
 	"DOTA_Tooltip_ability_luna_lucent_beam_custom_max_stacks"			"MAX STACKS:"
 	"DOTA_Tooltip_modifier_luna_lucent_beam_custom_buff"				"Lucent beam"
 	"DOTA_Tooltip_modifier_luna_lucent_beam_custom_buff_Description"	"Hero's Agility increased by %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%."
 
- 	"DOTA_Tooltip_ability_luna_moon_glaive_custom"						"Moon Glaives"
-	"DOTA_Tooltip_ability_luna_moon_glaive_custom_Description"			"Empowers Luna's glaives, causing her attacks to bounce between enemy units. Deals less damage with each bounce."
-	"DOTA_Tooltip_ability_luna_moon_glaive_custom_range"			"BOUNCE RANGE:"
-	"DOTA_Tooltip_ability_luna_moon_glaive_custom_bounces"			"BOUNCES:"
+ 	"DOTA_Tooltip_ability_luna_moon_glaive_custom"								"Moon Glaives"
+	"DOTA_Tooltip_ability_luna_moon_glaive_custom_Description"					"Empowers Luna's glaives, causing her attacks to bounce between enemy units. Deals less damage with each bounce."
+	"DOTA_Tooltip_ability_luna_moon_glaive_custom_range"						"BOUNCE RANGE:"
+	"DOTA_Tooltip_ability_luna_moon_glaive_custom_bounces"						"BOUNCES:"
 	"DOTA_Tooltip_ability_luna_moon_glaive_custom_damage_reduction_pct"			"%DAMAGE REDUCTION PER BOUNCE:"
 
- 	"DOTA_Tooltip_ability_luna_lunar_blessing_custom"						"Lunar Blessing"
-	"DOTA_Tooltip_ability_luna_lunar_blessing_custom_Description"			"Increases the attack damage for Luna and nearby allied heroes."
-	"DOTA_Tooltip_ability_luna_lunar_blessing_custom_radius"			"RADIUS:"
+ 	"DOTA_Tooltip_ability_luna_lunar_blessing_custom"							"Lunar Blessing"
+	"DOTA_Tooltip_ability_luna_lunar_blessing_custom_Description"				"Increases the attack damage for Luna and nearby allied heroes."
+	"DOTA_Tooltip_ability_luna_lunar_blessing_custom_radius"					"RADIUS:"
 	"DOTA_Tooltip_ability_luna_lunar_blessing_custom_bonus_damage_pct"			"%DAMAGE BONUS:"
 	"DOTA_Tooltip_modifier_luna_lunar_blessing_custom_aura_buff"				"Lunar blessing"
 	"DOTA_Tooltip_modifier_luna_lunar_blessing_custom_aura_buff_Description"	"Damage increased by %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%."
 
- 	"DOTA_Tooltip_ability_luna_lumina_bless"						"Lumina bless"
-	"DOTA_Tooltip_ability_luna_lumina_bless_Description"			"Increases attack speed and removes penalty from <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Moon Glaives</span></span></span>."
-	"DOTA_Tooltip_ability_luna_lumina_bless_as_bonus"			"ATTACKSPEED BONUS:"
-	"DOTA_Tooltip_ability_luna_lumina_bless_duration"			"DURATION:"
-	"DOTA_Tooltip_modifier_luna_lumina_bless"					"Elcipse"
-	"DOTA_Tooltip_modifier_luna_lumina_bless_Description"		"Attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%, the bounces from Moon Glaives deal full damage."
+	"DOTA_Tooltip_ability_luna_moon_light"						"Moon Light"
+	"DOTA_Tooltip_ability_luna_moon_light_Description"			"Give bonuses in night time."
+	"DOTA_Tooltip_ability_luna_moon_light_bonus_ms_pct"			"%MOVESPEED BONUS:"
+	"DOTA_Tooltip_ability_luna_moon_light_bonus_evasion"		"%BONUS EVASION:"
+	"DOTA_Tooltip_ability_luna_moon_light_bonus_magic_resist"	"%BONUS MAGIC RESISTANCE:"
+	"DOTA_Tooltip_modifier_luna_moon_light_Description"			"Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, evasion chance increased by %dMODIFIER_PROPERTY_EVASION_CONSTANT%%%, magical resistance increased by %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
 
-	"DOTA_Tooltip_ability_luna_eclipse_custom"						"Elcipse"
-	"DOTA_Tooltip_ability_luna_eclipse_custom_Description"			"Summon beam from sky, removes the upper limit on agility stacks from Lucent beam."
+	"DOTA_Tooltip_ability_luna_eclipse_custom"					"Elcipse"
+	"DOTA_Tooltip_ability_luna_eclipse_custom_Description"		"Summon beam from sky, removes the upper limit on agility stacks from Lucent beam."
 	"DOTA_Tooltip_ability_luna_eclipse_custom_duration"			"DURATION::"
 	"DOTA_Tooltip_ability_luna_eclipse_custom_beam_interval"	"BEAM INTERVAL:"
 	"DOTA_Tooltip_ability_luna_eclipse_custom_radius"			"RADIUS::"
 
+ 	"DOTA_Tooltip_ability_luna_lumina_bless"					"Lumina Bless"
+	"DOTA_Tooltip_ability_luna_lumina_bless_Description"		"Increases attack speed and removes penalty from <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Moon Glaives</span></span></span>."
+	"DOTA_Tooltip_ability_luna_lumina_bless_as_bonus"			"ATTACKSPEED BONUS:"
+	"DOTA_Tooltip_ability_luna_lumina_bless_duration"			"DURATION:"
+	"DOTA_Tooltip_modifier_luna_lumina_bless"					"Lumina Bless"
+	"DOTA_Tooltip_modifier_luna_lumina_bless_Description"		"Attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%, the bounces from Moon Glaives deal full damage."
+
 // Necrolyte
 	"npc_dota_hero_necrolyte"		"Sandro"
-
- 	"DOTA_Tooltip_ability_necrolyte_death_rage"						"Death rage"
-	"DOTA_Tooltip_ability_necrolyte_death_rage_Description"			"Increase attack speed of ally target."
-	"DOTA_Tooltip_ability_necrolyte_death_rage_buff_duration"		"DURATION:"
-	"DOTA_Tooltip_ability_necrolyte_death_rage_bonus_as"			"BONUS AS:"
 
  	"DOTA_Tooltip_ability_necrolyte_summon_skeleton"						"Summon Skeletons"
 	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_Description"			"Summons several skeletons to help in combat."
@@ -1824,7 +1819,6 @@
 	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_skeleton_count"			"SKELETON COUNT:"
 	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_skeleton_hp"			"SKELETON HEALTH:"
 	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_skeleton_damage"			"SKELETON DAMAGE:"
-
 
  	"DOTA_Tooltip_ability_necrolyte_plague_cloud"						"Plague Cloud"
 	"DOTA_Tooltip_ability_necrolyte_plague_cloud_Description"			"Creates a toxic cloud that deals damage over time to all enemies."
@@ -1838,14 +1832,27 @@
 	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_mage_skeleton_hp"			"HEALTH:"
 	"DOTA_Tooltip_ability_necrolyte_summon_skeleton_mage_skeleton_damage"			"DAMAGE:"
 
+	"DOTA_Tooltip_ability_necrolyte_death_rage"						"Death rage"
+	"DOTA_Tooltip_ability_necrolyte_death_rage_Description"			"Increase attack speed of ally target."
+	"DOTA_Tooltip_ability_necrolyte_death_rage_buff_duration"		"DURATION:"
+	"DOTA_Tooltip_ability_necrolyte_death_rage_bonus_as"			"BONUS ATTACK SPEED:"
+
+	"DOTA_Tooltip_ability_necrolyte_summon_death_knight"						"Summon Death knight"
+	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_Description"			"Summons powerful Death knight."
+	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_skeleton_duration"		"DURATION:"
+	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_skeleton_hp"			"HEALTH:"
+	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_skeleton_damage"		"DAMAGE:"
+
  	"DOTA_Tooltip_ability_necrolyte_shadow_of_death"						"Shadow of death"
-	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_Description"			"description"
-	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_radius"			"RADIUS:"
-	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_duration"			"DEBUFF DURATION:"
+	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_Description"			"Curses the selected area, inflicting periodic damage to all enemies. If the enemy dies under the effect of the curse, they will be resurrected as a shadow under the control of the hero."
+	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_radius"					"RADIUS:"
+	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_duration"				"DEBUFF DURATION:"
 	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_damage_per_sec"			"DAMAGE PER SECOND:"
 	"DOTA_Tooltip_ability_necrolyte_shadow_of_death_live_duration"			"LIVE DURATION:"
+	"DOTA_Tooltip_modifier_necrolyte_shadow_of_death"						"Shadow of death"
+	"DOTA_Tooltip_modifier_necrolyte_shadow_of_death_Description"			"Suffering from a curse, if it dies under the effect of the ability, it will be reborn as a shadow."
 
-
+//Summon skills
  	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_nether_blast"						"Nether Blast"
 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_nether_blast_Description"			"An exploding pulse deals damage to enemies and structures in the area."
 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_nether_blast_structure_damage_pct"			"%BUILDING DAMAGE:"
@@ -1856,13 +1863,6 @@
 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_splash_Description"			"The creature's attacks deal a part of the damage to all enemies in the area."
 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_splash_radius"			"RADIUS:"
 	"DOTA_Tooltip_ability_necrolyte_skeleton_mage_summon_splash_damage_pct"			"%SPLASH:"
-
-
- 	"DOTA_Tooltip_ability_necrolyte_summon_death_knight"						"Summon Death knight"
-	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_Description"			"Summons powerful Death knight."
-	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_skeleton_duration"		"DURATION:"
-	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_skeleton_hp"			"HEALTH:"
-	"DOTA_Tooltip_ability_necrolyte_summon_death_knight_skeleton_damage"		"DAMAGE:"
 
  	"DOTA_Tooltip_ability_necrolyte_death_knight_dark_sword"						"Dark sword"
 	"DOTA_Tooltip_ability_necrolyte_death_knight_dark_sword_Description"			"Every kill from dark sword summon fallen minion."
@@ -1901,6 +1901,20 @@
 	"DOTA_Tooltip_ability_primal_beast_armor_Description"			"The thick skin of the hero allows you to block part of the damage from the attack of the enemy."
 	"DOTA_Tooltip_ability_primal_beast_armor_damage_block"			"DAMAGE BLOCK:"
 
+	"DOTA_Tooltip_ability_primal_beast_savage_blow"					"Savage Blow"
+	"DOTA_Tooltip_ability_primal_beast_savage_blow_Description"		"The hero makes an empowered attack that deals area damage."
+	"DOTA_Tooltip_ability_primal_beast_savage_blow_damage"			"DAMAGE:"
+	"DOTA_Tooltip_ability_primal_beast_savage_blow_damage_str"		"%STRENGTH TO DAMAGE:"
+	"DOTA_Tooltip_ability_primal_beast_savage_blow_radius"			"RADIUS:"
+
+	"DOTA_Tooltip_ability_primal_beast_primal_strength"					"Primal Strenght"
+	"DOTA_Tooltip_ability_primal_beast_primal_strength_Description"		"The hero harnesses primal power, gaining a strength bonus and health regeneration."
+	"DOTA_Tooltip_ability_primal_beast_primal_strength_bonus_str"		"BONUS STRENGTH:"
+	"DOTA_Tooltip_ability_primal_beast_primal_strength_bonus_hp_regen"	"BONUS HEALTH REGENERATION:"
+	"DOTA_Tooltip_ability_primal_beast_primal_strength_buff_duration"	"DURATION:"
+	"DOTA_Tooltip_modifier_primal_beast_primal_strength"				"Primal Strenght"
+	"DOTA_Tooltip_modifier_primal_beast_primal_strength_Description"	"Strenght increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%, heath regeneration increased by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%."	
+
  	"DOTA_Tooltip_ability_primal_beast_pulverize_custom"						"Pulverize"
 	"DOTA_Tooltip_ability_primal_beast_pulverize_custom_Description"			"The hero repeatedly hits the ground, dealing damage to all enemies in the area of effect and reducing their damage."
 	"DOTA_Tooltip_ability_primal_beast_pulverize_custom_duration"			"DURATION:"
@@ -1912,13 +1926,6 @@
 	"DOTA_Tooltip_modifier_primal_beast_pulverize_custom_debuff_Description"		"Damage reduced by %dMODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE%%%."
 
 //Batrider
-
- 	"DOTA_Tooltip_ability_batrider_sticky_masut"						"Sticky masut"
-	"DOTA_Tooltip_ability_batrider_sticky_masut_Description"			"Slow units in radius and decrease their magical resistance."
-	"DOTA_Tooltip_ability_batrider_sticky_masut_debuff_duration"			"DURATION:"
-	"DOTA_Tooltip_ability_batrider_sticky_masut_fire_radius"			"RADIUS:"
-	"DOTA_Tooltip_ability_batrider_sticky_masut_proj_decrease_resist"			"%DECREASE MAGIC RESIST:"
-	"DOTA_Tooltip_ability_batrider_sticky_masut_proj_decrease_ms"			"%MS SLOW:"
 
  	"DOTA_Tooltip_ability_batrider_fireball"						"Fireball"
 	"DOTA_Tooltip_ability_batrider_fireball_Description"			"The hero creates a stream of liquid flame that lasts for some time and deals damage to enemy creatures every second."
@@ -1940,6 +1947,13 @@
 	"DOTA_Tooltip_modifier_batrider_inner_bensol_debuff"						"Inner bensol"
 	"DOTA_Tooltip_modifier_batrider_inner_bensol_debuff_Description"			"Nope"
 
+	"DOTA_Tooltip_ability_batrider_sticky_masut"						"Sticky masut"
+	"DOTA_Tooltip_ability_batrider_sticky_masut_Description"			"Slow units in radius and decrease their magical resistance."
+	"DOTA_Tooltip_ability_batrider_sticky_masut_debuff_duration"			"DURATION:"
+	"DOTA_Tooltip_ability_batrider_sticky_masut_fire_radius"			"RADIUS:"
+	"DOTA_Tooltip_ability_batrider_sticky_masut_proj_decrease_resist"			"%DECREASE MAGIC RESIST:"
+	"DOTA_Tooltip_ability_batrider_sticky_masut_proj_decrease_ms"			"%MS SLOW:"
+
  	"DOTA_Tooltip_ability_batrider_bombardier"					"Bombarding"
 	"DOTA_Tooltip_ability_batrider_bombardier_Description"		"For %duration% seconds, the hero continuously casts the ability <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Flamebreak</span></span></span> on a random target."
 	"DOTA_Tooltip_ability_batrider_bombardier_radius"			"RADIUS:"
@@ -1947,23 +1961,29 @@
 	"DOTA_Tooltip_ability_batrider_bombardier_duration"			"DURATION:"
 	"DOTA_Tooltip_ability_batrider_bombardier_interval"			"INTERVAL:"
 
- 	"DOTA_Tooltip_ability_batrider_combusition"					"Bombarding"
-	"DOTA_Tooltip_ability_batrider_combusition_Description"		"For %duration% seconds, the hero continuously casts the ability <span class='GameplayValues'><span class='GameplayVariable'><span class='GameplayVariable'>Flamebreak</span></span></span> on a random target."
+ 	"DOTA_Tooltip_ability_batrider_combusition"					"Combusition"
+	"DOTA_Tooltip_ability_batrider_combusition_Description"		"Do somesthing..."
 	"DOTA_Tooltip_ability_batrider_combusition_duration"			"DURATION:"
 	"DOTA_Tooltip_ability_batrider_combusition_burn_damage"			"DAMAGE PER SECOND:"
-	"DOTA_Tooltip_ability_batrider_combusition_decrease_regen"		"%DECREASE REGENERATION:"
+	"DOTA_Tooltip_ability_batrider_combusition_decrease_regen"		"%HEALTH REGENERATION DECREASE:"
+	"DOTA_Tooltip_modifier_batrider_combusition"						"Сombusition"
+	"DOTA_Tooltip_modifier_batrider_combusition_Description"			"Health regeneration decreased by %dMODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE%%%."
 //Kunkka
 
  	"DOTA_Tooltip_ability_kunkka_hard_blow"						"Hard blow"
 	"DOTA_Tooltip_ability_kunkka_hard_blow_Description"			"Increase damage for next attack"
 	"DOTA_Tooltip_ability_kunkka_hard_blow_buff_duration"			"BUFF DURATION:"
 	"DOTA_Tooltip_ability_kunkka_hard_blow_bonus_damage_pct"		"%BONUS DAMAGE:"
+	"DOTA_Tooltip_modifier_kunkka_hard_blow"					"Hard blow"
+	"DOTA_Tooltip_modifier_kunkka_hard_blow_Description"		"Damage increased by %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%%."
 
  	"DOTA_Tooltip_ability_kunkka_seasickness_immunity"						"Seasickness immunity"
 	"DOTA_Tooltip_ability_kunkka_seasickness_immunity_Description"			"Increases the capacity of the body."
 	"DOTA_Tooltip_ability_kunkka_seasickness_immunity_bonus_base_damage"		"BASE DAMAGE BONUS:"
 	"DOTA_Tooltip_ability_kunkka_seasickness_immunity_bonus_armor"				"BONUS ARMOR:"
 	"DOTA_Tooltip_ability_kunkka_seasickness_immunity_bonus_status_resist"		"BONUS STATUS RESISTANCE:"
+	"DOTA_Tooltip_modifier_kunkka_seasickness_immunity"						"Seasickness immunity"
+	"DOTA_Tooltip_modifier_kunkka_seasickness_immunity_Description"			"Base damage increased by %dMODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE%, armor increased by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%, status resistance increased by %dMODIFIER_PROPERTY_STATUS_RESISTANCE%%%."
 
 //Abilities
 
@@ -3599,29 +3619,29 @@
 	"DOTA_Tooltip_ability_item_base_mana_4"						"Archmage Orb"
 	"DOTA_Tooltip_ability_item_base_mana_4_bonus_mana"			"+$mana"
 
-	"DOTA_Tooltip_ability_item_base_health_regeneration_1"						"Ring of Regen"
-	"DOTA_Tooltip_ability_item_base_health_regeneration_1_bonus_health_regeneration"			"+$hp_regen"
+	"DOTA_Tooltip_ability_item_base_hp_regen_1"						"Ring of Regen"
+	"DOTA_Tooltip_ability_item_base_hp_regen_1_bonus_hp_regen"			"+$hp_regen"
 
-	"DOTA_Tooltip_ability_item_base_health_regeneration_2"						"Ring of Health"
-	"DOTA_Tooltip_ability_item_base_health_regeneration_2_bonus_health_regeneration"			"+$hp_regen"
+	"DOTA_Tooltip_ability_item_base_hp_regen_2"						"Ring of Health"
+	"DOTA_Tooltip_ability_item_base_hp_regen_2_bonus_hp_regen"			"+$hp_regen"
 
-	"DOTA_Tooltip_ability_item_base_health_regeneration_3"						"Golden ring"
-	"DOTA_Tooltip_ability_item_base_health_regeneration_3_bonus_health_regeneration"			"+$hp_regen"
+	"DOTA_Tooltip_ability_item_base_hp_regen_3"						"Golden ring"
+	"DOTA_Tooltip_ability_item_base_hp_regen_3_bonus_hp_regen"			"+$hp_regen"
 
-	"DOTA_Tooltip_ability_item_base_health_regeneration_4"						"Blood ring"
-	"DOTA_Tooltip_ability_item_base_health_regeneration_4_bonus_health_regeneration"			"+$hp_regen"
+	"DOTA_Tooltip_ability_item_base_hp_regen_4"						"Blood ring"
+	"DOTA_Tooltip_ability_item_base_hp_regen_4_bonus_hp_regen"			"+$hp_regen"
 
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_1"						"Mana Ring"
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_1_bonus_mana_regeneration"			"+$mana_regen"
+	"DOTA_Tooltip_ability_item_base_mp_regen_1"						"Mana Ring"
+	"DOTA_Tooltip_ability_item_base_mp_regen_1_bonus_mp_regen"			"+$mana_regen"
 
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_2"						"Arcane Ring"
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_2_bonus_mana_regeneration"			"+$mana_regen"
+	"DOTA_Tooltip_ability_item_base_mp_regen_2"						"Arcane Ring"
+	"DOTA_Tooltip_ability_item_base_mp_regen_2_bonus_mp_regen"			"+$mana_regen"
 
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_3"						"Magician Ring"
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_3_bonus_mana_regeneration"			"+$mana_regen"
+	"DOTA_Tooltip_ability_item_base_mp_regen_3"						"Magician Ring"
+	"DOTA_Tooltip_ability_item_base_mp_regen_3_bonus_mp_regen"			"+$mana_regen"
 
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_4"						"Sage Ring"
-	"DOTA_Tooltip_ability_item_base_mana_regeneration_4_bonus_mana_regeneration"			"+$mana_regen"
+	"DOTA_Tooltip_ability_item_base_mp_regen_4"						"Sage Ring"
+	"DOTA_Tooltip_ability_item_base_mp_regen_4_bonus_mp_regen"			"+$mana_regen"
 
 	"DOTA_Tooltip_ability_item_base_armor_1"						"Chainmail"
 	"DOTA_Tooltip_ability_item_base_armor_1_bonus_armor"			"+$armor"
