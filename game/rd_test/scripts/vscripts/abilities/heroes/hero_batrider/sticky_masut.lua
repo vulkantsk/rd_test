@@ -24,7 +24,7 @@ function batrider_sticky_masut:OnSpellStart(target)
 	end
 	
 	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_batrider/batrider_stickynapalm_impact.vpcf", PATTACH_WORLDORIGIN, nil)
-	ParticleManager:SetParticleControl(particle, 0, vLocation);
+	ParticleManager:SetParticleControl(particle, 0, point);
     ParticleManager:SetParticleControl(particle, 1, Vector(radius,radius,radius));
  	ParticleManager:ReleaseParticleIndex(particle)
 
