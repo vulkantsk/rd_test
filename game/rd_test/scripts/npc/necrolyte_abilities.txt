@@ -28,20 +28,21 @@
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/summon_skeleton"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName"				"hero_necrolyte/summon_skeleton"
+
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
-		"MaxLevel"					"7"
+		"MaxLevel"					"9"
 
-		"AbilityCooldown"					"15 14 13 12"
-		"AbilityManaCost"					"70 80 90 100"
+		"AbilityCooldown"					"15"
+		"AbilityManaCost"					"70 80 90 100 110 140 170 200"
 
 		"AbilityValues"
 		{
 			"skeleton_count"				"3"
-			"skeleton_duration"				"30"
-			"skeleton_hp"					"250 400 550 700"
-			"skeleton_damage"				"20 35 50 75"
-			"skeleton_armor"				"0 2 4 8"
+			"skeleton_duration"				"20 21 22 23 24 26 28 30 32"
+			"skeleton_hp"					"250 400 550 700 900 1200 1500 1800 2250"
+			"skeleton_damage"				"20 35 50 75 100 150 200 250 325"
+			"skeleton_armor"				"0 2 4 8 10 12 14 16 20"
 			"skeleton_BAT"					"1.0"
 		}
 	}
@@ -55,18 +56,19 @@
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
 		"AbilityTextureName"				"hero_necrolyte/plague_cloud"
+
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
-		"MaxLevel"					"7"
+		"MaxLevel"					"9"
 
-		"AbilityCooldown"					"10"
-		"AbilityManaCost"					"50 75 100 125"
+		"AbilityCooldown"					"15"
+		"AbilityManaCost"					"50 75 100 125 150 200 250 300"
 
 		"AbilityValues"
 		{
 			"duration"						"5"
 			"radius"						"450"
-			"damage_per_sec"				"25 50 75 100"
+			"damage_per_sec"				"25 50 75 100 125 175 225 275 350"
 			"damage_interval"				"0.5"
 		}
 	}
@@ -76,19 +78,20 @@
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/summon_skeleton_mage"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName"				"hero_necrolyte/summon_skeleton_mage"
-		"RequiredLevel"				"8"
-		"LevelsBetweenUpgrades"		"8"
-		"MaxLevel"					"3"
 
-		"AbilityCooldown"					"80"
-		"AbilityManaCost"					"200 300 400"
+		"RequiredLevel"				"1"
+		"LevelsBetweenUpgrades"		"3"
+		"MaxLevel"					"9"
+
+		"AbilityCooldown"					"30"
+		"AbilityManaCost"					"100 150 200 250 300 350 400 500 600"
 
 		"AbilityValues"
 		{
-			"skeleton_duration"				"30"
-			"skeleton_hp"					"1000 2000 3000"
-			"skeleton_damage"				"125 250 500"
-			"skeleton_armor"				"10"
+			"skeleton_duration"				"35"
+			"skeleton_hp"					"400 600 800 1000 1250 1500 1750 2250"
+			"skeleton_damage"				"50 75 125 175 250 325 425 550 750"
+			"skeleton_armor"				"5"
 			"skeleton_BAT"					"1.0"
 		}
 	}
@@ -102,20 +105,21 @@
 		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"				"DAMAGE_TYPE_MAGICAL"
 		"AbilityTextureName"				"hero_necrolyte/shadow_of_death"
-		"RequiredLevel"				"1"
-		"LevelsBetweenUpgrades"		"3"
-		"MaxLevel"					"7"
+
+		"RequiredLevel"				"8"
+		"LevelsBetweenUpgrades"		"8"
+		"MaxLevel"					"5"
 
 		"AbilityCooldown"					"80"
-		"AbilityManaCost"					"125 150 175 200"
+		"AbilityManaCost"					"250 400 600 800 1000"
 
 		"AbilityValues"
 		{
 			"duration"						"10"
 			"radius"						"550"
-			"damage_per_sec"				"50"
+			"damage_per_sec"				"100 150 250 400 600"
 			"damage_interval"				"0.2"
-			"live_duration"					"40"
+			"live_duration"					"60"
 			"stats_reduction_pct"			"0"
 		}
 	}
@@ -125,19 +129,20 @@
 		"ScriptFile"						"abilities/heroes/hero_necrolyte/summon_death_knight"
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName"				"hero_necrolyte/summon_death_knight"
-		"RequiredLevel"				"8"
-		"LevelsBetweenUpgrades"		"8"
+
+		"RequiredLevel"				"50"
+		"LevelsBetweenUpgrades"		"25"
 		"MaxLevel"					"3"
 
-		"AbilityCooldown"					"80"
-		"AbilityManaCost"					"200 300 400"
+		"AbilityCooldown"					"150"
+		"AbilityManaCost"					"500 750 1000"
 
 		"AbilityValues"
 		{
-			"skeleton_duration"				"30"
-			"skeleton_hp"					"1000 2000 3000"
-			"skeleton_damage"				"125 250 500"
-			"skeleton_armor"				"10"
+			"skeleton_duration"				"45"
+			"skeleton_hp"					"10000 15000 25000"
+			"skeleton_damage"				"500 750 1250"
+			"skeleton_armor"				"40 60 80"
 			"skeleton_BAT"					"1.0"
 		}
 	}
@@ -191,27 +196,14 @@
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Abaddon.DeathCoil.Cast"
 
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"500"
-		"AbilityCastPoint"				"0.25"
-		
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"5.5"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"50"
-
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
 			"skeleton_duration"				"30"
-			"skeleton_hp"					"250 400 550 700"
-			"skeleton_damage"				"20 35 50 75"
-			"skeleton_armor"				"0 2 4 8"
+			"skeleton_hp"					"1000 1750 2750"
+			"skeleton_damage"				"100 200 300"
+			"skeleton_armor"				"10 20 30"
 			"skeleton_BAT"					"1.0"
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
@@ -246,8 +238,8 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"target_damage"				"500"
-			"heal_amount"				"250"
+			"target_damage"				"1500 2000 3000"
+			"heal_amount"				"1000 1500 2000"
 			"stun_duration"				"1.5"
 			"missile_speed"				"1300"
 		}

@@ -37,8 +37,10 @@ end
 
 function luna_lucent_beam_custom:BeamStackProc()
 	local max_stacks = self:GetSpecialValueFor("max_stacks")
-	
+	local caster = self:GetCaster()
+
 	local modifier = caster:AddNewModifier(caster, self, "modifier_luna_lucent_beam_custom_buff", {duration = self:GetSpecialValueFor("buff_duration")})
+	local modifier_stacks = modifier:GetStackCount()
 	if self:GetCaster():HasModifier("modifier_luna_eclipse_custom") or modifier_stacks < max_stacks then
 		modifier:IncrementStackCount()
 	else

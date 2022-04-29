@@ -29044,10 +29044,10 @@
         //
         "PathfindingSearchDepthScale"   "0.1"
         "BaseClass"                     "npc_dota_creature"
-        "Model"                         "models/items/wraith_king/arcana/wk_arcana_skeleton.vmdl"   // Model.
+        "Model"                         "models/items/wraith_king/arcana/wraith_king_arcana.vmdl"   // Model.
         "SoundSet"                      "Creep_Good_Melee"             // Name of sound set.
         "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
-        "ModelScale"                    "1"                               // old 1.0
+        "ModelScale"                    "1.2"                               // old 1.0
         "Level"                         "50"
         
         // Abilities
@@ -29066,7 +29066,7 @@
         // Armor
         //----------------------------------------------------------------
         "ArmorPhysical"             "20"            // Physical protection.
-        "MagicalResistance"             "20"            // Magical protection.
+        "MagicalResistance"             "25"            // Magical protection.
 
         // Attack
         //----------------------------------------------------------------
@@ -29096,7 +29096,7 @@
         // Movement
         //----------------------------------------------------------------
         "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"         // Type of locomotion - ground, air
-        "MovementSpeed"             "325"       // Speed
+        "MovementSpeed"             "425"       // Speed
         "MovementTurnRate"          "0.8"       // Turning rate.
 
         // Status
@@ -29104,7 +29104,7 @@
         "StatusHealth"              "5000"     // Base health.
         "StatusHealthRegen"         "100"       // Health regeneration rate.
         "StatusMana"                "1000"          // Base mana.
-        "StatusManaRegen"           "100"            // Mana regeneration rate.
+        "StatusManaRegen"           "5"            // Mana regeneration rate.
 
         // Team
         //----------------------------------------------------------------
@@ -29117,15 +29117,27 @@
         //----------------------------------------------------------------
         "VisionDaytimeRange"        "750"       // Range of vision during day light.
         "VisionNighttimeRange"      "750"       // Range of vision at night time.
+        "Creature"
+        {
+            "AttachWearables"//The One True King Bundle
+            {
+            "Wearable1" {"ItemDef" "13760"}//("Sword of the One True King")
+            "Wearable2" {"ItemDef" "13743"}//arms("Bracers of the One True King")
+            "Wearable3" {"ItemDef" "13571"}//shoulder("Pauldrons of the One True King")
+            "Wearable4" {"ItemDef" "13569"}//armor("Armor of the One True King")
+            "Wearable5" {"ItemDef" "13473"}//back("Cloak of the One True King")
+            "Wearable6" {"ItemDef" "13456"}//head("Crown of the One True King")
+            }           
+        }
     }
 
     "npc_necrolyte_death_knight_minion"
     {
         "PathfindingSearchDepthScale"   "0.1"
         "BaseClass"                 "npc_dota_creature"
-        "Model"                     "models/items/wraith_king/wk_ti8_creep/wk_ti8_creep.vmdl"
+       "Model"                      "models/items/wraith_king/arcana/wk_arcana_skeleton.vmdl"   // Model.
         "SoundSet"                  "Creep_Good_Melee"                  // Name of sound set.
-        "ModelScale"                "2.4"
+        "ModelScale"                "1.2"
         "Level"                     "8"
         "IsBossMonster"                     "1"
         "MinimapIcon"                   "minimap_death"

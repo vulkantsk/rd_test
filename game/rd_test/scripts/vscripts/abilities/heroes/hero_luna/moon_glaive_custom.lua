@@ -10,7 +10,7 @@ function luna_moon_glaive_custom:OnProjectileHit_ExtraData(target, location, dat
 	if target then
 		local reduction = (100 - self:GetSpecialValueFor("damage_reduction_pct")) / 100
 		local final_damage
-		if data.isUlt == 1 then
+		if caster:HasModifier("modifier_luna_lumina_bless") then
 			final_damage = data.damage
 		else
 			final_damage = data.damage * reduction

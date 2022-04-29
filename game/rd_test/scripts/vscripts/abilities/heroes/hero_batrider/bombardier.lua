@@ -36,7 +36,7 @@ function modifier_batrider_bombardier:OnCreated()
 	if not IsServer() then return end
 	self.ability = self:GetAbility()
 	self.radius = self.ability:GetSpecialValueFor("radius")
-	self.bombardier_count = self.ability:GetSpecialValueFor("bombardier_count")
+	self.bombardier_count = self.ability:GetSpecialValueFor("bombs_count")
 	self.interval = self.ability:GetSpecialValueFor("interval")
 	self.target_team = self.ability:GetAbilityTargetTeam()
 	self.target_type = self.ability:GetAbilityTargetType()

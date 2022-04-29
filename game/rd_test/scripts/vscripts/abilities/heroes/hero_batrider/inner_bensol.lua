@@ -16,6 +16,7 @@ modifier_batrider_inner_bensol = class({
 
 function modifier_batrider_inner_bensol:OnCreated()
 	self.ability = self:GetAbility()
+	self.ability_damage = self.ability:GetAbilityDamageType()
 	self.max_stacks = self.ability:GetSpecialValueFor("max_stacks")
 	self.debuff_duration = self.ability:GetSpecialValueFor("debuff_duration")
 	self.damage_per_stack = self.ability:GetSpecialValueFor("damage_per_stack")
@@ -32,34 +33,25 @@ function modifier_batrider_inner_bensol:OnTakeDamage(keys)
 	local target = keys.unit
 	local inflictor = keys.inflictor
 	
-	if inflictor and inflictor ~= ability and attacker == caster and target and not (target:IsMagicImmune() or caster:PassivesDisabled() or target:IsBuilding()) then
-		local mod = target:AddNewModifier(caster, ability, "modifier_batrider_inner_bensol_debuff", {duration = debuff_duration})
-		local stack_count = target:GetModifierStackCount("modifier_batrider_inner_bensol_debuff", caster)
-	
-		if stack_count < 1 then
-			mod:IncrementStackCount()
-		elseif stack_count < self.max_stacks then
-			local damage = self.damage_per_stack * self:GetStackCount()
+	if inflictor and inflictor ~= self.ability and attacker == caster and target and not (target:IsMagicImmune() or caster:PassivesDisabled() or target:IsBuilding()) then
+		local modifier = target:AddNewModifier(caster, self.ability, "modifier_batrider_inner_bensol_debuff", {duration = self.debuff_duration})
+		local stack_count = modifier:GetStackCount()
+		
+		if stack_count > 0 then
+			local damage = self.damage_per_stack * stack_count
 			local damageTable = {
 		        attacker = caster,
 		        victim = target,
 		        damage = damage,
-		        damage_type = self:GetAbilityDamageType(),
-		        ability = self:GetAbility()
+		        damage_type = self.ability_damage,
+		        ability = self.ability,
 		    }	
-			ApplyDamage(damageTable)				
-			mod:IncrementStackCount()
-		elseif stack_count = self.max_stacks then
-			local damage = self.damage_per_stack * self:GetStackCount()
-			local damageTable = {
-		        attacker = caster,
-		        victim = target,
-		        damage = damage,
-		        damage_type = self:GetAbilityDamageType(),
-		        ability = self:GetAbility()
-		    }	
-			ApplyDamage(damageTable)				
-		end
+			ApplyDamage(damageTable)
+		end	
+
+		if stack_count < self.max_stacks then
+			modifier:IncrementStackCount()
+		end			
 		
 	end
 end
@@ -82,5 +74,10 @@ end
 modifier_batrider_inner_bensol_debuff = class({
 	IsHidden = function(self) return false end,
 	IsPurgable = function() return true end,
+	IsDebuff = function() return true end,
 })
+
+function modifier_batrider_inner_bensol:GetTexture()
+	return self:GetAbility():GetAbilityTextureName()
+end
 

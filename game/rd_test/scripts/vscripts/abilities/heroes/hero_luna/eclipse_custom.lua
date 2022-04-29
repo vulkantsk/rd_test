@@ -28,48 +28,28 @@ function luna_eclipse_custom:OnSpellStart()
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
 	local point = self:GetCursorPosition()
+	local duration = self:GetSpecialValueFor("duration")
+	local beam_interval = self:GetSpecialValueFor("beam_interval")
+	local radius = self:GetSpecialValueFor("radius")
 
 	local damage = 0
 	if self.damage then
 		damage = self.damage
 	else
-		local ability = caster:FindAbilityByName( "luna_eclipse_custom" )
+		local ability = caster:FindAbilityByName( "luna_lucent_beam_custom" )
 		if ability and ability:GetLevel()>0 then
-			damage = ability:GetLevelSpecialValueFor( "beam_damage", ability:GetLevel()-1 )
+			damage = ability:GetLevelSpecialValueFor( "damage", ability:GetLevel()-1 )
 		end
 	end
 
-	local unit = caster
-	if caster:HasScepter() then
-		if target then
-			unit = target
-		else
-			unit = nil
-		end
-	end
-
-	if unit then
-		unit:AddNewModifier(
-			caster,
-			self,
-			"modifier_luna_eclipse_custom",
-			{ damage = damage }
-		)
-	else
-		caster:AddNewModifier(
-			caster,
-			self,
-			"modifier_luna_eclipse_custom",
-			{
-				duration = self:GetSpecialValueFor("duration"),
-				damage = damage,
-				point = 1,
-				pointx = point.x,
-				pointy = point.y,
-				pointz = point.z,
-			}
-		)
-	end
+	caster:AddNewModifier(
+		caster,
+		self,
+		"modifier_luna_eclipse_custom",
+		{ 
+			duration = duration,
+			damage = damage }
+	)
 
 	GameRules:BeginTemporaryNight( 10 )
 end
@@ -101,6 +81,7 @@ function modifier_luna_eclipse_custom:GetAttributes()
 end
 
 function modifier_luna_eclipse_custom:OnCreated( kv )
+	print("222")
 	self.duration = self:GetAbility():GetSpecialValueFor( "duration" )
 	self.beam_interval = self:GetAbility():GetSpecialValueFor( "beam_interval" )
 	self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
@@ -180,15 +161,10 @@ function modifier_luna_eclipse_custom:OnIntervalThink()
 
 	local unit = nil
 	if #units>0 then
-		for i=1,#units do
-			unit = units[i]
-			self.damageTable.victim = unit
-			ApplyDamage(self.damageTable)
-			self.beam_ability:BeamStackProc()
---			break
-		
-			unit = nil
-		end
+		unit = units[RandomInt(1, #units)]
+		self.damageTable.victim = unit
+		ApplyDamage(self.damageTable)
+		self.beam_ability:BeamStackProc()
 	end
 
 	if not unit then

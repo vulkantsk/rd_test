@@ -9,7 +9,7 @@ function primal_beast_wave:OnSpellStart()
 	local point = self:GetCursorPosition()
 
 	ProjectileManager:CreateLinearProjectile({
-		EffectName = "particles/units/heroes/hero_magnataur/magnataur_shockwave.vpcf",
+		EffectName = "particles/econ/items/magnataur/shock_of_the_anvil/magnataur_shockanvil.vpcf",
 		Ability = self,
 		vSpawnOrigin = caster:GetAbsOrigin(),
 		fStartRadius = self:GetSpecialValueFor("wave_start_width"),

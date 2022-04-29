@@ -10,17 +10,16 @@ end
 function batrider_sticky_masut:OnSpellStart(target)
 	local caster = self:GetCaster()
 	local point = self:GetCursorPosition()
-	if not target then
-		point = self:GetCursorPosition()
-	else
-		point = target
-	end
 
 	local caster = self:GetCaster()
 	local radius = self:GetSpecialValueFor("radius")
+	local reveal_duration = self:GetSpecialValueFor("reveal_duration")
+	local debuff_duration = self:GetSpecialValueFor("debuff_duration")
+
 	local enemies_in_radius = FindUnitsInRadius(caster:GetTeamNumber(), point, nil, radius, self:GetAbilityTargetTeam(), self:GetAbilityTargetType(), self:GetAbilityTargetFlags(), 0, false)
+
 	for _, enemy in pairs(enemies_in_radius) do
-		enemy:AddNewModifier(caster, self, "modifier_batrider_sticky_masut", {duration = self:GetSpecialValueFor("debuff_duration")})
+		enemy:AddNewModifier(caster, self, "modifier_batrider_sticky_masut", {duration = debuff_duration})
 	end
 	
 	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_batrider/batrider_stickynapalm_impact.vpcf", PATTACH_WORLDORIGIN, nil)
@@ -33,7 +32,7 @@ function batrider_sticky_masut:OnSpellStart(target)
 end
 
 modifier_batrider_sticky_masut = class({
-	IsHidden = function(self) return self:GetStackCount() < 1 end,
+	IsHidden = function(self) return false end,
 	IsPurgable = function() return false end,
 	DeclareFunctions = function() return {
 		MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
@@ -49,6 +48,10 @@ end
 
 function modifier_batrider_sticky_masut:OnRefresh()
 	self:OnCreated()
+end
+
+function modifier_batrider_sticky_masut:GetStatusEffectName()
+	return "particles/status_fx/status_effect_stickynapalm.vpcf"
 end
 
 function modifier_batrider_sticky_masut:GetEffectName()

@@ -3,7 +3,7 @@
 	"item_potion_hp_1"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_potion"
+		"ScriptFile"					"items/baseitems/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityTextureName"			"baseitems/potion_hp_1"
 		"Model"							"models/props_gameplay/salve.vmdl"
@@ -38,7 +38,7 @@
 	"item_potion_hp_2"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_potion"
+		"ScriptFile"					"items/baseitems/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityTextureName"			"baseitems/potion_hp_2"
 		"Model"							"models/props_gameplay/salve.vmdl"
@@ -73,7 +73,7 @@
 	"item_potion_hp_3"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_potion"
+		"ScriptFile"					"items/baseitems/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityTextureName"			"baseitems/potion_hp_3"
 		"Model"							"models/props_gameplay/salve.vmdl"
@@ -108,7 +108,7 @@
 	"item_potion_hp_4"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_potion"
+		"ScriptFile"					"items/baseitems/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityTextureName"			"baseitems/potion_hp_4"
 		"Model"							"models/props_gameplay/salve.vmdl"
@@ -143,7 +143,7 @@
 	"item_potion_mp_1"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_potion"
+		"ScriptFile"					"items/baseitems/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityTextureName"			"baseitems/potion_mp_1"
 		"Model"							"models/props_gameplay/clarity.vmdl"
@@ -178,7 +178,7 @@
 	"item_potion_mp_2"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_potion"
+		"ScriptFile"					"items/baseitems/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityTextureName"			"baseitems/potion_mp_2"
 		"Model"							"models/props_gameplay/clarity.vmdl"
@@ -213,7 +213,7 @@
 	"item_potion_mp_3"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_potion"
+		"ScriptFile"					"items/baseitems/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityTextureName"			"baseitems/potion_mp_3"
 		"Model"							"models/props_gameplay/clarity.vmdl"
@@ -248,7 +248,7 @@
 	"item_potion_mp_4"
 	{
 		"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_potion"
+		"ScriptFile"					"items/baseitems/item_potion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityTextureName"			"baseitems/potion_mp_4"
 		"Model"							"models/props_gameplay/clarity.vmdl"

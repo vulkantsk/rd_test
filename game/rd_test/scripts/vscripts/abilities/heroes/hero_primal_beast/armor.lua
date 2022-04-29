@@ -12,7 +12,7 @@ modifier_primal_beast_armor = class({
 	} end,
 })
 
-function modifier_primal_beast_armor:GetModifierPhysical_ConstantBlockh()
+function modifier_primal_beast_armor:GetModifierPhysical_ConstantBlock()
 	return self.damage_block
 end
 

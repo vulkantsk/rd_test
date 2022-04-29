@@ -56,6 +56,7 @@ function batrider_fireball:OnProjectileHit_ExtraData(target, location)
 			damage = self:GetSpecialValueFor("proj_damage"),
 			damage_type = self:GetAbilityDamageType()
 		})
+		print(self:GetSpecialValueFor("proj_damage"))
 	else
 		self.end_pos = self.final_end_pos
 		--CreateModifierThinker(caster, self, "modifier_batrider_fireball_thinker", {duration = self:GetSpecialValueFor("fire_duration")}, location, caster:GetTeamNumber(), false)
@@ -80,6 +81,7 @@ function modifier_batrider_fireball_thinker:OnCreated()
 	self.target_flags = self.ability:GetAbilityTargetFlags() or 0
 	self.damage_type = self.ability:GetAbilityDamageType()
 	self:StartIntervalThink(self.damage_interval)
+
 end
 
 function modifier_batrider_fireball_thinker:OnDestroy()

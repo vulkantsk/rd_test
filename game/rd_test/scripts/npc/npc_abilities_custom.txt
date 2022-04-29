@@ -1,4 +1,3 @@
-#base "npc_talents_custom.txt"
 #base "luna_abilities.txt"
 #base "kunkka_abilities.txt"
 #base "batrider_abilities.txt"

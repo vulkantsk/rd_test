@@ -51,24 +51,28 @@ end
 
 function modifier_necrolyte_shadow_of_death:OnDeath(data)
 	if not IsServer() then return end
-	local unit = data.unit
+	local killed_unit = data.unit
 	local caster = self:GetCaster()
 	local reduction = (100 - self.stats_reduction_pct) / 100
-	if unit == self:GetParent() then
-		local unit = CreateUnitByName(unit:GetUnitName(), unit:GetAbsOrigin(), true, caster, caster, caster:GetTeamNumber())
+	if killed_unit == self:GetParent() then
+		local unit = CreateUnitByName(killed_unit:GetUnitName(), killed_unit:GetAbsOrigin(), true, caster, caster, caster:GetTeamNumber())
 		unit:AddNewModifier(caster, self.ability, "modifier_kill", {duration = self.live_duration})
 		unit:SetControllableByPlayer(caster:GetPlayerID(), true)
-		unit:SetMaxHealth(unit:GetMaxHealth() * reduction)
-		unit:SetHealth(unit:GetMaxHealth())
-		unit:SetBaseDamageMin(unit:GetBaseDamageMin() * reduction)
-		unit:SetBaseDamageMax(unit:GetBaseDamageMax() * reduction)
-		unit:SetPhysicalArmorBaseValue(unit:GetPhysicalArmorBaseValue() * reduction)
-		unit:SetBaseAttackTime(unit:GetBaseAttackTime() * reduction)
+		unit:SetMaxHealth(killed_unit:GetMaxHealth() * reduction)
+		unit:SetHealth(killed_unit:GetMaxHealth())
+		unit:SetBaseDamageMin(killed_unit:GetBaseDamageMin() * reduction)
+		unit:SetBaseDamageMax(killed_unit:GetBaseDamageMax() * reduction)
+		unit:SetPhysicalArmorBaseValue(killed_unit:GetPhysicalArmorBaseValue() * reduction)
+		unit:SetBaseAttackTime(killed_unit:GetBaseAttackTime() * reduction)
 		unit:SetRenderColor(10, 10, 10)
-		FindClearSpaceForUnit(unit, unit:GetAbsOrigin(), true)
+		FindClearSpaceForUnit(unit, killed_unit:GetAbsOrigin(), true)
 		local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_dark_willow/dark_willow_bramble_wraith_endcap.vpcf", PATTACH_ABSORIGIN_FOLLOW, unit)
 		ParticleManager:SetParticleControl(pfx, 0, unit:GetAbsOrigin())
 		ParticleManager:SetParticleControl(pfx, 3, unit:GetAbsOrigin())
 		ParticleManager:ReleaseParticleIndex(pfx)
+
+		unit:RemoveAbility("respawn")
+		unit:RemoveAbility("boss_respawn")
+		unit:RemoveAbility("respawn_strong")
 	end
 end

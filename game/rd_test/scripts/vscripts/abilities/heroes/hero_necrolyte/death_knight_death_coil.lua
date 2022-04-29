@@ -35,7 +35,7 @@ function necrolyte_death_knight_death_coil:OnProjectileHit(hTarget, vLocation)
     hTarget:EmitSound('Hero_Abaddon.DeathCoil.Target')
 
     if hTarget:GetTeam() ~= self:GetCaster():GetTeam() then 
-        target:AddNewModifier(self:GetCaster(), self, "modifier_stunned", {duration = self:GetSpecialValueFor("stun_duration")})
+        hTarget:AddNewModifier(self:GetCaster(), self, "modifier_stunned", {duration = self:GetSpecialValueFor("stun_duration")})
         ApplyDamage({
             victim = hTarget,
             attacker = self:GetCaster(),

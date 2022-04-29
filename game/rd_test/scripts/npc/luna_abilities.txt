@@ -9,8 +9,6 @@
 		"AbilityTextureName"			"hero_luna/moon_light"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"RequiredLevel"				"1"
-		"LevelsBetweenUpgrades"		"3"
 		"MaxLevel"					"1"
 
 		// Special
@@ -39,9 +37,10 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
 		"FightRecapLevel"				"1"
 		"AbilitySound"					"Hero_Luna.LucentBeam.Target"
+
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
-		"MaxLevel"					"7"
+		"MaxLevel"					"9"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -66,11 +65,11 @@
 		"AbilityValues"
 		{
 			"stun_duration"				"0.8"
-			"damage"					"75 150 225 300"
+			"damage"					"75 150 225 300 400 500 650 800 950"
 			"buff_duration"				"8"
-			"agility_bonus"				"5 10 15 20"
+			"agility_bonus"				"5 8 11 14 17 20 23 26 30"
 			"agility_bonus_pct"			"0"
-			"max_stacks"					"6"
+			"max_stacks"				"6"
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
@@ -87,17 +86,18 @@
 		"AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_NONE"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilitySound"					"Hero_Luna.MoonGlaive.Impact"
+
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
-		"MaxLevel"					"7"
+		"MaxLevel"					"9"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
 			"range"							"500"
-			"bounces"						"1 2 3 4"
-			"damage_reduction_pct"			"25"
+			"bounces"						"1 2 3 4 5 6 7 8 9"
+			"damage_reduction_pct"			"30"
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 	}
@@ -115,14 +115,14 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
 		"RequiredLevel"				"1"
 		"LevelsBetweenUpgrades"		"3"
-		"MaxLevel"					"7"
+		"MaxLevel"					"9"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
 			"radius"			"1200"
-			"bonus_damage_pct"	"10 20 30 40"
+			"bonus_damage_pct"	"15 20 25 30 35 45 55 65 75"
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
@@ -137,9 +137,10 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"FightRecapLevel"				"2"
+
 		"RequiredLevel"				"8"
 		"LevelsBetweenUpgrades"		"8"
-		"MaxLevel"					"3"
+		"MaxLevel"					"5"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -153,13 +154,13 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"150 200 250"
+		"AbilityManaCost"				"150 200 250 350 450"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"as_bonus"						"75 125 175"
+			"as_bonus"						"100 150 200 300 400"
 			"duration"						"15"
 		}
 	}
@@ -168,9 +169,6 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/heroes/hero_luna/eclipse_custom"
 		"AbilityTextureName"			"luna_eclipse"
-		"FightRecapLevel"				"2"
-		"MaxLevel"						"3"
-
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -179,14 +177,17 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
+		"RequiredLevel"				"50"
+		"LevelsBetweenUpgrades"		"25"
+		"MaxLevel"					"3"
+
 		"AbilityCastRange"				"0"
 		"AbilityCastPoint"				"0.6"
 		"AbilityCooldown"				"140"
-		"AbilityManaCost"				"150 200 250"
-		"AbilityDuration"				"2.4 4.2 6.0"
+		"AbilityManaCost"				"300 500 700"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
 
-		"AbilitySpecial"
+		"AbilityValues"
 		{
 			"duration"					"5 7 9"
 			"beam_interval"				"0.5"
