@@ -29036,6 +29036,19 @@
 		//----------------------------------------------------------------
 		"VisionDaytimeRange"		"750"		// Range of vision during day light.
 		"VisionNighttimeRange"		"750"		// Range of vision at night time.
+       "Creature"
+        {
+            "AttachWearables"//Tined Shroud
+            {
+            "Wearable1" {"ItemDef" "14811"}//arms("Arms of the Tined Shroud")
+            "Wearable2" {"ItemDef" "14810"}//back("Back of the Tined Shroud")
+            "Wearable3" {"ItemDef" "14869"}//belt("Belt of the Tined Shroud")
+            "Wearable4" {"ItemDef" "14808"}//head("Head of the Tined Shroud")
+            "Wearable5" {"ItemDef" "14809"}//shoulder("Shoulder of the Tined Shroud")
+            "Wearable6" {"ItemDef" "14871"}//ability3("Ward of the Tined Shroud")
+            "Wearable7" {"ItemDef" "14870"}//("Weapon of the Tined Shroud")
+            }           
+        }       
 	}
 
     "npc_necrolyte_summon_death_knight"
